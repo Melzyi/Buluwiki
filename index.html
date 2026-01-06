@@ -1,52 +1,72 @@
-<style>
-  body {
-    background-color: #121212;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-  /* Continue traduzindo os outros termos aqui */
-</style>
- corpo { cor de fundo: #121212; cor: branco; família de fontes: sem serifa; alinhamento de texto: centro; enchimento: 20px; }
- .logotipo { largura: 150px; margem inferior: 20px; }
- .monstros da grade { exibir: flexível; envolvimento flexível: embrulhar; justificar-conteúdo: centro; lacuna: 20px; marca superior: 30px; }
-        
- /* Estilo do Card do Monstro */
- .cartão { 
- posição: relativo; 
- largura: 160px; 
- alta: 220px; 
- raio de borda: 10px; 
- transbordar: escondido; 
- fronteira: 2px sólido #555;
+<!DOCTYPE html>
+<HTML língua="pt-br">
+<cabeça>
+    <meta conjunto de caracteres="UTF-8">
+    <meta nome="janela de visualização" conteúdo="largura=largura do dispositivo, escala inicial=1,0">
+    <título>Buluwiki - 1o Aniversário</título>
+    <estilo>
+        /* Tradução do Estilo (CSS) */
+        corpo {
+            cor de fundo: #121212;
+            cor: branco;
+            família de fontes: sem serifa;
+ alinhamento de texto: centro;
+ enchimento: 20px;
         }
- .fundo-livro { largura: 100%; alta: 100%; ajuste de objeto: cobrir; posição: absoluto; topo: 0; esquerda: 0; índice z: 1; }
- .foto-monstro { largura: 80%; posição: absoluto; topo: 20%; esquerda: 10%; índice z: 2; }
- .ícone-tipo { largura: 30px; posição: absoluto; topo: 5px; certo: 5px; índice z: 3; }
- .nome-monstro { posição: absoluto; fundo: 10px; largura: 100%; índice z: 3; peso da fonte: audacioso; tamanho da fonte: 14px; sombra de texto: 2px 2px 4px preto; }
+
+ .grau monstruoso {
+ exibir: flexível;
+ envolvimento flexível: embrulhar;
+ justificar-conteúdo: centro;
+ lacuna: 20px;
+ marca superior: 30px;
+        }
+
+ .fundo-livro {
+ largura: 160px;
+ alta: 220px;
+ raio de borda: 10px;
+ transbordar: escondido;
+ fronteira: 2px sólido #555;
+ posição: relativo;
+        }
+
+ .foto-monstro {
+ largura: 80%;
+ posição: absoluto;
+ topo: 20%;
+ escerta: 10%;
+ índice z: 2;
+        }
+
+ .icone-tipo {
+ largura: 30px;
+ posição: absoluto;
+ escerta: 0;
+ índice z: 1;
+        }
+
+ .nome-monstro {
+ posição: absoluto;
+ fundo: 10px;
+ largura: 100%;
+ índice z: 3;
+ peso da fonte: negrito;
+ tamanho da fonte: 14px;
+ sombra de texto: 2px 2px 4px rgba(0,0,0,0,8);
+        }
     </estilo>
 </caboça>
 <corpo>
 
-    <imagem fonte="imagens/ícone/ativo/bulu_monster_logo.png" classe="logotipo">
     <h1>1o Aniversário</h1>
+    <p>Bem-vindo à Buluwiki!</p>
 
-    <dividir classe="monstros da grau">
-        <dividir classe="cartão">
-            <imagem fonte="imagens/ícone/ativo/monster_book_water.webp" classe="fundo-livro">
-            <imagem fonte="imagens/monstros/agua/telefishy_03_th_01.jpg" classe="foto-monstro">
-            <imagem fonte="imagens/ícone/ativo/água_tipo_ícone.png" classe="ícone-tipo">
-            <dividir classe="nome-monstro">Telefísico</dividir>
- </dividir>
-
-        <dividir classe="cartão">
-            <imagem fonte="imagens/ícone/ativo/monster_book_fire.webp" classe="fundo-livro">
-            <imagem fonte="imagens/monstros/fogo/nome_do_seu_monstro.jpg" classe="foto-monstro">
-            <imagem fonte="imagens/ícone/ativo/fire_type_icon.png" classe="ícone-tipo">
-            <dividir classe="nome-monstro">Nome Aqui</dividir>
- </dividir>
- </dividir>
+    <dividir classe="grau monstro">
+        <dividir classe="fundo-livro">
+            <dividir classe="nome-monstro">Seu Monstro Aqui</dividir>
+        </dividir>
+    </dividir>
 
 </corpo>
- </HTML>
+</HTML>
