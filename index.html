@@ -3,58 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bulu Monster News – Aniversários</title>
+  <title>Bulu Monster News – Galeria Completa</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #0f1220; color: #ffffff; }
-    header { background: linear-gradient(135deg, #1a1c2c, #4a192c); padding: 20px; text-align: center; border-bottom: 2px solid #3ad6c5; }
-    header img { max-width: 250px; margin-bottom: 10px; }
+    body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f1220; color: #ffffff; }
     
-    nav { background: #151933; display: flex; justify-content: center; gap: 8px; padding: 15px; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; }
-    nav button { background: #1c2148; border: 1px solid #333; color: #ffffff; font-weight: bold; cursor: pointer; padding: 8px 12px; border-radius: 8px; transition: 0.3s; }
-    nav button.active, nav button:hover { background: #3ad6c5; color: #0f1220; border-color: #fff; }
+    header { background: linear-gradient(135deg, #151933, #252a50); padding: 20px; text-align: center; border-bottom: 3px solid #3ad6c5; }
+    header img { max-width: 260px; margin-bottom: 10px; }
+    header h1 { margin: 5px 0; font-size: 1.8rem; color: #3ad6c5; }
+
+    nav { background: #151933; display: flex; justify-content: center; gap: 8px; padding: 15px; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
+    nav button { background: #1c2148; border: 1px solid #444; color: #ffffff; font-weight: bold; cursor: pointer; padding: 10px 14px; border-radius: 8px; transition: 0.3s; }
+    nav button.active, nav button:hover { background: #3ad6c5; color: #0f1220; border-color: #fff; transform: scale(1.05); }
     .btn-unknown { border-color: #ff4444; color: #ff4444; }
 
-    main { padding: 20px; max-width: 1200px; margin: auto; }
-    .banner { width: 100%; border-radius: 14px; margin-bottom: 25px; border: 1px solid #3ad6c5; }
+    main { padding: 20px; max-width: 1400px; margin: auto; }
+    .banner { width: 100%; border-radius: 15px; margin-bottom: 30px; border: 2px solid #333; display: block; }
 
-    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .monster-card { background: #1c2148; border-radius: 14px; padding: 15px; text-align: center; border: 1px solid #333; }
+    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; }
     
-    .evolution-line { display: flex; align-items: center; justify-content: center; gap: 5px; margin: 15px 0; background: #0a0c16; padding: 10px; border-radius: 10px; }
-    .evolution-line img { width: 75px; height: 75px; object-fit: contain; }
-    .evolution-line span { color: #3ad6c5; font-weight: bold; }
+    .monster-card { background: #1c2148; border-radius: 18px; padding: 20px; text-align: center; border: 1px solid #2a2f55; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    
+    .type-label { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: bold; color: #3ad6c5; margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
+    .type-label img { width: 24px; height: 24px; }
 
-    .type { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: bold; color: #3ad6c5; text-transform: capitalize; }
-    .type img { width: 22px; height: 22px; }
+    .evolution-line { display: flex; align-items: center; justify-content: space-around; gap: 10px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 12px; }
+    
+    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 100px; }
+    .evo-stage img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; transition: 0.3s; }
+    .evo-stage span { font-size: 0.75rem; color: #00d4ff; font-weight: bold; text-align: center; min-height: 30px; }
 
-    /* Botões de Versão (Natal/Shyne) */
-    .forms-btns { margin-top: 10px; display: flex; justify-content: center; gap: 5px; }
-    .forms-btns button { font-size: 10px; padding: 4px 8px; cursor: pointer; background: #0f1220; color: white; border: 1px solid #3ad6c5; border-radius: 4px; }
+    .arrow { color: #3ad6c5; font-weight: bold; font-size: 1.2rem; }
+
+    .forms-btns { margin-top: 15px; display: flex; justify-content: center; gap: 8px; }
+    .forms-btns button { font-size: 0.7rem; padding: 5px 10px; cursor: pointer; background: #0f1220; color: white; border: 1px solid #3ad6c5; border-radius: 5px; text-transform: uppercase; }
     .forms-btns button:hover { background: #3ad6c5; color: black; }
+
+    footer { text-align: center; padding: 30px; color: #666; font-size: 0.8rem; }
   </style>
 </head>
 <body>
 
 <header>
   <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Logo" />
-  <p>Galeria de Aniversários Oficial</p>
+  <h1>Bulu Monster News</h1>
 </header>
 
 <nav id="anniversaryNav">
-  <button onclick="filterAnniversary('all')" class="active">Todos</button>
-  <button onclick="filterAnniversary('01')">01º</button>
-  <button onclick="filterAnniversary('02')">02º</button>
-  <button onclick="filterAnniversary('03')">03º</button>
-  <button onclick="filterAnniversary('04')">04º</button>
-  <button onclick="filterAnniversary('05')">05º</button>
-  <button onclick="filterAnniversary('06')">06º</button>
-  <button onclick="filterAnniversary('07')">07º</button>
-  <button onclick="filterAnniversary('08')">08º</button>
-  <button onclick="filterAnniversary('09')">09º</button>
-  <button onclick="filterAnniversary('10')">10º</button>
-  <button onclick="filterAnniversary('11')">11º</button>
-  <button onclick="filterAnniversary('12')">12º</button>
-  <button onclick="filterAnniversary('unknown')" class="btn-unknown">Descartado</button>
+  <button onclick="filterAniv('all')" class="active">Todos</button>
+  <button onclick="filterAniv('01')">01º Aniv.</button>
+  <button onclick="filterAniv('02')">02º Aniv.</button>
+  <button onclick="filterAniv('03')">03º Aniv.</button>
+  <button onclick="filterAniv('04')">04º Aniv.</button>
+  <button onclick="filterAniv('05')">05º Aniv.</button>
+  <button onclick="filterAniv('06')">06º Aniv.</button>
+  <button onclick="filterAniv('07')">07º Aniv.</button>
+  <button onclick="filterAniv('08')">08º Aniv.</button>
+  <button onclick="filterAniv('09')">09º Aniv.</button>
+  <button onclick="filterAniv('10')">10º Aniv.</button>
+  <button onclick="filterAniv('11')">11º Aniv.</button>
+  <button onclick="filterAniv('12')">12º Aniv.</button>
+  <button onclick="filterAniv('unknown')" class="btn-unknown">Descartado</button>
 </nav>
 
 <main>
@@ -63,85 +71,96 @@
   <div class="monster-grid">
     
     <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <h3>Fishy Line</h3>
+      <div class="type-label"><img src="imagens/imagens/icon/asset/water_type_icon.png" /> Water</div>
       <div class="evolution-line">
-        <img src="imagens/monstros/agua/waterfishy_01_th_01.webp" />
-        <span>→</span>
-        <img src="imagens/monstros/agua/oceanfishy_02_th_01.webp" />
-        <span>→</span>
-        <img src="imagens/monstros/agua/abyssfishy_03_th_01.webp" />
+        <div class="evo-stage"><img src="imagens/monstros/agua/waterfishy_01_th_01.webp" /><span>Waterfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/agua/oceanfishy_02_th_01.webp" /><span>Oceanfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/agua/abyssfishy_03_th_01.webp" /><span>Abyssfishy</span></div>
       </div>
-      <div class="type"><img src="imagens/imagens/icon/asset/water_type_icon.png" /> Water</div>
     </div>
 
     <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <h3>Spirit Fishy Line</h3>
+      <div class="type-label"><img src="imagens/imagens/icon/asset/spirit_type_icon.png" /> Spirit</div>
       <div class="evolution-line">
-        <img id="s1" src="imagens/monstros/spirit/telefishy_01_th_01.webp" />
-        <span>→</span>
-        <img id="s2" src="imagens/monstros/spirit/spiritfishy_02_th_01.webp" />
-        <span>→</span>
-        <img id="s3" src="imagens/monstros/spirit/psychicfishy_03_th_01.webp" />
+        <div class="evo-stage"><img id="sp1" src="imagens/monstros/spirit/telefishy_01_th_01.webp" /><span id="nm1">Telefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img id="sp2" src="imagens/monstros/spirit/spiritfishy_02_th_01.webp" /><span id="nm2">Spiritfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img id="sp3" src="imagens/monstros/spirit/psychicfishy_03_th_01.webp" /><span id="nm3">Psychicfishy</span></div>
       </div>
       <div class="forms-btns">
-        <button onclick="changeSet(['s1','s2','s3'], ['telefishy_01_th_01.webp','spiritfishy_02_th_01.webp','psychicfishy_03_th_01.webp'])">Normal</button>
-        <button onclick="changeSet(['s1','s2','s3'], ['telefishy_natal_01_th_01.webp','spiritfishy_natal_02_th_01.webp','psychicfishy_natal_03_th_01.webp'])">Natal</button>
-        <button onclick="changeSet(['s1','s2','s3'], ['telefishy_shyne_01_th_01.webp','spiritfishy_shyne_02_th_01.webp','psychicfishy_shyne_03_th_01.webp'])">Shyne</button>
+        <button onclick="trocarVersao(['sp1','sp2','sp3'], ['telefishy_01_th_01.webp','spiritfishy_02_th_01.webp','psychicfishy_03_th_01.webp'], ['nm1','nm2','nm3'], ['Telefishy','Spiritfishy','Psychicfishy'])">Normal</button>
+        <button onclick="trocarVersao(['sp1','sp2','sp3'], ['telefishy_natal_01_th_01.webp','spiritfishy_natal_02_th_01.webp','psychicfishy_natal_03_th_01.webp'], ['nm1','nm2','nm3'], ['Telefishy (Natal)','Spiritfishy (Natal)','Psychicfishy (Natal)'])">Natal</button>
+        <button onclick="trocarVersao(['sp1','sp2','sp3'], ['telefishy_shyne_01_th_01.webp','spiritfishy_shyne_02_th_01.webp','psychicfishy_shyne_03_th_01.webp'], ['nm1','nm2','nm3'], ['Telefishy (Shyne)','Spiritfishy (Shyne)','Psychicfishy (Shyne)'])">Shyne</button>
       </div>
-      <div class="type"><img src="imagens/imagens/icon/asset/spirit_type_icon.png" /> Spirit</div>
     </div>
 
     <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <h3>Common Fishy Line</h3>
+      <div class="type-label"><img src="imagens/imagens/icon/asset/common_type_icon.png" /> Common</div>
       <div class="evolution-line">
-        <img src="imagens/monstros/comum/fishy_01_th_01.webp" />
-        <span>→</span>
-        <img src="imagens/monstros/comum/ordinfishy_02_th_01.webp" />
-        <span>→</span>
-        <img src="imagens/monstros/comum/mystfishy_03_th_01.webp" />
+        <div class="evo-stage"><img src="imagens/monstros/comum/fishy_01_th_01.webp" /><span>Fishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/ordinfishy_02_th_01.webp" /><span>Ordinfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/mystfishy_03_th_01.webp" /><span>Mystfishy</span></div>
       </div>
-      <div class="type"><img src="imagens/imagens/icon/asset/common_type_icon.png" /> Common</div>
     </div>
 
     <div class="monster-card" data-anniversary="01" data-unknown="true">
-      <h3>Descartados</h3>
+      <div class="type-label">Descartados / Unknown</div>
       <div class="evolution-line">
-        <img src="imagens/monstros/comum/unknown_01c_th_01.webp" />
-        <img src="imagens/monstros/eletrico/unknown_01a_th_01.webp" />
+        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_01c_th_01.webp" /><span>Unknown 01c</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/eletrico/unknown_01a_th_01.webp" /><span>Unknown 01a</span></div>
       </div>
-      <div class="type">Unknown</div>
     </div>
 
   </div>
 </main>
 
+<footer>
+  Bulu Monster News © 2026 - Galeria Interativa de Aniversários
+</footer>
+
 <script>
-  function filterAnniversary(value) {
+  // Filtro de Aniversários e Banner
+  function filterAniv(value) {
     document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-    // Encontrar o botão clicado
     event.currentTarget.classList.add('active');
 
     const cards = document.querySelectorAll('.monster-card');
     const banner = document.getElementById('banner');
 
+    // Troca o banner conforme o aniversário
     if (value !== 'all' && value !== 'unknown') {
       banner.src = `imagens/${value}th-anniversary.jpg`;
       banner.style.display = "block";
     } else if (value === 'unknown') {
       banner.style.display = "none";
+    } else {
+      banner.src = `imagens/01th-anniversary.jpg`;
+      banner.style.display = "block";
     }
 
     cards.forEach(card => {
-      if (value === 'all') card.style.display = 'block';
-      else if (value === 'unknown') card.style.display = (card.dataset.unknown === 'true') ? 'block' : 'none';
-      else card.style.display = (card.dataset.anniversary === value && card.dataset.unknown === 'false') ? 'block' : 'none';
+      if (value === 'all') {
+        card.style.display = 'block';
+      } else if (value === 'unknown') {
+        card.style.display = (card.dataset.unknown === 'true') ? 'block' : 'none';
+      } else {
+        card.style.display = (card.dataset.anniversary === value && card.dataset.unknown === 'false') ? 'block' : 'none';
+      }
     });
   }
 
-  // Função para trocar as 3 imagens da linha evolutiva ao mesmo tempo
-  function changeSet(ids, filenames) {
-    ids.forEach((id, index) => {
-      document.getElementById(id).src = `imagens/monstros/spirit/` + filenames[index];
+  // Troca de Versão (Imagens e Nomes)
+  function trocarVersao(imgIds, files, nameIds, names) {
+    imgIds.forEach((id, i) => {
+      document.getElementById(id).src = `imagens/monstros/spirit/` + files[i];
+    });
+    nameIds.forEach((id, i) => {
+      document.getElementById(id).innerText = names[i];
     });
   }
 </script>
