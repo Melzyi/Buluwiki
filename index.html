@@ -27,22 +27,21 @@
 
     .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; }
     
-    .monster-card { background: var(--card-bg); border-radius: 18px; padding: 20px; text-align: center; border: 1px solid #2a2f55; position: relative; }
+    .monster-card { background: var(--card-bg); border-radius: 18px; padding: 20px; text-align: center; border: 1px solid #2a2f55; }
     
-    .type-label { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: bold; color: var(--primary); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+    .type-label { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: bold; color: var(--primary); margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
     .type-label img { width: 24px; height: 24px; }
 
-    .evolution-line { display: flex; align-items: center; justify-content: space-around; gap: 5px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; border: 1px solid #ffffff05; flex-wrap: wrap; }
+    .evolution-line { display: flex; align-items: center; justify-content: space-around; gap: 5px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; flex-wrap: wrap; }
     
-    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 100px; margin: 10px 0; }
-    .evo-stage img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 10px; }
+    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 105px; margin: 10px 2px; }
+    .evo-stage img { width: 85px; height: 85px; object-fit: contain; margin-bottom: 10px; }
     .evo-stage span { font-size: 0.75rem; color: var(--text-blue); font-weight: bold; min-height: 35px; line-height: 1.2; }
 
     .arrow { color: var(--primary); font-weight: bold; font-size: 1.5rem; opacity: 0.5; }
 
     .forms-btns { margin-top: 15px; display: flex; justify-content: center; gap: 8px; }
-    .forms-btns button { font-size: 0.65rem; padding: 6px 12px; cursor: pointer; background: #0f1220; color: white; border: 1px solid var(--primary); border-radius: 5px; transition: 0.2s; }
-    .forms-btns button:hover { background: var(--primary); color: black; }
+    .forms-btns button { font-size: 0.65rem; padding: 6px 12px; cursor: pointer; background: #0f1220; color: white; border: 1px solid var(--primary); border-radius: 5px; }
 
     footer { text-align: center; padding: 50px; color: #555; font-size: 0.9rem; border-top: 1px solid #1c2148; margin-top: 50px; }
   </style>
@@ -52,10 +51,9 @@
 <header>
   <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Monster Logo" />
   <h1>Bulu Monster News</h1>
-  <p>Enciclopédia Completa de Monstros Comemorativos</p>
 </header>
 
-<nav id="anniversaryNav">
+<nav>
   <button onclick="filterAniv('all')" class="active">Todos</button>
   <button onclick="filterAniv('01')">01º Aniv.</button>
   <button onclick="filterAniv('02')">02º Aniv.</button>
@@ -89,22 +87,6 @@
     </div>
 
     <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/spirit_type_icon.png" /> Spirit</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img id="sp1" src="imagens/monstros/spirit/telefishy_01_th_01.webp" /><span id="nm1">Telefishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img id="sp2" src="imagens/monstros/spirit/spiritfishy_02_th_01.webp" /><span id="nm2">Spiritfishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img id="sp3" src="imagens/monstros/spirit/psychicfishy_03_th_01.webp" /><span id="nm3">Psychicfishy</span></div>
-      </div>
-      <div class="forms-btns">
-        <button onclick="trocarVersao(['sp1','sp2','sp3'], ['telefishy_01_th_01.webp','spiritfishy_02_th_01.webp','psychicfishy_03_th_01.webp'], ['nm1','nm2','nm3'], ['Telefishy','Spiritfishy','Psychicfishy'])">Normal</button>
-        <button onclick="trocarVersao(['sp1','sp2','sp3'], ['telefishy_natal_01_th_01.webp','spiritfishy_natal_02_th_01.webp','psychicfishy_natal_03_th_01.webp'], ['nm1','nm2','nm3'], ['Telefishy (Natal)','Spiritfishy (Natal)','Psychicfishy (Natal)'])">Natal</button>
-        <button onclick="trocarVersao(['sp1','sp2','sp3'], ['telefishy_shyne_01_th_01.webp','spiritfishy_shyne_02_th_01.webp','psychicfishy_shyne_03_th_01.webp'], ['nm1','nm2','nm3'], ['Telefishy (Shyne)','Spiritfishy (Shyne)','Psychicfishy (Shyne)'])">Shyne</button>
-      </div>
-    </div>
-
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
       <div class="type-label"><img src="imagens/imagens/icon/asset/fire_type_icon.png" /> Fire</div>
       <div class="evolution-line">
         <div class="evo-stage"><img src="imagens/monstros/fogo/redfishy_01_th_01.webp" /><span>Redfishy</span></div>
@@ -112,6 +94,22 @@
         <div class="evo-stage"><img src="imagens/monstros/fogo/flamefishy_02_th_01.webp" /><span>Flamefishy</span></div>
         <div class="arrow">→</div>
         <div class="evo-stage"><img src="imagens/monstros/fogo/blazingfishy_03_th_01.webp" /><span>Blazingfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/spirit_type_icon.png" /> Spirit</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img id="s1" src="imagens/monstros/spirit/telefishy_01_th_01.webp" /><span id="n1">Telefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img id="s2" src="imagens/monstros/spirit/spiritfishy_02_th_01.webp" /><span id="n2">Spiritfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img id="s3" src="imagens/monstros/spirit/psychicfishy_03_th_01.webp" /><span id="n3">Psychicfishy</span></div>
+      </div>
+      <div class="forms-btns">
+        <button onclick="trocarV(['s1','s2','s3'],['telefishy_01_th_01.webp','spiritfishy_02_th_01.webp','psychicfishy_03_th_01.webp'],['n1','n2','n3'],['Telefishy','Spiritfishy','Psychicfishy'])">Normal</button>
+        <button onclick="trocarV(['s1','s2','s3'],['telefishy_natal_01_th_01.webp','spiritfishy_natal_02_th_01.webp','psychicfishy_natal_03_th_01.webp'],['n1','n2','n3'],['Telefishy (N)','Spiritfishy (N)','Psychicfishy (N)'])">Natal</button>
+        <button onclick="trocarV(['s1','s2','s3'],['telefishy_shyne_01_th_01.webp','spiritfishy_shyne_02_th_01.webp','psychicfishy_shyne_03_th_01.webp'],['n1','n2','n3'],['Telefishy (S)','Spiritfishy (S)','Psychicfishy (S)'])">Shyne</button>
       </div>
     </div>
 
@@ -127,17 +125,6 @@
     </div>
 
     <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/dragon_type_icon.png" /> Dragon</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/dragao/wyfishy_01_th_01.webp" /><span>Wyfishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/dragao/dritfishy_02_th_01.webp" /><span>Dritfishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/dragao/dragkfishy_03_th_01.webp" /><span>Dragkfishy</span></div>
-      </div>
-    </div>
-
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
       <div class="type-label"><img src="imagens/imagens/icon/asset/common_type_icon.png" /> Common</div>
       <div class="evolution-line">
         <div class="evo-stage"><img src="imagens/monstros/comum/fishy_01_th_01.webp" /><span>Fishy</span></div>
@@ -148,69 +135,16 @@
       </div>
     </div>
 
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/ice_type_icon.png" /> Ice</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/gelo/icefishy_01_th_01.webp" /><span>Icefishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/gelo/glacifishy_02_th_01.webp" /><span>Glacifishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/gelo/frozenfishy_03_th_01.webp" /><span>Frozenfishy</span></div>
-      </div>
-    </div>
-
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/evil_type_icon.png" /> Evil</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/mal/evilfishy_01_th_01.webp" /><span>Evilfishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/mal/devilfishy_02_th_01.webp" /><span>Devilfishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/mal/mordefishy_03_th_01.webp" /><span>Mordefishy</span></div>
-      </div>
-    </div>
-
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/earth_type_icon.png" /> Earth</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/terra/stonefishy_01_th_01.webp" /><span>Stonefishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/terra/landfishy_02_th_01.webp" /><span>Landfishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/terra/gaiafishy_03_th_01.webp" /><span>Gaiafishy</span></div>
-      </div>
-    </div>
-
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/wind_type_icon.png" /> Wind</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/vento/windifishy_01_th_01.webp" /><span>Windifishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/vento/breezefishy_02_th_01.webp" /><span>Breezefishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/vento/stormfishy_03_th_01.webp" /><span>Stormfishy</span></div>
-      </div>
-    </div>
-
-    <div class="monster-card" data-anniversary="01" data-unknown="false">
-      <div class="type-label"><img src="imagens/imagens/icon/asset/mythic_type_icon.png" /> Mythic</div>
-      <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/mitico/aciefishy_01_th_01.webp" /><span>Aciefishy</span></div>
-        <div class="arrow">→</div>
-        <div class="evo-stage"><img src="imagens/monstros/mitico/ancientfishy_02_th_01.webp" /><span>Ancientfishy</span></div>
-      </div>
-    </div>
-
     <div class="monster-card" data-anniversary="01" data-unknown="true">
-      <div class="type-label" style="color:#ff4444">Descartados / Unknown</div>
-      <div class="evolution-line" style="justify-content: center; gap: 15px;">
+      <div class="type-label" style="color:#ff4444">Descartados (Unknowns)</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_01_th_01.webp" /><span>Unknown 01</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_02_th_01.webp" /><span>Unknown 02</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_01b_th_01.webp" /><span>Unknown 01b</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/eletrico/unknown_01a_th_01.webp" /><span>Unknown 01a</span></div>
         <div class="evo-stage"><img src="imagens/monstros/comum/unknown_01c_th_01.webp" /><span>Unknown 01c</span></div>
         <div class="evo-stage"><img src="imagens/monstros/comum/unknown_02a_th_01.webp" /><span>Unknown 02a</span></div>
-        <div class="evo-stage"><img src="imagens/monstros/eletrico/unknown_01a_th_01.webp" /><span>Unknown 01a (Lightning)</span></div>
-        <div class="evo-stage"><img src="imagens/monstros/agua/unknown_th_01.webp" /><span>Unknown Water</span></div>
-        <div class="evo-stage"><img src="imagens/monstros/fogo/unknown_th_01.webp" /><span>Unknown Fire</span></div>
-        <div class="evo-stage"><img src="imagens/monstros/gelo/unknown_th_01.webp" /><span>Unknown Ice</span></div>
-        <div class="evo-stage"><img src="imagens/monstros/dragao/unknown_th_01.webp" /><span>Unknown Dragon</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/agua/unknown_th_01.webp" /><span>Unknown (Water)</span></div>
       </div>
     </div>
 
@@ -218,40 +152,39 @@
 </main>
 
 <footer>
-  Bulu Monster News & Buluwiki © 2026<br>
-  Preservando todos os monstros, inclusive os esquecidos.
+  Bulu Monster News © 2026 - Enciclopédia de Aniversários
 </footer>
 
 <script>
-  function filterAniv(value) {
+  function filterAniv(val) {
     document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
     event.currentTarget.classList.add('active');
     const cards = document.querySelectorAll('.monster-card');
     const banner = document.getElementById('banner');
 
-    if (value !== 'all' && value !== 'unknown') {
-      banner.src = `imagens/${value}th-anniversary.jpg`;
+    if (val !== 'all' && val !== 'unknown') {
+      banner.src = `imagens/${val}th-anniversary.jpg`;
       banner.style.display = "block";
-    } else if (value === 'unknown') {
+    } else if (val === 'unknown') {
       banner.style.display = "none";
     } else {
       banner.src = `imagens/01th-anniversary.jpg`;
       banner.style.display = "block";
     }
 
-    cards.forEach(card => {
-      if (value === 'all') card.style.display = 'block';
-      else if (value === 'unknown') card.style.display = (card.dataset.unknown === 'true') ? 'block' : 'none';
-      else card.style.display = (card.dataset.anniversary === value && card.dataset.unknown === 'false') ? 'block' : 'none';
+    cards.forEach(c => {
+      if (val === 'all') c.style.display = 'block';
+      else if (val === 'unknown') c.style.display = (c.dataset.unknown === 'true') ? 'block' : 'none';
+      else c.style.display = (c.dataset.anniversary === val && c.dataset.unknown === 'false') ? 'block' : 'none';
     });
   }
 
-  function trocarVersao(imgIds, files, nameIds, names) {
-    imgIds.forEach((id, i) => {
-      document.getElementById(id).src = `imagens/monstros/spirit/` + files[i];
+  function trocarV(ids, files, nids, names) {
+    ids.forEach((id, i) => { 
+      document.getElementById(id).src = `imagens/monstros/spirit/` + files[i]; 
     });
-    nameIds.forEach((id, i) => {
-      document.getElementById(id).innerText = names[i];
+    nids.forEach((id, i) => { 
+      document.getElementById(id).innerText = names[i]; 
     });
   }
 </script>
