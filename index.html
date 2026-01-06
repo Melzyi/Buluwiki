@@ -5,131 +5,121 @@
     <title>Buluwiki - Galeria Profissional</title>
     <style>
         body { background-color: #050505; color: white; font-family: 'Segoe UI', sans-serif; margin: 0; text-align: center; }
-        .header { padding: 20px; background: rgba(0,0,0,0.8); position: sticky; top: 0; z-index: 100; }
-        .logo-main { max-width: 250px; display: block; margin: 0 auto 20px; }
         
-        /* Menu de 13 Botões */
-        .nav-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 10px; }
+        /* Header Fixo */
+        .header { background: #000; padding: 20px; border-bottom: 2px solid #00d4ff; position: sticky; top: 0; z-index: 1000; }
+        .logo-main { max-width: 250px; margin-bottom: 20px; }
+        
+        /* 13 Botões */
+        .nav-menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 1000px; margin: 0 auto; }
         .btn { 
-            background: #222; border: 1px solid #444; color: #aaa; padding: 8px 12px; 
+            background: #1a1a1a; border: 1px solid #444; color: #fff; padding: 10px 15px; 
             border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.3s;
         }
-        .btn:hover, .btn.active { background: #00d4ff; color: black; border-color: #fff; box-shadow: 0 0 10px #00d4ff; }
+        .btn:hover, .btn.active { background: #00d4ff; color: #000; border-color: #fff; }
         .btn-descartado { border-color: #ff4444; color: #ff4444; }
+        .btn-descartado:hover { background: #ff4444; color: #fff; }
 
-        .banner-area { margin: 20px auto; max-width: 900px; padding: 0 10px; }
-        .banner-img { width: 100%; border-radius: 10px; border: 1px solid #333; display: none; }
-        .banner-img.active { display: block; }
-
-        /* Estilo dos Tipos */
-        .tipo-container { margin-top: 40px; text-align: left; max-width: 1100px; margin-left: auto; margin-right: auto; }
-        .tipo-header { 
-            display: flex; align-items: center; background: #111; padding: 10px 20px; 
-            border-radius: 8px; border-bottom: 2px solid #333; margin-bottom: 15px;
+        /* Estilo das Seções */
+        .secao-tipo { 
+            display: flex; align-items: center; background: #111; padding: 15px; 
+            margin: 40px auto 10px; max-width: 1000px; border-radius: 10px; border-left: 5px solid #ffcc00;
         }
-        .tipo-icon { width: 30px; height: 30px; margin-right: 15px; }
-        .tipo-nome { font-size: 1.5em; color: #ffcc00; text-transform: capitalize; }
+        .tipo-icon { width: 35px; height: 35px; margin-right: 15px; }
+        .tipo-nome { font-size: 1.5em; font-weight: bold; color: #ffcc00; text-transform: capitalize; }
 
-        .grade-monstros { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; padding: 10px; }
-        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 10px; text-align: center; position: relative; }
-        .monstro-img { width: 100%; height: auto; border-radius: 8px; }
-        .footer-card { display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 10px; }
-        .mini-icon { width: 18px; height: 18px; }
-        .nome-txt { font-size: 0.85em; color: #00d4ff; font-weight: bold; }
+        /* Grade de Monstros */
+        .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 15px; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .monstro-img { width: 100%; border-radius: 8px; margin-bottom: 12px; }
         
-        .hidden { display: none; }
+        .card-footer { display: flex; align-items: center; justify-content: center; gap: 8px; border-top: 1px solid #333; padding-top: 10px; }
+        .mini-icon { width: 20px; height: 20px; }
+        .nome-txt { font-size: 0.9em; color: #00d4ff; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <img src="imagens/icon/asset/bulu_monster_logo.png" class="logo-main" onerror="this.src='https://via.placeholder.com/250x100?text=Logo+Nao+Encontrada'">
+        <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" class="logo-main">
         
-        <div class="nav-buttons">
-            <button class="btn active" onclick="showAniv(1)">1º Aniv.</button>
-            <button class="btn" onclick="showAniv(2)">2º Aniv.</button>
-            <button class="btn" onclick="showAniv(3)">3º Aniv.</button>
-            <button class="btn" onclick="showAniv(4)">4º Aniv.</button>
-            <button class="btn" onclick="showAniv(5)">5º Aniv.</button>
-            <button class="btn" onclick="showAniv(6)">6º Aniv.</button>
-            <button class="btn" onclick="showAniv(7)">7º Aniv.</button>
-            <button class="btn" onclick="showAniv(8)">8º Aniv.</button>
-            <button class="btn" onclick="showAniv(9)">9º Aniv.</button>
-            <button class="btn" onclick="showAniv(10)">10º Aniv.</button>
-            <button class="btn" onclick="showAniv(11)">11º Aniv.</button>
-            <button class="btn" onclick="showAniv(12)">12º Aniv.</button>
-            <button class="btn btn-descartado" onclick="showDescartados()">Descartado</button>
+        <div class="nav-menu">
+            <button class="btn active" onclick="trocarAba(1, this)">1º Aniv.</button>
+            <button class="btn" onclick="trocarAba(2, this)">2º Aniv.</button>
+            <button class="btn" onclick="trocarAba(3, this)">3º Aniv.</button>
+            <button class="btn" onclick="trocarAba(4, this)">4º Aniv.</button>
+            <button class="btn" onclick="trocarAba(5, this)">5º Aniv.</button>
+            <button class="btn" onclick="trocarAba(6, this)">6º Aniv.</button>
+            <button class="btn" onclick="trocarAba(7, this)">7º Aniv.</button>
+            <button class="btn" onclick="trocarAba(8, this)">8º Aniv.</button>
+            <button class="btn" onclick="trocarAba(9, this)">9º Aniv.</button>
+            <button class="btn" onclick="trocarAba(10, this)">10º Aniv.</button>
+            <button class="btn" onclick="trocarAba(11, this)">11º Aniv.</button>
+            <button class="btn" onclick="trocarAba(12, this)">12º Aniv.</button>
+            <button class="btn btn-descartado" onclick="trocarAba('descartado', this)">Descartado</button>
         </div>
     </div>
 
-    <div class="banner-area">
-        <img src="imagens/01th-anniversary.jpg" id="banner1" class="banner-img active">
-        </div>
-
-    <div id="galeria-area">
-        </div>
+    <div id="galeria"></div>
 
 <script>
-    const caminhos = {
-        icons: "imagens/icon/asset/",
-        monstros: "imagens/monstros/"
-    };
+    const ASSETS = "imagens/imagens/icon/asset/";
+    const MONSTROS = "imagens/monstros/";
 
-    function showAniv(num) {
-        // Remove active de todos os botões
+    function trocarAba(aba, botao) {
+        // Estilo dos botões
         document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
-        event.target.classList.add('active');
+        botao.classList.add('active');
 
-        const area = document.getElementById('galeria-area');
-        area.innerHTML = `<h1>Carregando ${num}º Aniversário...</h1>`;
+        const area = document.getElementById('galeria');
+        area.innerHTML = ""; // Limpa a tela para carregar rápido
 
-        // Simulando a construção do 1º Aniversário (Repita a lógica para os outros)
-        if(num === 1) {
-            area.innerHTML = `
-                <div class="tipo-container">
-                    <div class="tipo-header">
-                        <img src="${caminhos.icons}water_type_icon.png" class="tipo-icon">
-                        <span class="tipo-nome">Water</span>
-                    </div>
-                    <div class="grade-monstros">
-                        ${renderCard('agua', 'waterfishy_01_th_01.webp', 'Water', 'Waterfishy')}
-                        ${renderCard('agua', 'oceanfishy_02_th_01.webp', 'Water', 'Oceanfishy')}
-                    </div>
-                </div>
-            `;
-        } else {
-            area.innerHTML = `<h1>Conteúdo do ${num}º Aniversário em breve...</h1>`;
+        se (aba === 'descartado') {
+            área.HTML interno = `
+ <div class="secao-tipo"><span class="tipo-nome">Descartados (Desconhecidos)</span></div>
+ <div class="grau">
+                    ${cartão de criar('comum', 'desconhecido_01c_th_01.webp', 'comum', 'Desconhecido 01c')}
+                    ${cartão de criar('elétrico', 'desconhecido_01a_th_01.webp', 'raio', 'Desconhecido 01a')}
+                    ${cartão de criar('água', 'desconhecido_th_01.webp', 'água', 'Água Desconhecida')}
+ </dividir>`;
+        } outro se (aba === 1) {
+            área.HTML interno = `
+ <div class="secao-tipo">
+ <img src="${ATIVOS}water_type_icon.png" class="tipo-icon">
+ <span class="tipo-nome">Água</span>
+ </dividir>
+ <div class="grau">
+                    ${cartão de criar('água', 'peixe aquático_01_th_01.webp', 'água', 'Peixe aquático')}
+                    ${cartão de criar('água', 'oceanfishy_02_th_01.webp', 'água', 'Peixe do oceano')}
+ </dividir>
+                
+ <div class="secao-tipo">
+ <img src="${ATIVOS}common_type_icon.png" class="tipo-icon">
+ <span class="tipo-nome">Comum</span>
+ </dividir>
+ <div class="grau">
+                    ${cartão de criar('comum', 'fishy_01_th_01.webp', 'comum', 'Peixe')}
+ </dividir>`;
+        } outro {
+            área.HTML interno = `<h2 style="margin-top:50px">Conteúdo do ${aba}o Aniversário em breve!</h2>`;
         }
     }
 
-    function showDescartados() {
-        const area = document.getElementById('galeria-area');
-        area.innerHTML = `
-            <div class="tipo-container">
-                <div class="tipo-header"><span class="tipo-nome">Descartados (Unknowns)</span></div>
-                <div class="grade-monstros">
-                    ${renderCard('comum', 'unknown_01c_th_01.webp', 'common', 'Unknown 01c')}
-                    ${renderCard('eletrico', 'unknown_01a_th_01.webp', 'lightning', 'Unknown 01a')}
-                </div>
-            </div>
-        `;
+    diversão cartão de chorar(macarrão, arq, tipo, nome) {
+        retornar `
+ <div class="cartão">
+ <img src="${MONSTROS}${macarrão}/${arq}" classe="monstro-img">
+ <div class="rodapé do cartão">
+ <img src="${ATIVOS}${tipo}_type_icon.png" classe="mini-ícone">
+ <span class="nome-txt">${nome}</extensão>
+ </dividir>
+ </dividir>`;
     }
 
-    function renderCard(pasta, arquivo, tipoIcon, nome) {
-        return `
-            <div class="card">
-                <img src="${caminhos.monstros}${pasta}/${arquivo}" class="monstro-img" onerror="this.src='https://via.placeholder.com/150?text=Erro+Imagem'">
-                <div class="footer-card">
-                    <img src="${caminhos.icons}${tipoIcon.toLowerCase()}_type_icon.png" class="mini-icon">
-                    <span class="nome-txt">${nome}</span>
-                </div>
-            </div>
-        `;
-    }
+    // Carrega o primeiro por padrão
+    trocarAba(1, documento.seletor de consulta('.btn'));
+</roteiro>
 
-    // Inicia no 1
-    showAniv(1);
-</script>
-
-</body>
-</html>
+</corpo>
+    </HTML>
