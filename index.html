@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bulu Monster News – 12º Aniversário</title>
+  <title>Bulu Monster News – Aniversários</title>
 
   <style>
     body {
@@ -28,35 +28,39 @@
       background: #151933;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
       padding: 10px;
       flex-wrap: wrap;
     }
 
     nav button {
-      background: none;
+      background: #1c2148;
       border: none;
       color: #ffffff;
       font-weight: bold;
       cursor: pointer;
       padding: 6px 10px;
+      border-radius: 8px;
     }
 
+    nav button.active,
     nav button:hover {
-      color: #3ad6c5;
+      background: #3ad6c5;
+      color: #0f1220;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 240px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 25px;
     }
 
     main {
       padding: 30px;
-      max-width: 1300px;
+      max-width: 1400px;
       margin: auto;
-    }
-
-    .section-title {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-      border-left: 4px solid #7b5cff;
-      padding-left: 12px;
     }
 
     .monster-grid {
@@ -70,12 +74,6 @@
       border-radius: 14px;
       padding: 12px;
       text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .monster-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
 
     .monster-card img.monster {
@@ -99,6 +97,15 @@
       height: 18px;
     }
 
+    .forms button {
+      margin: 4px;
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
     footer {
       background: #151933;
       text-align: center;
@@ -112,54 +119,55 @@
 <body>
 
 <header>
-  <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Monster" />
+  <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" />
   <h1>Bulu Monster News</h1>
-  <p>Monstros do 12º Aniversário</p>
+  <p>Todos os Monstros dos Aniversários (01º ao 12º)</p>
 </header>
 
-<nav>
-  <button onclick="filterType('all')">Todos</button>
-  <button onclick="filterType('agua')">Água</button>
-  <button onclick="filterType('fogo')">Fogo</button>
-  <button onclick="filterType('gelo')">Gelo</button>
-  <button onclick="filterType('eletrico')">Elétrico</button>
-  <button onclick="filterType('terra')">Terra</button>
-  <button onclick="filterType('vento')">Vento</button>
-  <button onclick="filterType('dragao')">Dragão</button>
-  <button onclick="filterType('mal')">Mal</button>
-  <button onclick="filterType('mitico')">Mítico</button>
-  <button onclick="filterType('spirit')">Spirit</button>
+<nav id="anniversaryNav">
+  <button onclick="filterAnniversary('all')" class="active">Todos</button>
+  <button onclick="filterAnniversary('01')">01º</button>
+  <button onclick="filterAnniversary('02')">02º</button>
+  <button onclick="filterAnniversary('03')">03º</button>
+  <button onclick="filterAnniversary('04')">04º</button>
+  <button onclick="filterAnniversary('05')">05º</button>
+  <button onclick="filterAnniversary('06')">06º</button>
+  <button onclick="filterAnniversary('07')">07º</button>
+  <button onclick="filterAnniversary('08')">08º</button>
+  <button onclick="filterAnniversary('09')">09º</button>
+  <button onclick="filterAnniversary('10')">10º</button>
+  <button onclick="filterAnniversary('11')">11º</button>
+  <button onclick="filterAnniversary('12')">12º</button>
+  <button onclick="filterAnniversary('unknown')">Unknown</button>
 </nav>
 
 <main>
-  <h2 class="section-title">Coleção – 12º Aniversário</h2>
+  <img id="banner" class="banner" src="imagens/12th-anniversary.jpg" />
 
-  <div class="monster-grid" id="monsterGrid">
+  <div class="monster-grid">
 
-    <!-- ÁGUA -->
-    <div class="monster-card" data-type="agua">
-      <img class="monster" src="imagens/monstros/agua/waterfishy_01_th_01.webp" />
-      <h3>Water Fishy</h3>
+    <!-- EXEMPLO COM FORMAS -->
+    <div class="monster-card" data-anniversary="12" data-unknown="false">
+      <img class="monster" id="telefishy" src="imagens/monstros/spirit/telefishy_01_th_01.webp" />
+      <h3>Telefishy</h3>
+
       <div class="type">
-        <img src="imagens/imagens/icon/asset/water_type_icon.png" /> Água
+        <img src="imagens/imagens/icon/asset/spirit_type_icon.png" /> Spirit
+      </div>
+
+      <div class="forms">
+        <button onclick="changeForm('telefishy','imagens/monstros/spirit/telefishy_01_th_01.webp')">Normal</button>
+        <button onclick="changeForm('telefishy','imagens/monstros/spirit/telefishy_natal_01_th_01.webp')">Natal</button>
+        <button onclick="changeForm('telefishy','imagens/monstros/spirit/telefishy_shyne_01_th_01.webp')">Shyne</button>
       </div>
     </div>
 
-    <!-- COMUM -->
-    <div class="monster-card" data-type="comum">
-      <img class="monster" src="imagens/monstros/comum/fishy_01_th_01.webp" />
-      <h3>Fishy</h3>
+    <!-- UNKNOWN -->
+    <div class="monster-card" data-anniversary="12" data-unknown="true">
+      <img class="monster" src="imagens/monstros/agua/unknown_th_01.webp" />
+      <h3>Unknown</h3>
       <div class="type">
-        <img src="imagens/imagens/icon/asset/common_type_icon.png" /> Comum
-      </div>
-    </div>
-
-    <!-- DRAGÃO -->
-    <div class="monster-card" data-type="dragao">
-      <img class="monster" src="imagens/monstros/dragao/wyfishy_01_th_01.webp" />
-      <h3>Wyfishy</h3>
-      <div class="type">
-        <img src="imagens/imagens/icon/asset/dragon_type_icon.png" /> Dragão
+        <img src="imagens/imagens/icon/asset/water_type_icon.png" /> Water
       </div>
     </div>
 
@@ -171,15 +179,30 @@
 </footer>
 
 <script>
-  function filterType(type) {
+  function filterAnniversary(value) {
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+
     const cards = document.querySelectorAll('.monster-card');
+    const banner = document.getElementById('banner');
+
+    if (value !== 'all' && value !== 'unknown') {
+      banner.src = `imagens/${value}th-anniversary.jpg`;
+    }
+
     cards.forEach(card => {
-      if (type === 'all' || card.dataset.type === type) {
+      if (value === 'all') {
         card.style.display = 'block';
+      } else if (value === 'unknown') {
+        card.style.display = card.dataset.unknown === 'true' ? 'block' : 'none';
       } else {
-        card.style.display = 'none';
+        card.style.display = card.dataset.anniversary === value ? 'block' : 'none';
       }
     });
+  }
+
+  function changeForm(id, src) {
+    document.getElementById(id).src = src;
   }
 </script>
 
