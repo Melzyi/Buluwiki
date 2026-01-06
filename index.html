@@ -3,49 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bulu Monster News – Galeria Completa</title>
+  <title>Bulu Monster News – Enciclopédia de Aniversários</title>
   <style>
-    body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f1220; color: #ffffff; }
+    :root {
+      --primary: #3ad6c5;
+      --bg: #0f1220;
+      --card-bg: #1c2148;
+      --text-blue: #00d4ff;
+    }
+
+    body { margin: 0; font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); color: #ffffff; }
     
-    header { background: linear-gradient(135deg, #151933, #252a50); padding: 20px; text-align: center; border-bottom: 3px solid #3ad6c5; }
-    header img { max-width: 260px; margin-bottom: 10px; }
-    header h1 { margin: 5px 0; font-size: 1.8rem; color: #3ad6c5; }
+    header { background: linear-gradient(135deg, #151933, #252a50); padding: 30px; text-align: center; border-bottom: 4px solid var(--primary); }
+    header img { max-width: 280px; filter: drop-shadow(0 0 10px rgba(58, 214, 197, 0.3)); }
 
     nav { background: #151933; display: flex; justify-content: center; gap: 8px; padding: 15px; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
     nav button { background: #1c2148; border: 1px solid #444; color: #ffffff; font-weight: bold; cursor: pointer; padding: 10px 14px; border-radius: 8px; transition: 0.3s; }
-    nav button.active, nav button:hover { background: #3ad6c5; color: #0f1220; border-color: #fff; transform: scale(1.05); }
+    nav button.active, nav button:hover { background: var(--primary); color: #0f1220; border-color: #fff; transform: translateY(-2px); }
     .btn-unknown { border-color: #ff4444; color: #ff4444; }
 
     main { padding: 20px; max-width: 1400px; margin: auto; }
-    .banner { width: 100%; border-radius: 15px; margin-bottom: 30px; border: 2px solid #333; display: block; }
+    .banner { width: 100%; border-radius: 15px; margin-bottom: 30px; border: 2px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
 
-    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; }
+    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 25px; }
     
-    .monster-card { background: #1c2148; border-radius: 18px; padding: 20px; text-align: center; border: 1px solid #2a2f55; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    .monster-card { background: var(--card-bg); border-radius: 18px; padding: 20px; text-align: center; border: 1px solid #2a2f55; position: relative; }
     
-    .type-label { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: bold; color: #3ad6c5; margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
+    .type-label { display: flex; justify-content: center; align-items: center; gap: 8px; font-weight: bold; color: var(--primary); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
     .type-label img { width: 24px; height: 24px; }
 
-    .evolution-line { display: flex; align-items: center; justify-content: space-around; gap: 10px; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 12px; }
+    .evolution-line { display: flex; align-items: center; justify-content: space-around; gap: 5px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; border: 1px solid #ffffff05; }
     
-    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 100px; }
-    .evo-stage img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px; transition: 0.3s; }
-    .evo-stage span { font-size: 0.75rem; color: #00d4ff; font-weight: bold; text-align: center; min-height: 30px; }
+    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 110px; }
+    .evo-stage img { width: 85px; height: 85px; object-fit: contain; margin-bottom: 10px; }
+    .evo-stage span { font-size: 0.75rem; color: var(--text-blue); font-weight: bold; min-height: 35px; line-height: 1.2; }
 
-    .arrow { color: #3ad6c5; font-weight: bold; font-size: 1.2rem; }
+    .arrow { color: var(--primary); font-weight: bold; font-size: 1.5rem; opacity: 0.5; }
 
     .forms-btns { margin-top: 15px; display: flex; justify-content: center; gap: 8px; }
-    .forms-btns button { font-size: 0.7rem; padding: 5px 10px; cursor: pointer; background: #0f1220; color: white; border: 1px solid #3ad6c5; border-radius: 5px; text-transform: uppercase; }
-    .forms-btns button:hover { background: #3ad6c5; color: black; }
+    .forms-btns button { font-size: 0.65rem; padding: 6px 12px; cursor: pointer; background: #0f1220; color: white; border: 1px solid var(--primary); border-radius: 5px; transition: 0.2s; }
+    .forms-btns button:hover { background: var(--primary); color: black; }
 
-    footer { text-align: center; padding: 30px; color: #666; font-size: 0.8rem; }
+    footer { text-align: center; padding: 50px; color: #555; font-size: 0.9rem; border-top: 1px solid #1c2148; margin-top: 50px; }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Logo" />
+  <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Monster Logo" />
   <h1>Bulu Monster News</h1>
+  <p>Enciclopédia Completa de Monstros Comemorativos</p>
 </header>
 
 <nav id="anniversaryNav">
@@ -98,6 +105,39 @@
     </div>
 
     <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/fire_type_icon.png" /> Fire</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/fogo/redfishy_01_th_01.webp" /><span>Redfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/fogo/flamefishy_02_th_01.webp" /><span>Flamefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/fogo/blazingfishy_03_th_01.webp" /><span>Blazingfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/lightning_type_icon.png" /> Lightning</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/eletrico/elecfishy_01_th_01.webp" /><span>Elecfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/eletrico/lightfishy_02_th_01.webp" /><span>Lightfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/eletrico/thunderfishy_03_th_01.webp" /><span>Thunderfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/dragon_type_icon.png" /> Dragon</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/dragao/wyfishy_01_th_01.webp" /><span>Wyfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/dritfishy_02_th_01.webp" /><span>Dritfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/dragkfishy_03_th_01.webp" /><span>Dragkfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
       <div class="type-label"><img src="imagens/imagens/icon/asset/common_type_icon.png" /> Common</div>
       <div class="evolution-line">
         <div class="evo-stage"><img src="imagens/monstros/comum/fishy_01_th_01.webp" /><span>Fishy</span></div>
@@ -108,11 +148,65 @@
       </div>
     </div>
 
-    <div class="monster-card" data-anniversary="01" data-unknown="true">
-      <div class="type-label">Descartados / Unknown</div>
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/ice_type_icon.png" /> Ice</div>
       <div class="evolution-line">
-        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_01c_th_01.webp" /><span>Unknown 01c</span></div>
-        <div class="evo-stage"><img src="imagens/monstros/eletrico/unknown_01a_th_01.webp" /><span>Unknown 01a</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/gelo/icefishy_01_th_01.webp" /><span>Icefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/gelo/glacifishy_02_th_01.webp" /><span>Glacifishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/gelo/frozenfishy_03_th_01.webp" /><span>Frozenfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/evil_type_icon.png" /> Evil</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/mal/evilfishy_01_th_01.webp" /><span>Evilfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/mal/devilfishy_02_th_01.webp" /><span>Devilfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/mal/mordefishy_03_th_01.webp" /><span>Mordefishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/earth_type_icon.png" /> Earth</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/terra/stonefishy_01_th_01.webp" /><span>Stonefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/terra/landfishy_02_th_01.webp" /><span>Landfishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/terra/gaiafishy_03_th_01.webp" /><span>Gaiafishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/wind_type_icon.png" /> Wind</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/vento/windifishy_01_th_01.webp" /><span>Windifishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/vento/breezefishy_02_th_01.webp" /><span>Breezefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/vento/stormfishy_03_th_01.webp" /><span>Stormfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="false">
+      <div class="type-label"><img src="imagens/imagens/icon/asset/mythic_type_icon.png" /> Mythic</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/mitico/aciefishy_01_th_01.webp" /><span>Aciefishy</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/mitico/ancientfishy_02_th_01.webp" /><span>Ancientfishy</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="01" data-unknown="true">
+      <div class="type-label">Descartados</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_01c_th_01.webp" /><span>Unknown 01c (Common)</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/unknown_02a_th_01.webp" /><span>Unknown 02a (Common)</span></div>
+        <div class="evo-stage"><img src="imagens/monstros/eletrico/unknown_01a_th_01.webp" /><span>Unknown 01a (Lightning)</span></div>
       </div>
     </div>
 
@@ -120,11 +214,12 @@
 </main>
 
 <footer>
-  Bulu Monster News © 2026 - Galeria Interativa de Aniversários
+  Bulu Monster News & Buluwiki © 2026<br>
+  Desenvolvido com foco na preservação da história do jogo.
 </footer>
 
 <script>
-  // Filtro de Aniversários e Banner
+  // Filtro Principal
   function filterAniv(value) {
     document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
     event.currentTarget.classList.add('active');
@@ -132,7 +227,7 @@
     const cards = document.querySelectorAll('.monster-card');
     const banner = document.getElementById('banner');
 
-    // Troca o banner conforme o aniversário
+    // Lógica de Banner
     if (value !== 'all' && value !== 'unknown') {
       banner.src = `imagens/${value}th-anniversary.jpg`;
       banner.style.display = "block";
@@ -143,6 +238,7 @@
       banner.style.display = "block";
     }
 
+    // Lógica de Grid
     cards.forEach(card => {
       if (value === 'all') {
         card.style.display = 'block';
