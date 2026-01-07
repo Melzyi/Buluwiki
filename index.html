@@ -1,167 +1,92 @@
+<!-- Atualização completa: suporte a aniversários th_01 até th_09, múltiplas linhas evolutivas, mega-evoluções, formas especiais e separação de Unknown --><script>
+const anniversaries = {
+  th_01: { label: "1º Aniversário", banner: "imagens/01th-anniversary.jpg" },
+  th_02: { label: "2º Aniversário", banner: "imagens/02th-anniversary.jpg" },
+  th_03: { label: "3º Aniversário", banner: "imagens/03th-anniversary.jpg" },
+  th_04: { label: "4º Aniversário", banner: "imagens/04th-anniversary.jpg" },
+  th_05: { label: "5º Aniversário", banner: "imagens/05th-anniversary.jpg" },
+  th_06: { label: "6º Aniversário", banner: "imagens/06th-anniversary.jpg" },
+  th_07: { label: "7º Aniversário", banner: "imagens/07th-anniversary.jpg" },
+  th_08: { label: "8º Aniversário", banner: "imagens/08th-anniversary.jpg" },
+  th_09: { label: "9º Aniversário", banner: "imagens/09th-anniversary.jpg" }
+};
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bulu Monster - Encyclopedia 1.0</title>
-  <style>
-    :root {
-      --primary: #3ad6c5;
-      --bg: #0f1220;
-      --card-bg: #1c2148;
-      --text-blue: #00d4ff;
-      --mega-gold: #ffd700;
-    }
+const monsters = {
+  dragao: {
+    th_02: [
+      { name: "Sigg", stage: 1, file: "sigg_01_th_02.webp" },
+      { name: "Siggit", stage: 2, file: "siggit_02_th_02.webp" },
+      { name: "Siggonit", stage: 3, file: "siggonit_03_th_02.webp" },
+      { name: "Siggdrak", stage: 4, file: "siggdrak_04_th_02.webp", mega: "siggdrak_evo_sigma_power_02_th.webp" }
+    ],
+    th_03: [
+      { name: "Siggy", stage: 1, file: "siggy_01_th_03.webp" },
+      { name: "Sigmot", stage: 2, file: "sigmot_02_th_03.webp" },
+      { name: "Sigmetit", stage: 3, file: "sigmetit_03_th_03.webp" },
+      { name: "Siggement", stage: 4, file: "siggement_04_th_03.webp", mega: "siggement_evo_sigma_gem_03_th.webp" }
+    ],
+    th_04: [
+      { name: "Sigqua", stage: 1, file: "sigqua_01_th_04.webp" },
+      { name: "Sigquid", stage: 2, file: "sigquid_02_th_04.webp" },
+      { name: "Sigquigon", stage: 3, file: "sigquigon_03_th_04.webp" },
+      { name: "Siggtaple", stage: 4, file: "siggtaple_04_th_04.webp", mega: "siggtaple_evo_sigma_elixir_04_th.webp" }
+    ],
+    th_05: [
+      { name: "Daara", stage: 1, file: "daara_01_th_05.webp" },
+      { name: "Gararah", stage: 2, file: "gararah_02_th_05.webp" },
+      { name: "Garajion", stage: 3, file: "garajion_03_th_05.webp" }
+    ],
+    th_06: [
+      { name: "Hatchette", stage: 1, file: "hatchette_01_th_06.webp" },
+      { name: "Areochett", stage: 2, file: "areochett_02_th_06.webp" },
+      { name: "Gaiachett", stage: 3, file: "gaiachett_03_th_06.webp" },
+      { name: "Ultichett", stage: 4, file: "ultichett_04_th_06.webp", mega: "ultichette_evo_rainbow_feather_06_th.webp" }
+    ],
+    th_07: [
+      { name: "Sigiv", stage: 1, file: "sigiv_01_th_07.webp" },
+      { name: "Sigilva", stage: 2, file: "sigilva_02_th_07.webp" },
+      { name: "Sigversa", stage: 3, file: "sigversa_03_th_07.webp" },
+      { name: "Sigversith", stage: 4, file: "sigversith_04_th_07.webp", mega: "sigversith_evo_versatile_core_07_th.webp" }
+    ],
+    th_08: [
+      { name: "Sigco", stage: 1, file: "sigco_01_th_08.webp" },
+      { name: "Sigcom", stage: 2, file: "sigcom_02_th_08.webp" },
+      { name: "Sigcobie", stage: 3, file: "sigcobie_03_th_08.webp" },
+      { name: "Sigcobinith", stage: 4, file: "sigcobinith_04_th_08.webp", mega: "sigcobinith_evo_sigma_controller_08_th.webp" }
+    ]
+  },
+  mal: {
+    th_09: [
+      { name: "Hydrix", stage: 1, file: "hydrix_01_th_09.webp" },
+      { name: "Hydrely", stage: 2, file: "hydrely_02_th_09.webp" },
+      { name: "Hydriola", stage: 3, file: "hydriola_03_th_09.webp" },
+      { name: "Hydrellion", stage: 4, file: "hydrellion_04_th_09.webp", mega: "hydreilion_evo_sigma_sign_09_th.webp" }
+    ]
+  }
+};
 
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: #fff; }
-    header { background: #151933; padding: 25px; text-align: center; border-bottom: 4px solid var(--primary); }
-    header img { max-width: 220px; }
+function renderAnniversary(th) {
+  const container = document.getElementById("monster-container");
+  container.innerHTML = "";
 
-    nav { background: #151933; display: flex; justify-content: center; gap: 8px; padding: 15px; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
-    nav button { background: #1c2148; border: 1px solid #444; color: #fff; cursor: pointer; padding: 10px 15px; border-radius: 8px; font-weight: bold; }
-    nav button.active { background: var(--primary); color: #000; }
+  Object.keys(monsters).forEach(type => {
+    if (!monsters[type][th]) return;
 
-    main { padding: 20px; max-width: 1400px; margin: auto; }
-    .banner { width: 100%; border-radius: 15px; margin-bottom: 30px; border: 2px solid #333; }
+    const section = document.createElement("section");
+    section.innerHTML = `<h2>${type.toUpperCase()}</h2>`;
 
-    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 25px; }
-    .monster-card { background: var(--card-bg); border-radius: 20px; padding: 20px; border: 2px solid #2a2f55; }
-    
-    .type-label { display: flex; align-items: center; gap: 10px; color: var(--primary); font-weight: bold; margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
-    .type-label img { width: 24px; height: 24px; }
-
-    .evolution-line { display: flex; align-items: center; justify-content: space-around; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 15px; }
-    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 90px; position: relative; }
-    .evo-stage img:not(.item-icon) { width: 80px; height: 80px; object-fit: contain; transition: 0.3s; }
-    .evo-stage span { font-size: 0.7rem; color: var(--text-blue); margin-top: 8px; font-weight: bold; text-align: center; }
-
-    /* EFEITO DE BRILHO MEGA (GLOW) */
-    .mega-stage img:not(.item-icon) { 
-        filter: drop-shadow(0 0 12px var(--mega-gold)); 
-        animation: pulse-glow 2.5s infinite; 
-    }
-    .item-icon { width: 32px !important; height: 32px !important; position: absolute; top: -12px; right: -5px; border-radius: 50%; border: 2px solid #fff; z-index: 5; background: #000; }
-
-    @keyframes pulse-glow { 
-        0%, 100% { filter: drop-shadow(0 0 10px var(--mega-gold)); transform: scale(1); } 
-        50% { filter: drop-shadow(0 0 20px var(--mega-gold)); transform: scale(1.05); } 
-    }
-    
-    .arrow { color: var(--primary); font-weight: bold; opacity: 0.4; font-size: 1.4rem; }
-    .variant-btns { display: flex; justify-content: center; gap: 8px; margin-top: 15px; }
-    .variant-btns button { font-size: 0.7rem; padding: 6px 12px; border-radius: 5px; border: 1px solid var(--primary); background: transparent; color: #fff; cursor: pointer; }
-    .variant-btns button:hover { background: var(--primary); color: #000; }
-  </style>
-</head>
-<body>
-
-<header><img src="imagens/imagens/icon/asset/bulu_monster_logo.png" /></header>
-
-<nav id="navbar"></nav>
-
-<main>
-  <img id="banner-img" class="banner" src="imagens/01th-anniversary.jpg" />
-  <div class="monster-grid" id="container-grid"></div>
-</main>
-
-<script>
-// Gerador do Menu 01-12
-const navbar = document.getElementById('navbar');
-for(let i=1; i<=12; i++){
-    let n = i.toString().padStart(2, '0');
-    navbar.innerHTML += `<button onclick="changePage('${n}', this)" class="${i==1?'active':''}">${n}º Aniv.</button>`;
-}
-
-function changePage(val, btn) {
-    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('banner-img').src = `imagens/${val}th-anniversary.jpg`;
-    document.querySelectorAll('.monster-card').forEach(c => c.style.display = (c.dataset.anniv === val) ? 'block' : 'none');
-}
-
-// BASE DE DADOS INTEGRAL
-const data = [
-    // ANIV 01
-    { aniv: '01', type: 'water', names: ['Waterfishy','Oceanfishy','Abyssfishy'], imgs: ['agua/waterfishy_01_th_01.webp','agua/oceanfishy_02_th_01.webp','agua/abyssfishy_03_th_01.webp'] },
-    { aniv: '01', type: 'fire', names: ['Redfishy','Flamefishy','Blazingfishy'], imgs: ['fogo/redfishy_01_th_01.webp','fogo/flamefishy_02_th_01.webp','fogo/blazingfishy_03_th_01.webp'] },
-    { aniv: '01', type: 'spirit', names: ['Telefishy','Spiritfishy','Psychicfishy'], imgs: ['spirit/telefishy_01_th_01.webp','spirit/spiritfishy_02_th_01.webp','spirit/psychicfishy_03_th_01.webp'] },
-    // ANIV 02-04
-    { aniv: '02', type: 'dragon', names: ['Sigg','Siggit','Siggonit','Siggdrak'], imgs: ['dragao/sigg_01_th_02.webp','dragao/siggit_02_th_02.webp','dragao/siggonit_03_th_02.webp','dragao/siggdrak_04_th_02.webp'], mega: 'siggdrak_evo_sigma_power_02_th.webp' },
-    { aniv: '03', type: 'dragon', names: ['Siggy','Sigmot','Sigmetit','Siggement'], imgs: ['dragao/siggy_01_th_03.webp','dragao/sigmot_02_th_03.webp','dragao/sigmetit_03_th_03.webp','dragao/siggement_04_th_03.webp'], mega: 'siggement_evo_sigma_gem_03_th.webp' },
-    { aniv: '04', type: 'dragon', names: ['Sigqua','Sigquid','Sigquigon','Siggtaple'], imgs: ['dragao/sigqua_01_th_04.webp','dragao/sigquid_02_th_04.webp','dragao/sigquigon_03_th_04.webp','dragao/siggtaple_04_th_04.webp'], mega: 'siggtaple_evo_sigma_elixir_04_th.webp' },
-    // ANIV 05
-    { aniv: '05', type: 'comum', names: ['Punchant','Boxant'], imgs: ['comum/punchant_01_th_05.webp','comum/boxant_02_th_05.webp'] },
-    { aniv: '05', type: 'dragao', names: ['Daara','Gararah','Garajion'], imgs: ['dragao/daara_01_th_05.webp','dragao/gararah_02_th_05.webp','dragao/garajion_03_th_05.webp'] },
-    { aniv: '05', type: 'terra', names: ['Earthdillo','Gaiadillo'], imgs: ['terra/earthdillo_01_th_05.webp','terra/gaiadillo_02_th_05.webp'] },
-    { aniv: '05', type: 'mal', names: ['Soullent','Ghoosent'], imgs: ['mal/soullent_01_th_05.webp','mal/ghoosent_02_th_05.webp'] },
-    { aniv: '05', type: 'fogo', names: ['Fireater','Flameater','Blazeater'], imgs: ['fogo/fireater_01_th_05.webp','fogo/flameater_02_th_05.webp','fogo/blazeater_03_th_05.webp'] },
-    { aniv: '05', type: 'agua', names: ['Aquapole','Aquatoad','Clownfrog'], imgs: ['agua/aquapole_01_th_05.webp','agua/aquatoad_02_th_05.webp','agua/clownfrog_03_th_05.webp'] },
-    { aniv: '05', type: 'eletrico', names: ['Elecir','Eleckuu','Eleccuma'], imgs: ['eletrico/elecir_01_th_05.webp','eletrico/eleckuu_02_th_05.webp','eletrico/eleccuma_03_th_05.webp'] },
-    { aniv: '05', type: 'spirit', names: ['Spirikett','Psychokett'], imgs: ['spirit/spirikett_01_th_05.webp','spirit/psychokett_02_th_05.webp'] },
-    { aniv: '05', type: 'spirit', names: ['Ancient Sheep'], imgs: ['spirit/ancient_sheep_02_th_05.webp'], variant: 'ancient' },
-    { aniv: '05', type: 'mitico', names: ['Miracle Sheep'], imgs: ['mitico/miracle_sheep_04_th_05.webp'], mega: 'miracle_sheep_evo_ancient_ring_05_th.webp', variant: 'miracle' },
-    { aniv: '05', type: 'gelo', names: ['Ragebea','Terrobear'], imgs: ['gelo/ragebea_01_th_05.webp','gelo/terrobear_02_th_05.webp'] },
-    { aniv: '05', type: 'vento', names: ['Cutou','Toucan'], imgs: ['vento/cutou_01_th_05.webp','vento/toucan_02_th_05.webp'] },
-    // ANIV 06
-    { aniv: '06', type: 'dragao', names: ['Hatchette','Areochett','Gaiachett','Ultichett'], imgs: ['dragao/hatchette_01_th_06.webp','dragao/areochett_02_th_06.webp','dragao/gaiachett_03_th_06.webp','dragao/ultichett_04_th_06.webp'], mega: 'ultichette_evo_rainbow_feather_06_th.webp' },
-    { aniv: '06', type: 'mal', names: ['Prison Breaker'], imgs: ['mal/prison_breaker_04_th_06.webp'], mega: 'prison_breaker_evo_crimzon_cape_06_th.webp', variant: 'prison' },
-    { aniv: '06', type: 'gelo', names: ['Snowlords'], imgs: ['gelo/snowlords_04_th_06.webp'], mega: 'snowlords_evo_giant_clamp_06_th.webp', variant: 'snow' },
-    // ANIV 07-09
-    { aniv: '07', type: 'dragon', names: ['Sigiv','Sigilva','Sigversa','Sigversith'], imgs: ['dragao/sigiv_01_th_07.webp','dragao/sigilva_02_th_07.webp','dragao/sigversa_03_th_07.webp','dragao/sigversith_04_th_07.webp'], mega: 'sigversith_evo_versatile_core_07_th.webp' },
-    { aniv: '07', type: 'comum', names: ['Scissz','Scissor','Scisserg'], imgs: ['comum/scissz_01_th_07.webp','comum/scissor_02_th_07.webp','comum/scisserg_03_th_07.webp'] },
-    { aniv: '08', type: 'dragon', names: ['Sigco','Sigcom','Sigcobie','Sigcobinith'], imgs: ['dragao/sigco_01_th_08.webp','dragao/sigcom_02_th_08.webp','dragao/sigcobie_03_th_08.webp','dragao/sigcobinith_04_th_08.webp'], mega: 'sigcobinith_evo_sigma_controller_08_th.webp' },
-    { aniv: '09', type: 'mal', names: ['Hydrix','Hydrely','Hydriola','Hydrellion'], imgs: ['mal/hydrix_01_th_09.webp','mal/hydrely_02_th_09.webp','mal/hydriola_03_th_09.webp','mal/hydrellion_04_th_09.webp'], mega: 'hydreilion_evo_sigma_sign_09_th.webp' }
-];
-
-const grid = document.getElementById('container-grid');
-data.forEach((m, idx) => {
-    let card = document.createElement('div');
-    card.className = 'monster-card';
-    card.dataset.anniv = m.aniv;
-    if(m.aniv !== '01') card.style.display = 'none';
-
-    let html = `
-        <div class="type-label">
-            <img src="imagens/imagens/icon/asset/${m.type}_type_icon.png"> 
-            ${m.type}
-        </div>
-        <div class="evolution-line">`;
-    
-    m.imgs.forEach((img, i) => {
-        let isMega = (m.mega && i === m.imgs.length - 1);
-        html += `
-            <div class="evo-stage ${isMega?'mega-stage':''}">
-                ${isMega? `<img src="imagens/imagens/icon/mega-evolucao/${m.mega}" class="item-icon">` : ''}
-                <img id="img-${idx}-${i}" src="imagens/monstros/${img}">
-                <span>${m.names[i]}</span>
-            </div>
-            ${i < m.imgs.length-1 ? '<div class="arrow">→</div>' : ''}`;
+    monsters[type][th].forEach(mon => {
+      const card = document.createElement("div");
+      card.className = "monster-card";
+      card.innerHTML = `
+        <img src="imagens/monstros/${type}/${mon.file}">
+        <p>${mon.name} (Estágio ${mon.stage})</p>
+        ${mon.mega ? `<img class='mega' src='imagens/icon/mega-evolucao/${mon.mega}'>` : ""}
+      `;
+      section.appendChild(card);
     });
-    html += `</div>`;
 
-    // Botões de Variantes (Ancient, Miracle, Prison, Snow)
-    const variants = {
-        'ancient': ['spirit/ancient_sheep_02_th_05.webp', 'spirit/ancient_sheep_shyne_02_th_05.webp', 'spirit/ancient_sheep_natal_02_th_05.webp', 'Normal', 'Shyne', 'Natal'],
-        'miracle': ['mitico/miracle_sheep_04_th_05.webp', 'mitico/miracle_sheep_shyne_04_th_05.webp', 'mitico/miracle_sheep_natal_04_th_05.webp', 'Normal', 'Shyne', 'Natal'],
-        'prison': ['mal/prison_breaker_04_th_06.webp', 'mal/prison_breaker_shyne_04_th_06.webp', 'mal/prison_breaker_hyakki_yagyo_04_th_06.webp', 'Normal', 'Shyne', 'Mutante'],
-        'snow': ['gelo/snowlords_04_th_06.webp', 'gelo/snowlords_shyne_04_th_06.webp', 'gelo/snowlords_first_birthday_04_th_06.webp', 'Normal', 'Shyne', 'Especial']
-    };
-
-    if(m.variant) {
-        let v = variants[m.variant];
-        html += `<div class="variant-btns">
-            <button onclick="swap('img-${idx}-0','${v[0]}')">${v[3]}</button>
-            <button onclick="swap('img-${idx}-0','${v[1]}')">${v[4]}</button>
-            <button onclick="swap('img-${idx}-0','${v[2]}')">${v[5]}</button>
-        </div>`;
-    }
-
-    card.innerHTML = html;
-    grid.appendChild(card);
-});
-
-function swap(id, path) { document.getElementById(id).src = 'imagens/monstros/' + path; }
+    container.appendChild(section);
+  });
+}
 </script>
-</body>
-</html>
