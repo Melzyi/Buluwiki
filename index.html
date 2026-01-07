@@ -1,6 +1,26 @@
-<!-- Atualização completa: suporte a aniversários th_01 até th_09, múltiplas linhas evolutivas, mega-evoluções, formas especiais e separação de Unknown --><script>
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulu Monster News – Aniversários</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#0f172a; color:#e5e7eb; margin:0; }
+    header { padding:16px; background:#020617; display:flex; gap:8px; flex-wrap:wrap; }
+    header button { padding:8px 12px; border:none; border-radius:8px; cursor:pointer; background:#1e293b; color:white; }
+    header button:hover { background:#334155; }
+    .banner { width:100%; max-height:320px; object-fit:contain; background:#020617; }
+    section { padding:16px; }
+    h2 { margin-top:32px; border-bottom:1px solid #334155; padding-bottom:8px; }
+    .line { display:flex; gap:16px; flex-wrap:wrap; }
+    .monster-card { background:#020617; padding:12px; border-radius:12px; width:160px; text-align:center; }
+    .monster-card img { width:100%; height:auto; }
+    .mega { margin-top:6px; width:64px; }
+  </style>
+</head>
+<body><header id="anniversary-buttons"></header>
+<img id="banner" class="banner">
+<main id="monster-container"></main><script>
+// ================= ANIVERSÁRIOS =================
 const anniversaries = {
-  th_01: { label: "1º Aniversário", banner: "imagens/01th-anniversary.jpg" },
   th_02: { label: "2º Aniversário", banner: "imagens/02th-anniversary.jpg" },
   th_03: { label: "3º Aniversário", banner: "imagens/03th-anniversary.jpg" },
   th_04: { label: "4º Aniversário", banner: "imagens/04th-anniversary.jpg" },
@@ -11,63 +31,37 @@ const anniversaries = {
   th_09: { label: "9º Aniversário", banner: "imagens/09th-anniversary.jpg" }
 };
 
+// ================= MONSTROS =================
 const monsters = {
   dragao: {
     th_02: [
-      { name: "Sigg", stage: 1, file: "sigg_01_th_02.webp" },
-      { name: "Siggit", stage: 2, file: "siggit_02_th_02.webp" },
-      { name: "Siggonit", stage: 3, file: "siggonit_03_th_02.webp" },
-      { name: "Siggdrak", stage: 4, file: "siggdrak_04_th_02.webp", mega: "siggdrak_evo_sigma_power_02_th.webp" }
+      { name:"Sigg", stage:1, file:"sigg_01_th_02.webp" },
+      { name:"Siggit", stage:2, file:"siggit_02_th_02.webp" },
+      { name:"Siggonit", stage:3, file:"siggonit_03_th_02.webp" },
+      { name:"Siggdrak", stage:4, file:"siggdrak_04_th_02.webp", mega:"siggdrak_evo_sigma_power_02_th.webp" }
     ],
     th_03: [
-      { name: "Siggy", stage: 1, file: "siggy_01_th_03.webp" },
-      { name: "Sigmot", stage: 2, file: "sigmot_02_th_03.webp" },
-      { name: "Sigmetit", stage: 3, file: "sigmetit_03_th_03.webp" },
-      { name: "Siggement", stage: 4, file: "siggement_04_th_03.webp", mega: "siggement_evo_sigma_gem_03_th.webp" }
-    ],
-    th_04: [
-      { name: "Sigqua", stage: 1, file: "sigqua_01_th_04.webp" },
-      { name: "Sigquid", stage: 2, file: "sigquid_02_th_04.webp" },
-      { name: "Sigquigon", stage: 3, file: "sigquigon_03_th_04.webp" },
-      { name: "Siggtaple", stage: 4, file: "siggtaple_04_th_04.webp", mega: "siggtaple_evo_sigma_elixir_04_th.webp" }
-    ],
-    th_05: [
-      { name: "Daara", stage: 1, file: "daara_01_th_05.webp" },
-      { name: "Gararah", stage: 2, file: "gararah_02_th_05.webp" },
-      { name: "Garajion", stage: 3, file: "garajion_03_th_05.webp" }
-    ],
-    th_06: [
-      { name: "Hatchette", stage: 1, file: "hatchette_01_th_06.webp" },
-      { name: "Areochett", stage: 2, file: "areochett_02_th_06.webp" },
-      { name: "Gaiachett", stage: 3, file: "gaiachett_03_th_06.webp" },
-      { name: "Ultichett", stage: 4, file: "ultichett_04_th_06.webp", mega: "ultichette_evo_rainbow_feather_06_th.webp" }
-    ],
-    th_07: [
-      { name: "Sigiv", stage: 1, file: "sigiv_01_th_07.webp" },
-      { name: "Sigilva", stage: 2, file: "sigilva_02_th_07.webp" },
-      { name: "Sigversa", stage: 3, file: "sigversa_03_th_07.webp" },
-      { name: "Sigversith", stage: 4, file: "sigversith_04_th_07.webp", mega: "sigversith_evo_versatile_core_07_th.webp" }
-    ],
-    th_08: [
-      { name: "Sigco", stage: 1, file: "sigco_01_th_08.webp" },
-      { name: "Sigcom", stage: 2, file: "sigcom_02_th_08.webp" },
-      { name: "Sigcobie", stage: 3, file: "sigcobie_03_th_08.webp" },
-      { name: "Sigcobinith", stage: 4, file: "sigcobinith_04_th_08.webp", mega: "sigcobinith_evo_sigma_controller_08_th.webp" }
+      { name:"Siggy", stage:1, file:"siggy_01_th_03.webp" },
+      { name:"Sigmot", stage:2, file:"sigmot_02_th_03.webp" },
+      { name:"Sigmetit", stage:3, file:"sigmetit_03_th_03.webp" },
+      { name:"Siggement", stage:4, file:"siggement_04_th_03.webp", mega:"siggement_evo_sigma_gem_03_th.webp" }
     ]
   },
   mal: {
     th_09: [
-      { name: "Hydrix", stage: 1, file: "hydrix_01_th_09.webp" },
-      { name: "Hydrely", stage: 2, file: "hydrely_02_th_09.webp" },
-      { name: "Hydriola", stage: 3, file: "hydriola_03_th_09.webp" },
-      { name: "Hydrellion", stage: 4, file: "hydrellion_04_th_09.webp", mega: "hydreilion_evo_sigma_sign_09_th.webp" }
+      { name:"Hydrix", stage:1, file:"hydrix_01_th_09.webp" },
+      { name:"Hydrely", stage:2, file:"hydrely_02_th_09.webp" },
+      { name:"Hydriola", stage:3, file:"hydriola_03_th_09.webp" },
+      { name:"Hydrellion", stage:4, file:"hydrellion_04_th_09.webp", mega:"hydreilion_evo_sigma_sign_09_th.webp" }
     ]
   }
 };
 
+// ================= RENDER =================
 function renderAnniversary(th) {
   const container = document.getElementById("monster-container");
   container.innerHTML = "";
+  document.getElementById("banner").src = anniversaries[th].banner;
 
   Object.keys(monsters).forEach(type => {
     if (!monsters[type][th]) return;
@@ -75,18 +69,36 @@ function renderAnniversary(th) {
     const section = document.createElement("section");
     section.innerHTML = `<h2>${type.toUpperCase()}</h2>`;
 
+    const line = document.createElement("div");
+    line.className = "line";
+
     monsters[type][th].forEach(mon => {
       const card = document.createElement("div");
       card.className = "monster-card";
       card.innerHTML = `
         <img src="imagens/monstros/${type}/${mon.file}">
-        <p>${mon.name} (Estágio ${mon.stage})</p>
-        ${mon.mega ? `<img class='mega' src='imagens/icon/mega-evolucao/${mon.mega}'>` : ""}
+        <p>${mon.name}</p>
+        <small>Estágio ${mon.stage}</small>
+        ${mon.mega ? `<img class="mega" src="imagens/icon/mega-evolucao/${mon.mega}">` : ""}
       `;
-      section.appendChild(card);
+      line.appendChild(card);
     });
 
+    section.appendChild(line);
     container.appendChild(section);
   });
 }
-</script>
+
+// ================= BOTÕES =================
+const btnContainer = document.getElementById("anniversary-buttons");
+Object.keys(anniversaries).forEach(th => {
+  const btn = document.createElement("button");
+  btn.textContent = anniversaries[th].label;
+  btn.onclick = () => renderAnniversary(th);
+  btnContainer.appendChild(btn);
+});
+
+// Inicial
+renderAnniversary("th_02");
+</script></body>
+</html>
