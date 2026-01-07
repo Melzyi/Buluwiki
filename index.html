@@ -1,42 +1,59 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Legendary Cup – Siggdrak</title>
-<style>
-body {
-  background:#0b0b0f;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  font-family: 'Segoe UI', sans-serif;
-}.card { width:280px; height:420px; position:relative; border-radius:18px; overflow:hidden; box-shadow:0 0 40px rgba(120,80,255,.35); }
-
-.card::before { content:""; position:absolute; inset:0; background:url("imagens/book_dragon.webp") center/cover; filter:brightness(.55); }
-
-.title { position:absolute; top:14px; width:100%; text-align:center; font-weight:700; letter-spacing:1px; color:#e8dcff; text-shadow:0 0 8px rgba(180,140,255,.8); z-index:5; }
-
-.monster { position:absolute; inset:0; display:flex; justify-content:center; align-items:center; z-index:4; }
-
-.monster img { width:85%; opacity:0; animation: evolution 16s infinite; filter:drop-shadow(0 0 12px rgba(160,120,255,.8)); }
-
-.monster img:nth-child(1) { animation-delay:0s; } .monster img:nth-child(2) { animation-delay:4s; } .monster img:nth-child(3) { animation-delay:8s; } .monster img:nth-child(4) { animation-delay:12s; filter:drop-shadow(0 0 28px rgba(255,220,120,1)); }
-
-@keyframes evolution { 0% { opacity:0; transform:scale(.85); } 10% { opacity:1; transform:scale(1); } 30% { opacity:1; } 40% { opacity:0; transform:scale(1.1); } 100% { opacity:0; } }
-
-.mega-glow { position:absolute; inset:0; background:radial-gradient(circle, rgba(255,220,120,.45), transparent 60%); opacity:0; animation: megaGlow 16s infinite; z-index:3; }
-
-@keyframes megaGlow { 0%,70% { opacity:0; } 75% { opacity:1; } 90% { opacity:.4; } 100% { opacity:0; } }
-
-.footer { position:absolute; bottom:12px; width:100%; text-align:center; font-size:12px; color:#cbb8ff; letter-spacing:1px; z-index:5; } </style>
-
+  <meta charset="UTF-8" />
+  <title>Bulu Monster News</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- ===== CSS ===== -->  <link rel="stylesheet" href="style.css" />  <!-- Google Font (clean & modern) -->  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body><div class="card">
-  <div class="title">SIGGDRAK<br>Legendary Cup</div>  <div class="monster">
-    <img src="imagens/monstros/dragao/sigg_01_th_02.webp">
-    <img src="imagens/monstros/dragao/siggit_02_th_02.webp">
-    <img src="imagens/monstros/dragao/siggonit_03_th_02.webp">
-    <img src="imagens/monstros/dragao/siggdrak_04_th_02.webp">
-  </div>  <div class="mega-glow"></div>  <div class="footer">MEGA EVOLUTION</div>
-</div></body>
+<body><!-- ================= HEADER ================= --><header class="header">
+  <div class="logo">
+    <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Monster News" />
+    <span>Bulu Monster News</span>
+  </div>  <nav class="nav">
+    <button data-tab="anniversary">Anniversaries</button>
+    <button data-tab="legendary">Legendary Cup</button>
+    <button data-tab="unknown">Unknown</button>
+    <button data-tab="about">About</button>
+  </nav>
+</header><!-- ================= MAIN ================= --><main>  <!-- ===== ANNIVERSARY TAB ===== -->  <section id="anniversary" class="tab active"><!-- Anniversary Selector -->
+<div class="anniversary-selector">
+  <button data-year="1">1st</button>
+  <button data-year="2">2nd</button>
+  <button data-year="3">3rd</button>
+  <button data-year="4">4th</button>
+  <button data-year="5">5th</button>
+  <button data-year="6">6th</button>
+  <button data-year="7">7th</button>
+  <button data-year="8">8th</button>
+  <button data-year="9">9th</button>
+  <button data-year="10">10th</button>
+  <button data-year="11">11th</button>
+  <button data-year="12">12th</button>
+</div>
+
+<!-- Banner -->
+<div class="anniversary-banner">
+  <img id="anniversaryBanner" src="imagens/01th-anniversary.jpg" />
+</div>
+
+<!-- Monsters Container -->
+<div id="monstersContainer" class="monsters-container">
+  <!-- JS injects monster types & lines here -->
+</div>
+
+  </section>  <!-- ===== LEGENDARY CUP TAB ===== -->  <section id="legendary" class="tab">
+    <h2>Legendary Cup Edition</h2><div class="legendary-grid">
+  <!-- Legendary Cards injected here -->
+</div>
+
+  </section>  <!-- ===== UNKNOWN TAB ===== -->  <section id="unknown" class="tab">
+    <h2>Unknown Monsters Archive</h2>
+    <div class="unknown-grid">
+      <!-- Unknown monsters injected here -->
+    </div>
+  </section>  <!-- ===== ABOUT TAB ===== -->  <section id="about" class="tab">
+    <h2>About Bulu Monster News</h2>
+    <p>Community-driven archive for Anniversary Monsters and Legendary Cup Editions.</p>
+  </section></main><!-- ================= SCRIPTS ================= --><script src="data.js"></script><script src="app.js"></script></body>
 </html>
