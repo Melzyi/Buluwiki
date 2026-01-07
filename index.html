@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bulu Monster News – Mega Encyclopedia v2.0</title>
+  <title>Bulu Monster News – Atualização 05-09</title>
   <style>
     :root {
       --primary: #3ad6c5;
@@ -11,59 +11,37 @@
       --card-bg: #1c2148;
       --text-blue: #00d4ff;
       --mega-gold: #ffd700;
-      --mega-evil: #ff0055;
-      --mega-ice: #00f2ff;
     }
-
     body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: #fff; }
-    header { background: linear-gradient(135deg, #151933, #252a50); padding: 25px; text-align: center; border-bottom: 4px solid var(--primary); }
-    header img { max-width: 200px; }
-
-    nav { background: #151933; display: flex; justify-content: center; gap: 5px; padding: 15px; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
-    nav button { background: #1c2148; border: 1px solid #444; color: #fff; cursor: pointer; padding: 8px 12px; border-radius: 5px; font-weight: bold; font-size: 0.8rem; }
-    nav button.active, nav button:hover { background: var(--primary); color: #000; }
-
+    header { background: #151933; padding: 20px; text-align: center; border-bottom: 4px solid var(--primary); }
+    nav { background: #151933; display: flex; justify-content: center; gap: 8px; padding: 15px; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
+    nav button { background: #1c2148; border: 1px solid #444; color: #fff; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
+    nav button.active { background: var(--primary); color: #000; }
     main { padding: 20px; max-width: 1400px; margin: auto; }
-    .banner { width: 100%; border-radius: 15px; margin-bottom: 30px; border: 2px solid #333; }
-
-    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 25px; }
-    .monster-card { background: var(--card-bg); border-radius: 20px; padding: 20px; border: 2px solid #2a2f55; transition: 0.3s; position: relative; }
+    .banner { width: 100%; border-radius: 15px; margin-bottom: 30px; }
     
-    .type-label { display: flex; align-items: center; gap: 8px; color: var(--primary); font-weight: bold; margin-bottom: 15px; font-size: 0.85rem; text-transform: uppercase; }
-    .type-label img { width: 20px; }
-
-    .evolution-line { display: flex; align-items: center; justify-content: space-around; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 15px; }
-    .evo-stage { display: flex; flex-direction: column; align-items: center; width: 90px; position: relative; text-align: center; }
-    .evo-stage img:not(.item-icon) { width: 70px; height: 70px; object-fit: contain; }
-    .evo-stage span { font-size: 0.65rem; color: var(--text-blue); margin-top: 5px; font-weight: bold; }
-
-    /* EFEITOS DE MEGA */
-    .mega-stage img:not(.item-icon) { width: 90px; height: 90px; filter: drop-shadow(0 0 10px var(--mega-gold)); animation: pulse-mega 2.5s infinite; }
-    .mega-evil-glow img:not(.item-icon) { filter: drop-shadow(0 0 10px var(--mega-evil)); }
-    .mega-ice-glow img:not(.item-icon) { filter: drop-shadow(0 0 10px var(--mega-ice)); }
+    .monster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); gap: 20px; }
+    .monster-card { background: var(--card-bg); border-radius: 15px; padding: 20px; border: 2px solid #2a2f55; }
+    .type-label { display: flex; align-items: center; gap: 8px; color: var(--primary); font-weight: bold; margin-bottom: 15px; text-transform: uppercase; font-size: 0.8rem; }
     
-    .item-icon { width: 30px !important; height: 30px !important; position: absolute; top: -10px; right: -5px; border-radius: 50%; border: 2px solid #fff; background: #000; z-index: 5; }
+    .evolution-line { display: flex; align-items: center; justify-content: center; gap: 15px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; flex-wrap: wrap; }
+    .evo-stage { display: flex; flex-direction: column; align-items: center; min-width: 80px; position: relative; }
+    .evo-stage img:not(.item-icon) { width: 75px; height: 75px; object-fit: contain; }
+    .evo-stage span { font-size: 0.7rem; color: var(--text-blue); margin-top: 5px; font-weight: bold; text-align: center; }
 
+    /* Estilo para as Megas Isoladas */
+    .mega-stage img:not(.item-icon) { width: 95px; height: 95px; filter: drop-shadow(0 0 10px var(--mega-gold)); }
+    .item-icon { width: 30px !important; height: 30px !important; position: absolute; top: -10px; right: -5px; border-radius: 50%; border: 2px solid #fff; z-index: 5; }
+    
     .variant-btns { display: flex; justify-content: center; gap: 5px; margin-top: 10px; }
-    .variant-btns button { font-size: 0.6rem; padding: 4px 8px; border-radius: 4px; border: 1px solid var(--primary); background: transparent; color: #fff; cursor: pointer; }
-    .variant-btns button:hover { background: var(--primary); color: #000; }
-
-    @keyframes pulse-mega { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.9; } }
-    .arrow { color: var(--primary); font-weight: bold; opacity: 0.3; }
+    .variant-btns button { font-size: 0.6rem; padding: 4px 8px; border-radius: 4px; background: #0f1220; color: #fff; border: 1px solid var(--primary); cursor: pointer; }
+    .arrow { color: var(--primary); font-weight: bold; opacity: 0.5; }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="imagens/imagens/icon/asset/bulu_monster_logo.png" alt="Bulu Logo" />
-</header>
-
 <nav>
   <button onclick="filterAniv('all')">Todos</button>
-  <button onclick="filterAniv('01')">01º</button>
-  <button onclick="filterAniv('02')">02º</button>
-  <button onclick="filterAniv('03')">03º</button>
-  <button onclick="filterAniv('04')">04º</button>
   <button onclick="filterAniv('05')" class="active">05º</button>
   <button onclick="filterAniv('06')">06º</button>
   <button onclick="filterAniv('07')">07º</button>
@@ -73,153 +51,228 @@
 
 <main>
   <img id="banner" class="banner" src="imagens/05th-anniversary.jpg" />
-
   <div class="monster-grid">
-    
+
     <div class="monster-card" data-anniversary="05">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/mythic_type_icon.png" /> Mythic / Spirit Evolution</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/spirit/spirikett_01_th_05.webp" /><span>Spirikett</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img src="imagens/monstros/spirit/psychokett_02_th_05.webp" /><span>Psychokett</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img id="img-05-sheep-3" src="imagens/monstros/spirit/ancient_sheep_02_th_05.webp" /><span id="txt-05-sheep-3">Ancient Sheep</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage mega-stage">
-                <img src="imagens/imagens/icon/mega-evolucao/miracle_sheep_evo_ancient_ring_05_th.webp" class="item-icon" />
-                <img id="img-05-sheep-4" src="imagens/monstros/mitico/miracle_sheep_04_th_05.webp" />
-                <span id="txt-05-sheep-4">Miracle Sheep</span>
-            </div>
-        </div>
-        <div class="variant-btns">
-            <button onclick="swapForm('05-sheep', ['ancient_sheep_02_th_05.webp', 'miracle_sheep_04_th_05.webp'], ['Ancient Sheep', 'Miracle Sheep'], 'spirit', 'mitico')">Normal</button>
-            <button onclick="swapForm('05-sheep', ['ancient_sheep_shyne_02_th_05.webp', 'miracle_sheep_shyne_04_th_05.webp'], ['Ancient (S)', 'Miracle (S)'], 'spirit', 'mitico')">Shyne</button>
-            <button onclick="swapForm('05-sheep', ['ancient_sheep_natal_02_th_05.webp', 'miracle_sheep_natal_04_th_05.webp'], ['Ancient (N)', 'Miracle (N)'], 'spirit', 'mitico')">Natal</button>
-        </div>
+      <div class="type-label">Common</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/comum/punchant_01_th_05.webp" /><span>Punchant</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/boxant_02_th_05.webp" /><span>Boxant</span></div>
+      </div>
     </div>
 
     <div class="monster-card" data-anniversary="05">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/dragon_type_icon.png" /> Dragon</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/dragao/daara_01_th_05.webp" /><span>Daara</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img src="imagens/monstros/dragao/gararah_02_th_05.webp" /><span>Gararah</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img src="imagens/monstros/dragao/garajion_03_th_05.webp" /><span>Garajion</span></div>
+      <div class="type-label">Dragon</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/dragao/daara_01_th_05.webp" /><span>Daara</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/gararah_02_th_05.webp" /><span>Gararah</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/garajion_03_th_05.webp" /><span>Garajion</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="05">
+      <div class="type-label">Earth</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/terra/earthdillo_01_th_05.webp" /><span>Earthdillo</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/terra/gaiadillo_02_th_05.webp" /><span>Gaiadillo</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="05">
+      <div class="type-label">Evil</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/mal/soullent_01_th_05.webp" /><span>Soullent</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/mal/ghoosent_02_th_05.webp" /><span>Ghoosent</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="05">
+      <div class="type-label">Fire</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/fogo/fireater_01_th_05.webp" /><span>Fireater</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/fogo/flameater_02_th_05.webp" /><span>Flameater</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/fogo/blazeater_03_th_05.webp" /><span>Blazeater</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="05">
+      <div class="type-label">Water</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/agua/aquapole_01_th_05.webp" /><span>Aquapole</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/agua/aquatoad_02_th_05.webp" /><span>Aquatoad</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/agua/clownfrog_03_th_05.webp" /><span>Clownfrog</span></div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="05">
+      <div class="type-label">Spirit</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/spirit/spirikett_01_th_05.webp" /><span>Spirikett</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/spirit/psychokett_02_th_05.webp" /><span>Psychokett</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img id="sheep-v" src="imagens/monstros/spirit/ancient_sheep_02_th_05.webp" /><span id="sheep-n">Ancient Sheep</span></div>
+      </div>
+      <div class="variant-btns">
+        <button onclick="swapV('sheep-v','sheep-n','spirit/ancient_sheep_02_th_05.webp','Ancient Sheep')">Normal</button>
+        <button onclick="swapV('sheep-v','sheep-n','spirit/ancient_sheep_shyne_02_th_05.webp','Ancient (S)')">Shyne</button>
+        <button onclick="swapV('sheep-v','sheep-n','spirit/ancient_sheep_natal_02_th_05.webp','Ancient (N)')">Natal</button>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="05">
+      <div class="type-label">Mythic Mega</div>
+      <div class="evolution-line">
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/miracle_sheep_evo_ancient_ring_05_th.webp" class="item-icon" />
+          <img id="mira-v" src="imagens/monstros/mitico/miracle_sheep_04_th_05.webp" />
+          <span id="mira-n">Miracle Sheep</span>
         </div>
+      </div>
+      <div class="variant-btns">
+        <button onclick="swapV('mira-v','mira-n','mitico/miracle_sheep_04_th_05.webp','Miracle Sheep')">Normal</button>
+        <button onclick="swapV('mira-v','mira-n','mitico/miracle_sheep_shyne_04_th_05.webp','Miracle (S)')">Shyne</button>
+        <button onclick="swapV('mira-v','mira-n','mitico/miracle_sheep_natal_04_th_05.webp','Miracle (N)')">Natal</button>
+      </div>
     </div>
 
     <div class="monster-card" data-anniversary="06">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/evil_type_icon.png" /> Evil Mega Evolution</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/dragao/hatchette_01_th_06.webp" /><span>Hatchette</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img src="imagens/monstros/dragao/areochett_02_th_06.webp" /><span>Areochett</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img src="imagens/monstros/dragao/gaiachett_03_th_06.webp" /><span>Gaiachett</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage mega-stage mega-evil-glow">
-                <img src="imagens/imagens/icon/mega-evolucao/prison_breaker_evo_crimzon_cape_06_th.webp" class="item-icon" />
-                <img id="img-06-prison" src="imagens/monstros/mal/prison_breaker_04_th_06.webp" />
-                <span id="txt-06-prison">Prison Breaker</span>
-            </div>
+      <div class="type-label">Dragon Line</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/dragao/hatchette_01_th_06.webp" /><span>Hatchette</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/areochett_02_th_06.webp" /><span>Areochett</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/gaiachett_03_th_06.webp" /><span>Gaiachett</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/ultichette_evo_rainbow_feather_06_th.webp" class="item-icon" />
+          <img src="imagens/monstros/dragao/ultichett_04_th_06.webp" />
+          <span>Ultichett</span>
         </div>
-        <div class="variant-btns">
-            <button onclick="swapSingle('img-06-prison', 'txt-06-prison', 'mal/prison_breaker_04_th_06.webp', 'Prison Breaker')">Normal</button>
-            <button onclick="swapSingle('img-06-prison', 'txt-06-prison', 'mal/prison_breaker_shyne_04_th_06.webp', 'Prison (S)')">Shyne</button>
-            <button onclick="swapSingle('img-06-prison', 'txt-06-prison', 'mal/prison_breaker_hyakki_yagyo_04_th_06.webp', 'Hyakki Yagyo')">Mutante</button>
-        </div>
+      </div>
     </div>
 
     <div class="monster-card" data-anniversary="06">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/ice_type_icon.png" /> Ice Mega Evolution</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/gelo/ragebea_01_th_05.webp" /><span>Ragebea</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage mega-stage mega-ice-glow">
-                <img src="imagens/imagens/icon/mega-evolucao/snowlords_evo_giant_clamp_06_th.webp" class="item-icon" />
-                <img id="img-06-snow" src="imagens/monstros/gelo/snowlords_04_th_06.webp" />
-                <span id="txt-06-snow">Snowlords</span>
-            </div>
+      <div class="type-label">Evil Mega</div>
+      <div class="evolution-line">
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/prison_breaker_evo_crimzon_cape_06_th.webp" class="item-icon" />
+          <img id="pb-v" src="imagens/monstros/mal/prison_breaker_04_th_06.webp" />
+          <span id="pb-n">Prison Breaker</span>
         </div>
-        <div class="variant-btns">
-            <button onclick="swapSingle('img-06-snow', 'txt-06-snow', 'gelo/snowlords_04_th_06.webp', 'Snowlords')">Normal</button>
-            <button onclick="swapSingle('img-06-snow', 'txt-06-snow', 'gelo/snowlords_shyne_04_th_06.webp', 'Snow (S)')">Shyne</button>
+      </div>
+      <div class="variant-btns">
+        <button onclick="swapV('pb-v','pb-n','mal/prison_breaker_04_th_06.webp','Prison Breaker')">Normal</button>
+        <button onclick="swapV('pb-v','pb-n','mal/prison_breaker_shyne_04_th_06.webp','Prison (S)')">Shyne</button>
+        <button onclick="swapV('pb-v','pb-n','mal/prison_breaker_hyakki_yagyo_04_th_06.webp','Hyakki Yagyo')">Mutante</button>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="06">
+      <div class="type-label">Ice Mega</div>
+      <div class="evolution-line">
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/snowlords_evo_giant_clamp_06_th.webp" class="item-icon" />
+          <img id="sl-v" src="imagens/monstros/gelo/snowlords_04_th_06.webp" />
+          <span id="sl-n">Snowlords</span>
         </div>
+      </div>
+      <div class="variant-btns">
+        <button onclick="swapV('sl-v','sl-n','gelo/snowlords_04_th_06.webp','Snowlords')">Normal</button>
+        <button onclick="swapV('sl-v','sl-n','gelo/snowlords_shyne_04_th_06.webp','Snow (S)')">Shyne</button>
+        <button onclick="swapV('sl-v','sl-n','gelo/snowlords_first_birthday_04_th_06.webp','1st Birthday')">Especial</button>
+      </div>
     </div>
 
     <div class="monster-card" data-anniversary="07">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/dragon_type_icon.png" /> Dragon Evolution</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/dragao/sigiv_01_th_07.webp" /><span>Sigiv</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage"><img src="imagens/monstros/dragao/sigilva_02_th_07.webp" /><span>Sigilva</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage mega-stage">
-                <img src="imagens/imagens/icon/mega-evolucao/sigversith_evo_versatile_core_07_th.webp" class="item-icon" />
-                <img src="imagens/monstros/dragao/sigversith_04_th_07.webp" />
-                <span>Sigversith (MEGA)</span>
-            </div>
+      <div class="type-label">Dragon Mega</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/dragao/sigiv_01_th_07.webp" /><span>Sigiv</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/sigilva_02_th_07.webp" /><span>Sigilva</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/sigversa_03_th_07.webp" /><span>Sigversa</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/sigversith_evo_versatile_core_07_th.webp" class="item-icon" />
+          <img src="imagens/monstros/dragao/sigversith_04_th_07.webp" />
+          <span>Sigversith</span>
         </div>
+      </div>
+    </div>
+
+    <div class="monster-card" data-anniversary="07">
+      <div class="type-label">Common Line</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/comum/scissz_01_th_07.webp" /><span>Scissz</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/scissor_02_th_07.webp" /><span>Scissor</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/comum/scisserg_03_th_07.webp" /><span>Scisserg</span></div>
+      </div>
     </div>
 
     <div class="monster-card" data-anniversary="08">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/dragon_type_icon.png" /> Dragon Evolution</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/dragao/sigco_01_th_08.webp" /><span>Sigco</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage mega-stage">
-                <img src="imagens/imagens/icon/mega-evolucao/sigcobinith_evo_sigma_controller_08_th.webp" class="item-icon" />
-                <img src="imagens/monstros/dragao/sigcobinith_04_th_08.webp" />
-                <span>Sigcobinith (MEGA)</span>
-            </div>
+      <div class="type-label">Dragon Mega</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/dragao/sigco_01_th_08.webp" /><span>Sigco</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/sigcom_02_th_08.webp" /><span>Sigcom</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/dragao/sigcobie_03_th_08.webp" /><span>Sigcobie</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/sigcobinith_evo_sigma_controller_08_th.webp" class="item-icon" />
+          <img src="imagens/monstros/dragao/sigcobinith_04_th_08.webp" />
+          <span>Sigcobinith</span>
         </div>
+      </div>
     </div>
 
     <div class="monster-card" data-anniversary="09">
-        <div class="type-label"><img src="imagens/imagens/icon/asset/evil_type_icon.png" /> Malicious Evolution</div>
-        <div class="evolution-line">
-            <div class="evo-stage"><img src="imagens/monstros/mal/hydrix_01_th_09.webp" /><span>Hydrix</span></div>
-            <div class="arrow">→</div>
-            <div class="evo-stage mega-stage mega-evil-glow">
-                <img src="imagens/imagens/icon/mega-evolucao/hydreilion_evo_sigma_sign_09_th.webp" class="item-icon" />
-                <img src="imagens/monstros/mal/hydrellion_04_th_09.webp" />
-                <span>Hydrellion (MEGA)</span>
-            </div>
+      <div class="type-label">Evil Mega</div>
+      <div class="evolution-line">
+        <div class="evo-stage"><img src="imagens/monstros/mal/hydrix_01_th_09.webp" /><span>Hydrix</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/mal/hydrely_02_th_09.webp" /><span>Hydrely</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage"><img src="imagens/monstros/mal/hydriola_03_th_09.webp" /><span>Hydriola</span></div>
+        <div class="arrow">→</div>
+        <div class="evo-stage mega-stage">
+          <img src="imagens/imagens/icon/mega-evolucao/hydreilion_evo_sigma_sign_09_th.webp" class="item-icon" />
+          <img src="imagens/monstros/mal/hydrellion_04_th_09.webp" />
+          <span>Hydrellion</span>
         </div>
+      </div>
     </div>
 
   </div>
 </main>
 
 <script>
-    function filterAniv(val) {
-        document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-        event.currentTarget.classList.add('active');
-        const cards = document.querySelectorAll('.monster-card');
-        const banner = document.getElementById('banner');
-        
-        if(val !== 'all') {
-            banner.src = `imagens/${val}th-anniversary.jpg`;
-            cards.forEach(c => c.style.display = (c.dataset.anniversary === val) ? 'block' : 'none');
-        } else {
-            banner.src = `imagens/05th-anniversary.jpg`;
-            cards.forEach(c => c.style.display = 'block');
-        }
-    }
+  function filterAniv(val) {
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    const cards = document.querySelectorAll('.monster-card');
+    const banner = document.getElementById('banner');
+    banner.src = `imagens/${val}th-anniversary.jpg`;
+    cards.forEach(c => c.style.display = (val === 'all' || c.dataset.anniversary === val) ? 'block' : 'none');
+  }
 
-    function swapForm(prefix, files, names, type1, type2) {
-        document.getElementById(`img-${prefix}-3`).src = `imagens/monstros/${type1}/${files[0]}`;
-        document.getElementById(`img-${prefix}-4`).src = `imagens/monstros/${type2}/${files[1]}`;
-        document.getElementById(`txt-${prefix}-3`).innerText = names[0];
-        document.getElementById(`txt-${prefix}-4`).innerText = names[1];
-    }
-
-    function swapSingle(imgId, txtId, path, name) {
-        document.getElementById(imgId).src = `imagens/monstros/${path}`;
-        document.getElementById(txtId).innerText = name;
-    }
+  function swapV(imgId, txtId, path, name) {
+    document.getElementById(imgId).src = `imagens/monstros/` + path;
+    document.getElementById(txtId).innerText = name;
+  }
 </script>
-
 </body>
 </html>
