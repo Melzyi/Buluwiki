@@ -1,239 +1,46 @@
-<!DOCTYPE html><html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bulu Monster Anniversary Dex</title>
-  <style>
-    :root {
-      --bg: #0e0e12;
-      --card: #1a1a22;
-      --accent: #7cf3ff;
-      --accent-glow: 0 0 25px #7cf3ff;
-      --text: #eaeaf0;
-    }* { box-sizing: border-box; }
+<!DOCTYPE html>
+<html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" 
+            content="width=device-width,initial-scale=1.">
+            <title>BULU WIKI</title>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="icon"  href="imagens/logos/bulu_monster_logo.png"
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #1b1b2b, #0b0b10);
-  color: var(--text);
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 14px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(8px);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-header button {
-  background: none;
-  border: none;
-  color: #aaa;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-header button.active,
-header button:hover {
-  color: var(--accent);
-  text-shadow: var(--accent-glow);
-}
-
-section {
-  display: none;
-  padding: 20px;
-  animation: fadeIn 0.6s ease;
-}
-
-section.active { display: block; }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== ANIVERSÁRIOS ===== */
-.anniversary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 16px;
-}
-
-.anniversary-card {
-  background: var(--card);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  transition: 0.3s;
-}
-
-.anniversary-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--accent-glow);
-}
-
-.anniversary-card img {
-  width: 100%;
-  display: block;
-}
-
-.anniversary-card p {
-  text-align: center;
-  padding: 8px;
-  font-size: 13px;
-}
-
-/* ===== LC TCG ===== */
-.tcg-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
-
-.tcg-card {
-  width: 260px;
-  height: 380px;
-  border-radius: 20px;
-  background: linear-gradient(145deg, #222, #111);
-  box-shadow: 0 0 40px rgba(124,243,255,0.6);
-  position: relative;
-  overflow: hidden;
-}
-
-.tcg-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: fadeLoop 4s infinite;
-}
-
-@keyframes fadeLoop {
-  0%,100% { opacity: 0; }
-  20%,80% { opacity: 1; }
-}
-
-/* ===== LIVROS ===== */
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
-  gap: 18px;
-}
-
-.book {
-  text-align: center;
-  cursor: pointer;
-}
-
-.book img {
-  width: 80px;
-  filter: drop-shadow(0 0 10px rgba(124,243,255,0.5));
-  transition: 0.3s;
-}
-
-.book:hover img {
-  transform: scale(1.1);
-}
-
-/* ===== MONSTRO DO ANO ===== */
-.monster-year {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.monster-year img {
-  width: 260px;
-  filter: drop-shadow(0 0 40px gold);
-  animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-  from { filter: drop-shadow(0 0 20px gold); }
-  to { filter: drop-shadow(0 0 50px gold); }
-}
-
-.info-box {
-  background: var(--card);
-  border-radius: 16px;
-  padding: 16px;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
-}
-
-  </style>
-</head>
-<body><header>
-  <button class="active" onclick="showTab('anniversary')">Aniversários</button>
-  <button onclick="showTab('lc')">Legendary Cup</button>
-  <button onclick="showTab('skills')">Skills & Livros</button>
-  <button onclick="showTab('year')">Monstro do Ano</button>
-</header><section id="anniversary" class="active">
-  <h2>Monstros de Aniversário</h2>
-  <p>Aba principal com acesso aos 12 aniversários</p>
-  <div class="anniversary-grid">
-    <div class="anniversary-card"><img src="imagens/banners/01th-anniversary.jpg"><p>1º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/02th-anniversary.jpg"><p>2º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/03th-anniversary.jpg"><p>3º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/04th-anniversary.jpg"><p>4º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/05th-anniversary.jpg"><p>5º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/06th-anniversary.jpg"><p>6º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/07th-anniversary.jpg"><p>7º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/08th-anniversary.jpg"><p>8º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/09th-anniversary.jpg"><p>9º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/10th-anniversary.jpg"><p>10º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/11th-anniversary.jpg"><p>11º Aniversário</p></div>
-    <div class="anniversary-card"><img src="imagens/banners/12th-anniversary.jpg"><p>12º Aniversário</p></div>
-  </div>
-</section><section id="lc">
-  <h2>Legendary Cup Edition</h2>
-  <div class="tcg-area">
-    <div class="tcg-card">
-      <img src="imagens/legendery/legendary_monster_1.webp" />
-    </div>
-  </div>
-</section><section id="skills">
-  <h2>Livros de Skills</h2>
-  <p>Livros que aprimoram habilidades existentes</p>
-  <div class="books-grid">
-    <div class="book"><img src="imagens/icons/books/monster_book_fire.webp"><p>Fogo</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_water.webp"><p>Água</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_dragon.webp"><p>Dragão</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_ice.webp"><p>Gelo</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_lightning.webp"><p>Elétrico</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_earth.webp"><p>Terra</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_wind.webp"><p>Vento</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_evil.webp"><p>Mal</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_spirit.webp"><p>Spirit</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_mythic.webp"><p>Mítico</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_common.webp"><p>Comum</p></div>
-    <div class="book"><img src="imagens/icons/books/monster_book_umbral.webp"><p>Umbral</p></div>
-  </div>
-</section><section id="year">
-  <h2>Monstro do Ano</h2>
-  <div class="monster-year">
-    <img src="imagens/monstros/monster_of_the_year.webp" />
-    <div class="info-box">
-      <h3>Nome do Monstro</h3>
-      <p>Chegou ao jogo em: 2024</p>
-      <p>Linha Evolutiva + Item de Mega Evolução</p>
-    </div>
-  </div>
-</section><script>
-  function showTab(id) {
-    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('header button').forEach(b => b.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    event.target.classList.add('active');
-  }
-</script></body>
+        </head>
+        <body>
+            <div id="loading_screen">
+                <img src="imagens/loading_screen/loading_screen_background.webp"
+                alt="Loading Background"
+                class="loading-bg"
+                >
+                <div class="loading_monster">
+                    <img src="imagens/loading_screen/loading_monster_01.webp" alt="monster monster-left">
+                    <img src="imagens/loading_screen/loading_monster_02.webp" alt="monster monster right">
+                </div>
+            </div>
+            <div>
+                <div id="site content" class="hidden">
+                </header>
+                <section class="banner">
+                    <img src="imagens/banner/12th-anniversary.jpg" alt="12th Anniversary Banner"
+                    >
+                </section>
+                <main>
+                    <section class="intro">
+                        <h1>Bulu Monster Anniversary</h1>
+                        <p> celebre os monstros as evoluções e a histórias que maracaram cada ano! </p>
+                    </section>
+                    <main>
+                        <footer>
+                            <p>© 2026 Bulu WIKI. Todos os direitos reservados.</p>
+                            <div>
+                                <script src="js/main.js"></script>
+                    </section>
+                </main>
+                </section>
+                </div>
+            </div>
+        </body>
 </html>
