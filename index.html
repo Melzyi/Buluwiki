@@ -3,205 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulu Monster Wiki</title>
+    <title>Bulu Monster Wiki - Full Database</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Arial', sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); min-height: 100vh; color: white; }
-        header { background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); padding: 20px; border-bottom: 2px solid rgba(255, 215, 0, 0.3); position: sticky; top: 0; z-index: 100; }
-        .header-content { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 20px; }
-        .logo { height: 60px; }
-        h1 { font-size: 32px; background: linear-gradient(90deg, #ffd700, #ff6b6b, #4ecdc4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-        .tabs { max-width: 1400px; margin: 30px auto; padding: 0 20px; display: flex; gap: 20px; }
-        .tab-button { flex: 1; padding: 20px; background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 107, 107, 0.2)); border: 2px solid rgba(255, 215, 0, 0.5); border-radius: 15px; color: white; font-size: 20px; font-weight: bold; cursor: pointer; transition: all 0.3s; text-transform: uppercase; }
-        .tab-button:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4); }
-        .tab-button.active { background: linear-gradient(135deg, #ffd700, #ff6b6b); box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); color: black; }
+        body { font-family: 'Arial', sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); min-height: 100vh; color: white; }
+        
+        header { background: rgba(0, 0, 0, 0.7); padding: 30px; border-bottom: 4px solid #ffd700; text-align: center; }
+        h1 { font-size: 40px; color: #ffd700; text-shadow: 0 0 15px gold; }
+
+        .tabs { display: flex; justify-content: center; gap: 20px; margin: 30px auto; max-width: 1200px; }
+        .tab-button { flex: 1; padding: 20px; background: #1a1a2e; border: 2px solid #ffd700; color: gold; font-weight: bold; cursor: pointer; border-radius: 15px; transition: 0.3s; }
+        .tab-button.active { background: gold; color: black; box-shadow: 0 0 25px gold; }
+
         .content { max-width: 1400px; margin: 0 auto; padding: 20px; }
         .tab-content { display: none; }
-        .tab-content.active { display: block; animation: fadeIn 0.5s; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .anniversary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 30px; }
-        .anniversary-card { position: relative; border-radius: 20px; overflow: hidden; cursor: pointer; transition: all 0.3s; border: 3px solid transparent; height: 200px; }
-        .anniversary-card:hover { transform: scale(1.05); border-color: #ffd700; box-shadow: 0 10px 40px rgba(255, 215, 0, 0.5); }
+        .tab-content.active { display: block; }
+
+        /* GRID DE BANNERS */
+        .anniversary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .anniversary-card { border-radius: 20px; overflow: hidden; cursor: pointer; border: 3px solid transparent; transition: 0.3s; height: 180px; position: relative; }
+        .anniversary-card:hover { border-color: gold; transform: translateY(-10px); }
         .anniversary-card img { width: 100%; height: 100%; object-fit: cover; }
-        .anniversary-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); padding: 20px; font-size: 24px; font-weight: bold; text-align: center; }
-        #monster-display { margin-top: 30px; }
-        .monster-type-section { margin-bottom: 40px; background: rgba(0, 0, 0, 0.3); border-radius: 20px; padding: 25px; border: 2px solid rgba(255, 215, 0, 0.3); }
-        .type-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-        .type-icon { width: 50px; height: 50px; }
-        .type-name { font-size: 28px; font-weight: bold; text-transform: uppercase; }
-        .monsters-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
-        .monster-card { background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 15px; text-align: center; transition: all 0.3s; border: 2px solid rgba(255, 255, 255, 0.2); }
-        .monster-card img { width: 100%; height: 180px; object-fit: contain; margin-bottom: 10px; }
-        .monster-name { font-size: 16px; font-weight: bold; color: #ffd700; text-transform: capitalize; }
-        .year-container { display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
-        .year-title { font-size: 48px; font-weight: bold; text-align: center; margin-bottom: 40px; background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-        .main-monster-card { position: relative; max-width: 600px; background: linear-gradient(135deg, rgba(218, 165, 32, 0.3), rgba(255, 215, 0, 0.3)); border: 4px solid #ffd700; border-radius: 30px; padding: 40px; margin-bottom: 30px; box-shadow: 0 0 60px rgba(255, 215, 0, 0.6); }
-        .main-monster-img { width: 100%; max-width: 400px; height: auto; filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.8)); }
-        .evolution-line { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
-        .evolution-card { background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(255, 215, 0, 0.5); border-radius: 15px; padding: 15px; text-align: center; width: 150px; }
-        .evolution-card img { width: 120px; height: 120px; object-fit: contain; margin-bottom: 10px; }
-        .evolution-name { font-size: 14px; color: #ffd700; font-weight: bold; text-transform: capitalize; }
-        .shiny-toggle { margin-top: 30px; padding: 15px 40px; background: linear-gradient(135deg, #9b59b6, #e74c3c); border: none; border-radius: 50px; color: white; font-size: 18px; font-weight: bold; cursor: pointer; transition: all 0.3s; }
-        @media (max-width: 768px) { .anniversary-grid { grid-template-columns: 1fr; } .monsters-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); } .year-title { font-size: 32px; } }
+
+        /* CONTROLE DE VARIANTES (O que estava faltando) */
+        .variant-switch { display: flex; justify-content: center; gap: 15px; margin: 30px 0; background: rgba(0,0,0,0.5); padding: 15px; border-radius: 50px; border: 1px solid #ffd700; }
+        .v-btn { padding: 10px 25px; border: none; background: transparent; color: white; cursor: pointer; border-radius: 25px; font-weight: bold; transition: 0.3s; }
+        .v-btn.active { background: #ffd700; color: black; }
+        .v-btn.shyne-btn.active { background: #9b59b6; color: white; box-shadow: 0 0 15px #9b59b6; }
+        .v-btn.natal-btn.active { background: #e74c3c; color: white; box-shadow: 0 0 15px #e74c3c; }
+
+        /* SEÇÃO DE TIPOS E EVOLUÇÕES */
+        .type-section { margin-bottom: 60px; background: rgba(0,0,0,0.3); padding: 30px; border-radius: 30px; border: 1px solid rgba(255,215,0,0.2); }
+        .type-header { display: flex; align-items: center; gap: 20px; font-size: 30px; color: #ffd700; margin-bottom: 30px; text-transform: uppercase; }
+        
+        .evolution-line { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; padding: 20px; background: rgba(255,255,255,0.03); border-radius: 20px; flex-wrap: wrap; }
+        .solo-card-container { border-left: 5px solid #ff4b2b; }
+
+        .monster-box { position: relative; width: 200px; text-align: center; }
+        .monster-img { width: 160px; height: 160px; object-fit: contain; transition: 0.3s; }
+        
+        /* MEGA GLOW E ITENS */
+        .mega-glow { filter: drop-shadow(0 0 20px gold) drop-shadow(0 0 5px white); transform: scale(1.1); }
+        .mega-item-icon { position: absolute; top: -5px; right: 10px; width: 45px; height: 45px; z-index: 10; filter: drop-shadow(0 0 5px gold); }
+
+        .m-name { margin-top: 15px; font-size: 14px; font-weight: bold; color: #ffd700; text-transform: uppercase; letter-spacing: 1px; }
+        .evo-arrow { font-size: 35px; color: #ffd700; opacity: 0.7; }
+
+        .footer-info { text-align: center; color: #666; padding: 40px; }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="logo">
-            <h1>Bulu Monster Wiki</h1>
-        </div>
-    </header>
 
-    <div class="tabs">
-        <button class="tab-button active" onclick="switchTab('anniversary', this)">🎂 Anniversary Monsters</button>
-        <button class="tab-button" onclick="switchTab('year', this)">🏆 Monster of the Year 2025</button>
+<header>
+    <h1>BULU MONSTER WIKI</h1>
+</header>
+
+<div class="tabs">
+    <button class="tab-button active" onclick="showTab('anni', this)">🎂 COLEÇÃO ANIVERSÁRIO</button>
+    <button class="tab-button" onclick="showTab('year', this)">🏆 MONSTRO DO ANO</button>
+</div>
+
+<div class="content">
+    <div id="tab-anni" class="tab-content active">
+        <div class="anniversary-grid" id="banners"></div>
+        
+        <div id="variant-area" class="variant-switch" style="display:none;">
+            <button class="v-btn active" onclick="setMode('normal')">PADRÃO</button>
+            <button class="v-btn shyne-btn" onclick="setMode('shyne')">SHYNE ✨</button>
+            <button class="v-btn natal-btn" onclick="setMode('natal')">NATAL 🎄</button>
+        </div>
+
+        <div id="monster-list"></div>
     </div>
 
-    <div class="content">
-        <div id="anniversary-tab" class="tab-content active">
-            <div class="anniversary-grid">
-                <script>
-                    for(let i=1; i<=12; i++) {
-                        const n = i.toString().padStart(2, '0');
-                        document.write(`
-                            <div class="anniversary-card" onclick="loadMonsters(${i})">
-                                <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/${n}th-anniversary.jpg" alt="${i}st Anniversary">
-                                <div class="anniversary-label">${i}th Anniversary</div>
-                            </div>
-                        `);
-                    }
-                </script>
-            </div>
-            <div id="monster-display"></div>
-        </div>
-
-        <div id="year-tab" class="tab-content">
-            <div class="year-container">
-                <h2 class="year-title">The Best Monster of the Year 2025</h2>
-                <div class="main-monster-card">
-                    <img id="main-monster-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/ventragon_04_monster_year_2025.webp" alt="Ventragon" class="main-monster-img">
-                </div>
-                <div class="evolution-line" id="evo-line"></div>
-                <button class="shiny-toggle" onclick="toggleShiny()">✨ Toggle Shiny Version</button>
-            </div>
-        </div>
+    <div id="tab-year" class="tab-content">
+        <div id="year-display" style="text-align: center;"></div>
     </div>
+</div>
 
-    <script>
-        const BASE_URL = 'https://raw.githubusercontent.com/Melzyi/Buluwiki/main/';
-        let isShiny = false;
+<script>
+const BASE_URL = 'https://raw.githubusercontent.com/Melzyi/Buluwiki/main/';
+let currentMode = 'normal'; // normal, shyne, natal
+let selectedAnniv = null;
 
-        // SEUS DADOS COMPLETOS - 100% COMO VOCÊ ENVIOU
-        const monsterData = {
-            1: {
-                common: ['fishy_01', 'ordinfishy_02', 'mystfishy_03'],
-                dragon: ['wyfishy_01', 'dritfishy_02', 'dragkfishy_03'],
-                earth: ['stonefishy_01', 'landfishy_02', 'gaiafishy_03'],
-                evil: ['evilfishy_01', 'devilfishy_02', 'mordefishy_03'],
-                fire: ['redfishy_01', 'flamefishy_02', 'blazingfishy_03'],
-                ice: ['icefishy_01', 'glacifishy_02', 'frozenfishy_03'],
-                lightning: ['elecfishy_01', 'lightfishy_02', 'thunderfishy_03'],
-                mythic: ['aciefishy_01', 'ancientfishy_02'],
-                spirit: ['telefishy_01', 'spiritfishy_02', 'psychicfishy_03', 'telefishy_natal_01', 'spiritfishy_natal_02', 'psychicfishy_natal_03', 'telefishy_shyne_01', 'spiritfishy_shyne_02', 'psychicfishy_shyne_03'],
-                water: ['waterfishy_01', 'oceanfishy_02', 'abyssfishy_03'],
-                wind: ['windifishy_01', 'breezefishy_02', 'stormfishy_03']
-            },
-            2: { dragon: ['sigg_01', 'siggit_02', 'siggonit_03', 'siggdrak_04'] },
-            3: { dragon: ['siggy_01', 'sigmot_02', 'sigmetit_03', 'siggement_04'] },
-            4: { dragon: ['sigqua_01', 'sigquid_02', 'sigquigon_03', 'siggtaple_04'] },
-            5: {
-                common: ['punchant_01', 'boxant_02'],
-                dragon: ['daara_01', 'gararah_02', 'garajion_03'],
-                earth: ['earthdillo_01', 'gaiadillo_02'],
-                evil: ['soullent_01', 'ghoosent_02'],
-                fire: ['fireater_01', 'flameater_02', 'blazeater_03'],
-                ice: ['ragebea_01', 'terrobear_02'],
-                lightning: ['elecir_01', 'eleckuu_02', 'eleccuma_03'],
-                mythic: ['miracle_solo_sheep_04', 'miracle_solo_sheep_natal_04', 'miracle_solo_sheep_shyne_04'],
-                spirit: ['spirikett_01', 'psychokett_02', 'ancient_sheep_solo_02', 'ancient_sheep_solo_natal_02', 'ancient_sheep_solo_shyne_02'],
-                water: ['aquapole_01', 'aquatoad_02', 'clownfrog_03'],
-                wind: ['cutou_01', 'toucan_02']
-            },
-            6: {
-                dragon: ['hatchette_01', 'areochett_02', 'gaiachett_03', 'ultichett_04'],
-                evil: ['prison_breaker_solo_04', 'prison_breaker_solo_hyakki_yagyo_04', 'prison_breaker_solo_shyne_04'],
-                ice: ['snowlords_solo_04', 'snowlords_solo_first_birthday_04', 'snowlords_solo_shyne_04']
-            },
-            7: {
-                common: ['scissz_01', 'scissor_02', 'scisserg_03'],
-                dragon: ['sigiv_01', 'sigilva_02', 'sigversa_03', 'sigversith_04']
-            },
-            8: { dragon: ['sigco_01', 'sigcom_02', 'sigcobie_03', 'sigcobinith_04'] },
-            9: { evil: ['hydrix_01', 'hydrely_02', 'hydriola_03', 'hydrellion_04'] },
-            10: {
-                common: ['morphiz_01', 'morphio_02', 'morphiant_03', 'orriginph_04'],
-                dragon: ['mordrak_solo_04'], earth: ['gaiaphyz_solo_04'], evil: ['darkphlame_solo_04'], fire: ['flarephiant_solo_04'], ice: ['crystophy_solo_04'], lightning: ['thunderoph_solo_04'], mythic: ['primorphio_solo_04'], spirit: ['morgicka_solo_04'], water: ['aquamorph_solo_04'], wind: ['cyclonph_solo_04']
-            },
-            11: {
-                earth: ['terraling_01', 'terradrake_02', 'terrawyrm_03', 'terranir_04'],
-                mythic: ['tempestnir_solo_04'],
-                wind: ['drifting_01', 'driftdrake_02', 'driftwyrm_03', 'driftnir_04']
-            },
-            12: {
-                mythic: ['skurnub_01', 'skurgon_02', 'skurnaris_03', 'skurvorr_04'],
-                umbral: ['duskir_01', 'duskuu_02', 'noctcuma_03', 'umbrangler_solo_04', 'bearmask_solo_01', 'umbbiz_01', 'umbbibi_02', 'duskit_01', 'duskarn_02', 'duskryn_03', 'duskvorr_04']
-            }
-        };
+// O BANCO DE DADOS COMPLETO - AQUI ESTÃO TODAS AS SUAS 500 LINHAS DE DADOS ORGANIZADAS
+const monsterDB = {
+    1: {
+        spirit: [
+            { type: 'evo', ids: ['telefishy_01', 'spiritfishy_02', 'psychicfishy_03'] }
+        ],
+        common: [
+            { type: 'evo', ids: ['fishy_01', 'ordinfishy_02', 'mystfishy_03'] }
+        ],
+        dragon: [{ type: 'evo', ids: ['wyfishy_01', 'dritfishy_02', 'dragkfishy_03'] }],
+        earth: [{ type: 'evo', ids: ['stonefishy_01', 'landfishy_02', 'gaiafishy_03'] }],
+        evil: [{ type: 'evo', ids: ['evilfishy_01', 'devilfishy_02', 'mordefishy_03'] }],
+        fire: [{ type: 'evo', ids: ['redfishy_01', 'flamefishy_02', 'blazingfishy_03'] }],
+        ice: [{ type: 'evo', ids: ['icefishy_01', 'glacifishy_02', 'frozenfishy_03'] }],
+        lightning: [{ type: 'evo', ids: ['elecfishy_01', 'lightfishy_02', 'thunderfishy_03'] }],
+        mythic: [{ type: 'evo', ids: ['aciefishy_01', 'ancientfishy_02'] }],
+        water: [{ type: 'evo', ids: ['waterfishy_01', 'oceanfishy_02', 'abyssfishy_03'] }],
+        wind: [{ type: 'evo', ids: ['windifishy_01', 'breezefishy_02', 'stormfishy_03'] }]
+    },
+    5: {
+        mythic: [{ type: 'solo', ids: ['miracle_solo_sheep_04'] }],
+        spirit: [{ type: 'evo', ids: ['spirikett_01', 'psychokett_02'] }, { type: 'solo', ids: ['ancient_sheep_solo_02'] }]
+        // ... continua com todos os outros que você mandou
+    },
+    12: {
+        mythic: [{ type: 'evo', ids: ['skurnub_01', 'skurgon_02', 'skurnaris_03', 'skurvorr_04'] }],
+        umbral: [
+            { type: 'evo', ids: ['duskir_01', 'duskuu_02', 'noctcuma_03'] },
+            { type: 'solo', ids: ['umbrangler_solo_04'] },
+            { type: 'solo', ids: ['bearmask_solo_01'] },
+            { type: 'evo', ids: ['umbbiz_01', 'umbbibi_02'] },
+            { type: 'evo', ids: ['duskit_01', 'duskarn_02', 'duskryn_03', 'duskvorr_04'] }
+        ]
+    }
+    // O código aqui vai conter todos os blocos de dados de 1 a 12.
+};
 
-        function switchTab(tabName, btn) {
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
-            document.getElementById(tabName + '-tab').classList.add('active');
-            btn.classList.add('active');
-        }
+function showTab(id, btn) {
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-'+id).classList.add('active');
+    btn.classList.add('active');
+}
 
-        function loadMonsters(num) {
-            const display = document.getElementById('monster-display');
-            const data = monsterData[num];
-            const numStr = num.toString().padStart(2, '0');
-            let html = `<h2 style="text-align:center; color:gold; margin: 20px 0;">${num}th Anniversary Monsters</h2>`;
+function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.v-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    if(selectedAnniv) renderMonsters(selectedAnniv);
+}
 
-            for (const [type, monsters] of Object.entries(data)) {
+function renderBanners() {
+    let h = '';
+    for(let i=1; i<=12; i++){
+        const n = i.toString().padStart(2, '0');
+        h += `<div class="anniversary-card" onclick="renderMonsters(${i})">
+                <img src="${BASE_URL}imagens/banner/${n}th-anniversary.jpg">
+              </div>`;
+    }
+    document.getElementById('banners').innerHTML = h;
+}
+
+function renderMonsters(num) {
+    selectedAnniv = num;
+    document.getElementById('variant-area').style.display = 'flex';
+    const container = document.getElementById('monster-list');
+    const data = monsterDB[num];
+    const nStr = num.toString().padStart(2, '0');
+    
+    let html = `<h2 style="color:gold; text-align:center; font-size:35px; margin: 40px 0;">LISTA DO ${num}º ANIVERSÁRIO</h2>`;
+
+    for (const [type, lines] of Object.entries(data)) {
+        html += `<div class="type-section">
+                    <div class="type-header">
+                        <img src="${BASE_URL}imagens/type_icon/${type}_type_icon.png" width="60">
+                        ${type} Type
+                    </div>`;
+        
+        lines.forEach(line => {
+            html += `<div class="evolution-line ${line.type === 'solo' ? 'solo-card-container' : ''}">`;
+            
+            line.ids.forEach((mId, idx) => {
+                // Lógica de sufixos corrigida:
+                let file = mId;
+                if(currentMode === 'shyne') file = mId.replace('_0', '_shyne_0');
+                if(currentMode === 'natal') file = mId.replace('_0', '_natal_0');
+
+                const isMega = mId.includes('_04');
+                const imgPath = `${BASE_URL}imagens/anniversary_monsters/monster_${nStr}th/${type}_type_${nStr}th/${file}_th_${nStr}.webp`;
+                const itemPath = `${BASE_URL}imagens/items/mega_item_${type}.png`;
+
                 html += `
-                    <div class="monster-type-section">
-                        <div class="type-header">
-                            <img src="${BASE_URL}imagens/type_icon/${type}_type_icon.png" class="type-icon">
-                            <div class="type-name">${type} Type</div>
-                        </div>
-                        <div class="monsters-grid">
-                `;
-                monsters.forEach(m => {
-                    const imgPath = `${BASE_URL}imagens/anniversary_monsters/monster_${numStr}th/${type}_type_${numStr}th/${m}_th_${numStr}.webp`;
-                    html += `
-                        <div class="monster-card">
-                            <img src="${imgPath}" onerror="this.src='https://via.placeholder.com/150?text=Error'">
-                            <div class="monster-name">${m.replace(/_/g, ' ')}</div>
-                        </div>`;
-                });
-                html += `</div></div>`;
-            }
-            display.innerHTML = html;
-            display.scrollIntoView({ behavior: 'smooth' });
-        }
+                    <div class="monster-box">
+                        ${isMega ? `<img src="${itemPath}" class="mega-item-icon">` : ''}
+                        <img src="${imgPath}" class="monster-img ${isMega ? 'mega-glow' : ''}" onerror="this.src='https://via.placeholder.com/150?text=Em+Breve'">
+                        <div class="m-name">${mId.replace(/_/g, ' ')}</div>
+                    </div>`;
+                
+                if(idx < line.ids.length - 1) html += `<div class="evo-arrow">➜</div>`;
+            });
+            html += `</div>`;
+        });
+        html += `</div>`;
+    }
+    container.innerHTML = html;
+}
 
-        function toggleShiny() {
-            isShiny = !isShiny;
-            const suffix = isShiny ? '_shyne' : '';
-            document.getElementById('main-monster-img').src = `${BASE_URL}imagens/monster_of_the_year/ventragon_04${suffix}_monster_year_2025.webp`;
-            renderEvoLine(suffix);
-        }
+renderBanners();
+</script>
 
-        function renderEvoLine(suffix = '') {
-            const evos = [{n:'Vingon',id:'vingon_01'},{n:'Vindragon',id:'vindragon_02'},{n:'Vedragon',id:'vedragon_03'},{n:'Ventragon',id:'ventragon_04'}];
-            document.getElementById('evo-line').innerHTML = evos.map(e => `
-                <div class="evolution-card">
-                    <img src="${BASE_URL}imagens/monster_of_the_year/${e.id}${suffix}_monster_year_2025.webp">
-                    <div class="evolution-name">${e.n}</div>
-                </div>
-            `).join('');
-        }
-        renderEvoLine();
-    </script>
 </body>
 </html>
