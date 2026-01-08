@@ -16,10 +16,8 @@
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             min-height: 100vh;
             color: white;
-            overflow-x: hidden;
         }
 
-        /* Header */
         header {
             background: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
@@ -50,7 +48,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Tabs */
         .tabs {
             max-width: 1400px;
             margin: 30px auto;
@@ -83,7 +80,6 @@
             box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
         }
 
-        /* Content */
         .content {
             max-width: 1400px;
             margin: 0 auto;
@@ -104,7 +100,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Anniversary Grid */
         .anniversary-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -146,7 +141,6 @@
             text-align: center;
         }
 
-        /* Monster Display */
         #monster-display {
             margin-top: 30px;
         }
@@ -209,9 +203,9 @@
             font-size: 16px;
             font-weight: bold;
             color: #ffd700;
+            text-transform: capitalize;
         }
 
-        /* Monster of the Year */
         .year-container {
             display: flex;
             flex-direction: column;
@@ -228,7 +222,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
         }
 
         .main-monster-card {
@@ -240,21 +233,6 @@
             padding: 40px;
             margin-bottom: 30px;
             box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
-        }
-
-        .main-monster-card::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            background: linear-gradient(45deg, #ffd700, transparent, #ffd700);
-            border-radius: 30px;
-            z-index: -1;
-            animation: rotate 3s linear infinite;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
         }
 
         .main-monster-img {
@@ -292,6 +270,7 @@
             font-size: 14px;
             color: #ffd700;
             font-weight: bold;
+            text-transform: capitalize;
         }
 
         .shiny-toggle {
@@ -332,7 +311,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header-content">
             <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="logo">
@@ -340,62 +318,59 @@
         </div>
     </header>
 
-    <!-- Tabs -->
     <div class="tabs">
-        <button class="tab-button active" onclick="switchTab('anniversary')">🎂 Anniversary Monsters</button>
-        <button class="tab-button" onclick="switchTab('year')">🏆 Monster of the Year 2025</button>
+        <button class="tab-button active" id="tab-anniversary">🎂 Anniversary Monsters</button>
+        <button class="tab-button" id="tab-year">🏆 Monster of the Year 2025</button>
     </div>
 
-    <!-- Content -->
     <div class="content">
-        <!-- Anniversary Tab -->
         <div id="anniversary-tab" class="tab-content active">
             <div class="anniversary-grid">
-                <div class="anniversary-card" onclick="loadAnniversary(1)">
+                <div class="anniversary-card" data-anniversary="1">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/01th-anniversary.jpg" alt="1st Anniversary">
                     <div class="anniversary-label">1st Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(2)">
+                <div class="anniversary-card" data-anniversary="2">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/02th-anniversary.jpg" alt="2nd Anniversary">
                     <div class="anniversary-label">2nd Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(3)">
+                <div class="anniversary-card" data-anniversary="3">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/03th-anniversary.jpg" alt="3rd Anniversary">
                     <div class="anniversary-label">3rd Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(4)">
+                <div class="anniversary-card" data-anniversary="4">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/04th-anniversary.jpg" alt="4th Anniversary">
                     <div class="anniversary-label">4th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(5)">
+                <div class="anniversary-card" data-anniversary="5">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/05th-anniversary.jpg" alt="5th Anniversary">
                     <div class="anniversary-label">5th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(6)">
+                <div class="anniversary-card" data-anniversary="6">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/06th-anniversary.jpg" alt="6th Anniversary">
                     <div class="anniversary-label">6th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(7)">
+                <div class="anniversary-card" data-anniversary="7">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/07th-anniversary.jpg" alt="7th Anniversary">
                     <div class="anniversary-label">7th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(8)">
+                <div class="anniversary-card" data-anniversary="8">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/08th-anniversary.jpg" alt="8th Anniversary">
                     <div class="anniversary-label">8th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(9)">
+                <div class="anniversary-card" data-anniversary="9">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/09th-anniversary.jpg" alt="9th Anniversary">
                     <div class="anniversary-label">9th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(10)">
+                <div class="anniversary-card" data-anniversary="10">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/10th-anniversary.jpg" alt="10th Anniversary">
                     <div class="anniversary-label">10th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(11)">
+                <div class="anniversary-card" data-anniversary="11">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/11th-anniversary.jpg" alt="11th Anniversary">
                     <div class="anniversary-label">11th Anniversary</div>
                 </div>
-                <div class="anniversary-card" onclick="loadAnniversary(12)">
+                <div class="anniversary-card" data-anniversary="12">
                     <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/12th-anniversary.jpg" alt="12th Anniversary">
                     <div class="anniversary-label">12th Anniversary</div>
                 </div>
@@ -404,7 +379,6 @@
             <div id="monster-display"></div>
         </div>
 
-        <!-- Year Tab -->
         <div id="year-tab" class="tab-content">
             <div class="year-container">
                 <h2 class="year-title">The Best Monster of the Year 2025</h2>
@@ -415,24 +389,24 @@
 
                 <div class="evolution-line">
                     <div class="evolution-card">
-                        <img id="evo1" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vingon_01_monster_year_2025.webp" alt="Vingon">
+                        <img class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vingon_01_monster_year_2025.webp" alt="Vingon">
                         <div class="evolution-name">Vingon</div>
                     </div>
                     <div class="evolution-card">
-                        <img id="evo2" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vindragon_02_monster_year_2025.webp" alt="Vindragon">
+                        <img class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vindragon_02_monster_year_2025.webp" alt="Vindragon">
                         <div class="evolution-name">Vindragon</div>
                     </div>
                     <div class="evolution-card">
-                        <img id="evo3" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vedragon_03_monster_year_2025.webp" alt="Vedragon">
+                        <img class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vedragon_03_monster_year_2025.webp" alt="Vedragon">
                         <div class="evolution-name">Vedragon</div>
                     </div>
                     <div class="evolution-card">
-                        <img id="evo4" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/ventragon_04_monster_year_2025.webp" alt="Ventragon">
+                        <img class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/ventragon_04_monster_year_2025.webp" alt="Ventragon">
                         <div class="evolution-name">Ventragon</div>
                     </div>
                 </div>
 
-                <button class="shiny-toggle" onclick="toggleShiny()">✨ Toggle Shiny Version</button>
+                <button class="shiny-toggle" id="shiny-btn">✨ Toggle Shiny Version</button>
             </div>
         </div>
     </div>
@@ -441,7 +415,6 @@
         const BASE_URL = 'https://raw.githubusercontent.com/Melzyi/Buluwiki/main/';
         let isShiny = false;
 
-        // Monster data structure
         const monsterData = {
             1: {
                 common: ['fishy_01', 'ordinfishy_02', 'mystfishy_03'],
@@ -517,9 +490,27 @@
             }
         };
 
-        // Switch tabs
-        function switchTab(tab) {
-            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-            
-       
+        // Tab switching
+        document.getElementById('tab-anniversary').addEventListener('click', function() {
+            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('anniversary-tab').classList.add('active');
+        });
+
+        document.getElementById('tab-year').addEventListener('click', function() {
+            document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            document.getElementById('year-tab').classList.add('active');
+        });
+
+        // Anniversary cards click
+        document.querySelectorAll('.anniversary-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const num = parseInt(this.getAttribute('data-anniversary'));
+                loadMonsters(num);
+            });
+        });
+
+        
