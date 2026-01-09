@@ -402,7 +402,7 @@
 <body>
     <!-- ADICIONE ESTE CÓDIGO LOGO DEPOIS DA TAG <body> NO SEU INDEX.HTML -->
 
-<!--<div id="countdown-overlay">
+<div id="countdown-overlay">
     <div class="countdown-content">
         <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="countdown-logo">
         
@@ -523,7 +523,7 @@
         
         // Se ainda não chegou às 8h
         if (now < countdownStart) {
-            title.textContent = 'EM BREVE...';
+            title.textContent = 'COMING SOON...';
             timer.textContent = '--:--:--';
             subtitle.textContent = 'O lançamento será em breve!';
             return;
@@ -536,7 +536,7 @@
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-        title.textContent = 'AGUARDE...';
+        title.textContent = 'COMING SOON...';
         timer.textContent = 
             `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         subtitle.textContent = 'O site abre em breve!';
@@ -548,7 +548,7 @@
     
     // PARA TESTAR: descomente a linha abaixo para simular o lançamento
     // setTimeout(() => { document.getElementById('countdown-overlay').classList.add('hidden'); }, 3000);
-</script>-->
+</script>
     <header>
         <div class="header-content">
             <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="logo">
