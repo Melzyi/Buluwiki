@@ -677,7 +677,7 @@
                         if (variant === 'normal') {
                             newPath = `${BASE_URL}imagens/anniversary_monsters/monster_${num}th/${type}_type_${num}th/${baseMonster}_th_${num}.webp`;
                         } else {
-                            let modifiedName = baseMonster.includes('_solo') ? baseMonster.replace('_solo', `_solo_${variant}`) : baseMonster.replace(/(_\d+)$/, `_${variant}$1`);
+                            let modifiedName = baseMonster.includes('_solo') ? baseMonster.replace(/(_solo_\w+)?(_\d+)$/, `_${variant}$2`) : baseMonster.replace(/(_\d+)$/, `_${variant}$1`);
                             newPath = `${BASE_URL}imagens/anniversary_monsters/monster_${num}th/${type}_type_${num}th/${modifiedName}_th_${num}.webp`;
                         }
                         img.src = newPath;
