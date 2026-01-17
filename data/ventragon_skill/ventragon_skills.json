@@ -1,0 +1,110 @@
+[
+ {
+"name": "Aqua Tail",
+"type": "water",
+"level": 1,
+"pp": 12,
+"power": 120,
+"precision": "100%",
+"effect": "A normal attack with no special properties."
+},
+{
+"name": "Tail Strike",
+"type": "dragon"
+"level": 6,
+"pp": 8,
+"power": 130,
+"precision": "90%",
+"effect": "A normal attack with no special properties."
+},
+{
+"name": "Trance",
+"type": "spirit",
+"level": 8,
+"pp": 8,
+"power": 0,
+"precision": "100%",
+"effect": "Rise user's attack and defense by 10%."
+},
+{
+"name": "Spirit Surge",
+"type": "spirit",
+"level": 11,
+"pp": 8,
+"power": 125,
+"precision": "100%",
+"effect": "Pet also heals 10% of damage dealt."
+},
+{
+"name": "Frighten",
+"type": "common",
+"level": 15,
+"pp": 10,
+"power": 0,
+"precision": "100%",
+"effect": "Reduce enemy's attack by 20%."
+},
+{
+"name": "Fervo",
+"type": "dragon",
+"level": 19,
+"pp": 8,
+"power": 120,
+"precision": "100%",
+"effect": "75% chance to Rise user's attack by 20%."
+},
+{
+"name": "Maelstorm",
+"type": "dragon",
+"level": 26,
+"pp": 8,
+"power": 120,
+"precision": "100%",
+"effect": "75% chance to Rise user's defend by 20%."
+},
+{
+"name": "Brave Bird",
+"type": "wind",
+"level": 31,
+"pp": 5,
+"power": 160,
+"precision": "100%,"
+"effect": "Priority+. Pet lose 15% of its max HP."
+},
+{
+"name": "Storm Shield",
+"type": "wind",
+"level": 39,
+"pp": 3,
+"power": 0,
+"precision": "100%",
+"effect": "Priority+2. Block 1 hits. Rise pet's SPD by 10%."
+},
+{
+"name": "Bubble Jet",
+"type": "water",
+"level": 54,
+"pp": 8,
+"power": 130,
+"precision": "100%",
+"effect": "30% chance to reduce the enemy's attack by 20%."
+},
+{
+"name": "Draco Pulse",
+"type": "dragon",
+"level": 62,
+"pp": 8,
+"power": 115,
+"precision": "100%",
+"effect": "Pet also heals 50% of damage dealt."
+},
+{
+"name": "Tornado",
+"type": "wind",
+"level": 72,
+"pp": 3,
+"power": 140,
+"precision": "100%",
+"effect": "50% chance for the enemy to lose 40% HP in 4 turns."
+}
+]
