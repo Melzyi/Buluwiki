@@ -54,10 +54,12 @@
             padding: 0 20px;
             display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         .tab-button {
             flex: 1;
+            min-width: 200px;
             padding: 20px;
             background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 107, 107, 0.2));
             border: 2px solid rgba(255, 215, 0, 0.5);
@@ -372,6 +374,87 @@
             box-shadow: 0 5px 20px rgba(155, 89, 182, 0.6);
         }
 
+        /* ====== LEGENDARY CUP EDITION STYLES ====== */
+        .legendary-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .legendary-logo {
+            max-width: 400px;
+            height: auto;
+            filter: drop-shadow(0 5px 15px rgba(255, 215, 0, 0.5));
+        }
+
+        .week-section {
+            margin-bottom: 60px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .week-title {
+            font-size: 36px;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .edition-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s;
+        }
+
+        .edition-container:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 215, 0, 0.4);
+        }
+
+        .edition-banner {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .edition-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .edition-name {
+            font-size: 26px;
+            color: #ffd700;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .edition-type-badge {
+            padding: 8px 20px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 107, 107, 0.3));
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            border-radius: 20px;
+            color: #ffd700;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
         @media (max-width: 768px) {
             .anniversary-grid {
                 grid-template-columns: 1fr;
@@ -396,159 +479,18 @@
             .mega-item-container {
                 margin-left: 0;
             }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                min-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- ADICIONE ESTE CÓDIGO LOGO DEPOIS DA TAG <body> NO SEU INDEX.HTML -->
-
-<div id="countdown-overlay">
-    <div class="countdown-content">
-        <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="countdown-logo">
-        
-        <div id="countdown-message">
-            <h1 id="countdown-title">Aguarde...</h1>
-            <div id="countdown-timer">00:00:00</div>
-            <p id="countdown-subtitle">O site abre em breve!</p>
-        </div>
-    </div>
-</div>
-
-<style>
-    #countdown-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #000000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 99999;
-        opacity: 1;
-        transition: opacity 1s;
-    }
-
-    #countdown-overlay.hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .countdown-content {
-        text-align: center;
-        animation: fadeIn 1s;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; transform: scale(0.9); }
-        to { opacity: 1; transform: scale(1); }
-    }
-
-    .countdown-logo {
-        width: 200px;
-        height: auto;
-        margin-bottom: 40px;
-        animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-    }
-
-    #countdown-title {
-        font-size: 48px;
-        color: #ffffff;
-        margin-bottom: 30px;
-        font-family: Arial, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-    }
-
-    #countdown-timer {
-        font-size: 72px;
-        font-weight: bold;
-        color: #ffd700;
-        font-family: 'Courier New', monospace;
-        text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-        margin-bottom: 20px;
-    }
-
-    #countdown-subtitle {
-        font-size: 24px;
-        color: #cccccc;
-        font-family: Arial, sans-serif;
-    }
-
-    @media (max-width: 768px) {
-        .countdown-logo {
-            width: 150px;
-        }
-        
-        #countdown-title {
-            font-size: 32px;
-        }
-        
-        #countdown-timer {
-            font-size: 48px;
-        }
-        
-        #countdown-subtitle {
-            font-size: 18px;
-        }
-    }
-</style>
-
-<script>
-    // Data de lançamento: 12/01/2026 às 10:00 (horário de Brasília)
-    const launchDate = new Date('2026-01-12T10:00:00-03:00').getTime();
-    const countdownStart = new Date('2026-01-12T08:00:00-03:00').getTime();
-    
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const overlay = document.getElementById('countdown-overlay');
-        const timer = document.getElementById('countdown-timer');
-        const title = document.getElementById('countdown-title');
-        const subtitle = document.getElementById('countdown-subtitle');
-        
-        // Se já passou das 10h, libera o site
-        if (now >= launchDate) {
-            overlay.classList.add('hidden');
-            setTimeout(() => {
-                overlay.style.display = 'none';
-            }, 1000);
-            return;
-        }
-        
-        // Se ainda não chegou às 8h
-        if (now < countdownStart) {
-            title.textContent = 'COMING SOON...';
-            timer.textContent = '--:--:--';
-            subtitle.textContent = 'O lançamento será em breve!';
-            return;
-        }
-        
-        // Entre 8h e 10h - mostra countdown
-        const distance = launchDate - now;
-        
-        const hours = Math.floor(distance / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        title.textContent = 'COMING SOON...';
-        timer.textContent = 
-            `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        subtitle.textContent = 'O site abre em breve!';
-    }
-    
-    // Atualiza a cada segundo
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-    
-    // PARA TESTAR: descomente a linha abaixo para simular o lançamento
-    // setTimeout(() => { document.getElementById('countdown-overlay').classList.add('hidden'); }, 3000);
-</script>
     <header>
         <div class="header-content">
             <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="logo">
@@ -559,9 +501,11 @@
     <div class="tabs">
         <button class="tab-button active" data-tab="anniversary">🎂 Anniversary Monsters</button>
         <button class="tab-button" data-tab="year">🏆 Monster of the Year 2025</button>
+        <button class="tab-button" data-tab="legendary">🏆 Legendary Cup Edition</button>
     </div>
 
     <div class="content">
+        <!-- ANNIVERSARY TAB -->
         <div id="anniversary-tab" class="tab-content active">
             <div class="anniversary-grid">
                 <div class="anniversary-card" data-anniversary="1">
@@ -617,6 +561,7 @@
             <div id="monster-display"></div>
         </div>
 
+        <!-- YEAR TAB -->
         <div id="year-tab" class="tab-content">
             <div class="year-container">
                 <h2 class="year-title">Best Monster of the Year 2025</h2>
@@ -647,6 +592,14 @@
                 <button class="shiny-toggle" id="shiny-btn">✨ Toggle Shyne Version</button>
             </div>
         </div>
+
+        <!-- LEGENDARY CUP TAB -->
+        <div id="legendary-tab" class="tab-content">
+            <div class="legendary-header">
+                <img src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/legendery_cup_edition_logo.webp" alt="Legendary Cup" class="legendary-logo">
+            </div>
+            <div id="legendary-display"></div>
+        </div>
     </div>
 
     <script>
@@ -654,6 +607,11 @@
         let isShiny = false;
 
         const megaItems = {
+            'volcagon_04': 'volcagon_evo_volcano_armor',
+            'ultisaur_04': 'ultisaur_evo_saurpunch',
+            'ardizlord_04': 'ardizlord_evo_crystal_protect',
+            'ventragon_04': 'ventragon_evo_heavenly_feather',
+            'aquarion_04': 'aquarion_evo_tidal_might',
             'siggdrak_04': 'siggdrak_evo_sigma_power_02_th',
             'siggement_04': 'siggement_evo_sigma_gem_03_th',
             'siggtaple_04': 'siggtaple_evo_sigma_elixir_04_th',
@@ -755,19 +713,199 @@
             }
         };
 
-        document.querySelectorAll('.tab-button').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const targetTab = btn.dataset.tab;
-                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                btn.classList.add('active');
-                document.getElementById(targetTab + '-tab').classList.add('active');
-            });
-        });
+        const legendaryCupData = {
+            week_01: {
+                editions: [
+                    { name: "Kirin Edition", folder: "kirin_edition", banner: "kirin_week_banner.png", type: "mythic",
+                        monsters: [{ name: "kiric_01", hasVariant: false }, { name: "kiriak_02", hasVariant: false }, { name: "kirin_03", hasVariant: false }] },
+                    { name: "Kenga Edition", folder: "kenga_edition", banner: "kenga_week_banner.png", type: "dragon",
+                        monsters: [{ name: "kenga_01", hasVariant: false }, { name: "kengarok_02", hasVariant: false }, { name: "kengarion_03", hasVariant: false }] }
+                ]
+            },
+            week_02: {
+                editions: [
+                    { name: "Arctery Edition", folder: "arcter_edition", banner: "arctery_week_banner.png", type: "mythic",
+                        monsters: [{ name: "arctery_01", hasVariant: false }, { name: "arcterick_02", hasVariant: false }, { name: "arcterion_03", hasVariant: false }] },
+                    { name: "Leafy Edition", folder: "leafy_edition", banner: "lievi_week_banner.png", type: "dragon",
+                        monsters: [{ name: "lievi_01", hasVariant: false }, { name: "laforn_02", hasVariant: false }, { name: "leafornite_03", hasVariant: false }] }
+                ]
+            },
+            week_03: {
+                editions: [
+                    { name: "Griff Edition", folder: "griff_edition", banner: "griffie_week_banner.png", type: "mythic",
+                        monsters: [{ name: "griffie_01", hasVariant: false }, { name: "grifflio_02", hasVariant: false }, { name: "grifllizon_03", hasVariant: false }] },
+                    { name: "Musta Edition", folder: "musta_edition", banner: "kolter_week_banner.png", type: "mythic",
+                        monsters: [{ name: "kolter_01", hasVariant: false }, { name: "fillio_02", hasVariant: false }, { name: "mystang_03", hasVariant: false }] }
+                ]
+            },
+            week_04: {
+                editions: [
+                    { name: "Glacial Edition", folder: "glacial_edition", banner: "glacic_week_banner.png", type: "dragon",
+                        monsters: [{ name: "glacic_01", hasVariant: false }, { name: "glacirio_02", hasVariant: false }, { name: "glacigon_03", hasVariant: false }] },
+                    { name: "Pando Edition", folder: "pando_edition", banner: "pandy_week_banner.png", type: "ice",
+                        monsters: [{ name: "pandy_01", hasVariant: false }, { name: "pandin_02", hasVariant: false }, { name: "pandizard_03", hasVariant: false }] }
+                ]
+            },
+            week_05: {
+                editions: [
+                    { name: "Grety Edition", folder: "grety_edition", banner: "grety_week_banner.png", type: "mythic",
+                        monsters: [{ name: "grety_01", hasVariant: false }, { name: "greydi_02", hasVariant: false }, { name: "greydon_03", hasVariant: false }] },
+                    { name: "Krus Edition", folder: "krus_edition", banner: "krus_week_banner.png", type: "dragon",
+                        monsters: [{ name: "krus_01", hasVariant: false }, { name: "krusil_02", hasVariant: false }, { name: "krushigon_03", hasVariant: false }] }
+                ]
+            },
+            week_06: {
+                editions: [
+                    { name: "Voca Edition", folder: "voca_edition", banner: "volcano_week_banner.png", type: "dragon",
+                        monsters: [{ name: "firegon_01", hasVariant: true }, { name: "alagon_02", hasVariant: true }, 
+                                  { name: "lavagon_03", hasVariant: true }, { name: "volcagon_04", hasVariant: true, hasMega: true }] }
+                ]
+            },
+            week_07: {
+                editions: [
+                    { name: "Lamp Edition", folder: "lamp_edition", banner: "lampiz_week_banner.png", type: "dragon",
+                        monsters: [{ name: "lampiz_01", hasVariant: false }, { name: "lampiee_02", hasVariant: false }, { name: "genierts_03", hasVariant: false }] }
+                ]
+            },
+            week_08: {
+                editions: [
+                    { name: "Meduran Edition", folder: "meduran_edition", banner: "medy_week_banner.png", type: "mythic",
+                        monsters: [{ name: "medy_01", hasVariant: false }, { name: "mediss_02", hasVariant: false }, { name: "medurans_03", hasVariant: false }] }
+                ]
+            },
+            week_09: {
+                editions: [
+                    { name: "Blaze Edition", folder: "blaze_edition", banner: "blazhin_week_banner.png", type: "dragon",
+                        monsters: [{ name: "blazhin_01", hasVariant: false }, { name: "blazlin_02", hasVariant: false }, { name: "blazlong_03", hasVariant: false }] },
+                    { name: "Volti Edition", folder: "volti_edition", banner: "voltio_week_banner.png", type: "mythic",
+                        monsters: [{ name: "voltio_01", hasVariant: false }, { name: "volkon_02", hasVariant: false }, { name: "volcarion_03", hasVariant: false }] }
+                ]
+            },
+            week_10: {
+                editions: [
+                    { name: "Necro Edition", folder: "necro_edition", banner: "necio_week_banner.png", type: "evil",
+                        monsters: [{ name: "necio_01", hasVariant: false }, { name: "nectis_02", hasVariant: false }, { name: "necrolym_03", hasVariant: false }] },
+                    { name: "Nighty Edition", folder: "nighty_edition", banner: "nighty_week_banner.png", type: "dragon",
+                        monsters: [{ name: "nighty_01", hasVariant: false }, { name: "nightiers_02", hasVariant: false }, { name: "nightigon_03", hasVariant: false }] }
+                ]
+            },
+            week_11: {
+                editions: [
+                    { name: "Saur Edition", folder: "saur_edition", banner: "saur_week_banner.png", type: "dragon",
+                        monsters: [{ name: "rocky_01", hasVariant: true }, { name: "rocksaur_02", hasVariant: true }, 
+                                  { name: "megasaur_03", hasVariant: true }, { name: "ultisaur_04", hasVariant: true, hasMega: true }] }
+                ]
+            },
+            week_12: {
+                editions: [
+                    { name: "Azlord Edition", folder: "azlord_edition", banner: "crystal_week_banner.png", type: "mythic",
+                        monsters: [{ name: "ardio_01", hasVariant: false }, { name: "ardris_02", hasVariant: false }, 
+                                  { name: "ardizard_03", hasVariant: false }, { name: "ardizlord_04", hasVariant: false, hasMega: true }] }
+                ]
+            },
+            week_13: {
+                editions: [
+                    { name: "Whino Edition", folder: "whino_edition", banner: "whindz_week_banner.png", type: "wind",
+                        monsters: [{ name: "whindz_01", hasVariant: false }, { name: "whindniy_02", hasVariant: false }, { name: "whindnoser_03", hasVariant: false }] }
+                ]
+            },
+            week_14: {
+                editions: [
+                    { name: "Vendra Edition", folder: "vendra_edition", banner: "heavenly_week_banner.png", type: "dragon",
+                        monsters: [{ name: "vingon_01", hasVariant: true }, { name: "vindragon_02", hasVariant: true }, 
+                                  { name: "vedragon_03", hasVariant: true }, { name: "ventragon_04", hasVariant: true, hasMega: true }] }
+                ]
+            },
+            week_15: {
+                editions: [
+                    { name: "Aqua Edition", folder: "aqua_edition", banner: "tidal_week_banner.png", type: "dragon",
+                        monsters: [{ name: "aquatini_01", hasVariant: true }, { name: "aquatir_02", hasVariant: true }, 
+                                  { name: "aquanite_03", hasVariant: true }, { name: "aquarion_04", hasVariant: true, hasMega: true }] }
+                ]
+            }
+        };
 
         function formatMonsterName(filename) {
             let name = filename.replace(/_\d+$/, '').replace(/_solo/g, '');
             return name.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        }
+
+        function loadLegendaryCups() {
+            const display = document.getElementById('legendary-display');
+            let html = '';
+            
+            for (const [weekKey, weekData] of Object.entries(legendaryCupData)) {
+                const weekNum = weekKey.replace('week_', '');
+                html += `<div class="week-section"><h2 class="week-title">📅 Week ${weekNum}</h2>`;
+                
+                weekData.editions.forEach((edition, editionIndex) => {
+                    const editionId = `${weekKey}-${editionIndex}`;
+                    const hasVariants = edition.monsters.some(m => m.hasVariant);
+                    
+                    html += `<div class="edition-container" id="edition-${editionId}">
+                        <img src="${BASE_URL}imagens/legendery_cup_edition/${weekKey}/${edition.folder}/${edition.banner}" 
+                             alt="${edition.name}" class="edition-banner">
+                        <div class="edition-info">
+                            <h3 class="edition-name">${edition.name}</h3>
+                            <span class="edition-type-badge">${edition.type} Type</span>
+                        </div>`;
+                    
+                    if (hasVariants) {
+                        html += `<div class="variant-buttons">
+                            <button class="variant-btn active" data-edition-id="${editionId}" data-variant="normal">Normal</button>
+                            <button class="variant-btn" data-edition-id="${editionId}" data-variant="shyne">Shyne</button>
+                        </div>`;
+                    }
+                    
+                    html += '<div class="evolution-stages">';
+                    edition.monsters.forEach((monster, index) => {
+                        const isMega = monster.hasMega || false;
+                        const megaClass = isMega ? 'mega-evolution' : '';
+                        html += `<div class="evolution-stage">
+                            <img src="${BASE_URL}imagens/legendery_cup_edition/${weekKey}/${edition.folder}/${monster.name.replace(/_\d+$/, '')}_${edition.type}_type_${monster.name.match(/\d+$/)[0]}.webp"
+                                 alt="${formatMonsterName(monster.name)}" class="legendary-monster-img ${megaClass}"
+                                 data-base="${monster.name}" data-type="${edition.type}" data-folder="${edition.folder}" data-week="${weekKey}">
+                            <div class="evolution-stage-name">${formatMonsterName(monster.name)}</div>
+                        </div>`;
+                        if (index < edition.monsters.length - 1) html += '<div class="evolution-arrow">→</div>';
+                    });
+                    html += '</div>';
+                    
+                    const lastMonster = edition.monsters[edition.monsters.length - 1];
+                    if (lastMonster.hasMega && megaItems[lastMonster.name]) {
+                        html += `<div class="mega-item-container"><div>
+                            <img src="${BASE_URL}imagens/mega_evolution_items/${megaItems[lastMonster.name]}.webp" alt="Mega Item">
+                            <div class="mega-item-label">Mega Evolution Item</div></div></div>`;
+                    }
+                    html += '</div>';
+                });
+                html += '</div>';
+            }
+            display.innerHTML = html;
+            attachLegendaryVariantButtons();
+        }
+        
+        function attachLegendaryVariantButtons() {
+            document.querySelectorAll('#legendary-display .variant-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const editionId = this.dataset.editionId;
+                    const variant = this.dataset.variant;
+                    const container = document.getElementById(`edition-${editionId}`);
+                    container.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    container.querySelectorAll('.legendary-monster-img').forEach(img => {
+                        const baseName = img.dataset.base;
+                        const type = img.dataset.type;
+                        const folder = img.dataset.folder;
+                        const week = img.dataset.week;
+                        const suffix = variant === 'shyne' ? '_shyne' : '';
+                        const nameWithoutNum = baseName.replace(/_\d+/, '');
+const num = baseName.match(/_(\d+)/)[1];
+const newPath = `${BASE_URL}imagens/legendery_cup_edition/${week}/${folder}/${nameWithoutNum}${suffix}_${type}_type_${num}.webp`;
+                        img.src = newPath;
+                    });
+                });
+            });
         }
 
         function loadMonsters(num) {
@@ -777,7 +915,9 @@
             let html = '';
             
             for (const [type, monsterGroups] of Object.entries(data)) {
-                html += `<div class="monster-type-section"><div class="type-header"><img src="${BASE_URL}imagens/type_icon/${type}_type_icon.png" class="type-icon"><div class="type-name">${type} Type</div></div>`;
+                html += `<div class="monster-type-section"><div class="type-header">
+                    <img src="${BASE_URL}imagens/type_icon/${type}_type_icon.png" class="type-icon">
+                    <div class="type-name">${type} Type</div></div>`;
                 
                 monsterGroups.forEach((group, idx) => {
                     const lineId = `line-${type}-${idx}`;
@@ -795,20 +935,23 @@
                     html += '<div class="evolution-stages">';
                     group.line.forEach((monster, i) => {
                         const isMega = monster.includes('_04') || (monster.includes('_03') && group.line.length === 3) || (monster.includes('_02') && group.line.length === 2);
-                        html += `<div class="evolution-stage"><img src="${BASE_URL}imagens/anniversary_monsters/monster_${numStr}th/${type}_type_${numStr}th/${monster}_th_${numStr}.webp" class="evo-stage-img ${isMega ? 'mega-evolution' : ''}" data-base="${monster}" data-type="${type}" data-num="${numStr}"><div class="evolution-stage-name">${formatMonsterName(monster.replace(/_solo/g, ''))}</div></div>`;
+                        html += `<div class="evolution-stage"><img src="${BASE_URL}imagens/anniversary_monsters/monster_${numStr}th/${type}_type_${numStr}th/${monster}_th_${numStr}.webp" 
+                            class="evo-stage-img ${isMega ? 'mega-evolution' : ''}" data-base="${monster}" data-type="${type}" data-num="${numStr}">
+                            <div class="evolution-stage-name">${formatMonsterName(monster.replace(/_solo/g, ''))}</div></div>`;
                         if (i < group.line.length - 1) html += '<div class="evolution-arrow">→</div>';
                     });
                     html += '</div>';
                     
                     const lastMonster = group.line[group.line.length - 1];
                     if (megaItems[lastMonster]) {
-                        html += `<div class="mega-item-container"><div><img src="${BASE_URL}imagens/mega_evolution_items/${megaItems[lastMonster]}.webp"><div class="mega-item-label">Mega Item</div></div></div>`;
+                        html += `<div class="mega-item-container"><div>
+                            <img src="${BASE_URL}imagens/mega_evolution_items/${megaItems[lastMonster]}.webp">
+                            <div class="mega-item-label">Mega Item</div></div></div>`;
                     }
                     html += '</div>';
                 });
                 html += '</div>';
             }
-            
             display.innerHTML = html;
             
             document.querySelectorAll('.variant-btn').forEach(btn => {
@@ -826,7 +969,7 @@
                         if (variant === 'normal') {
                             newPath = `${BASE_URL}imagens/anniversary_monsters/monster_${num}th/${type}_type_${num}th/${baseMonster}_th_${num}.webp`;
                         } else {
-                             let modifiedName = baseMonster.replace(/(_\d+)$/, `_${variant}$1`);
+                            let modifiedName = baseMonster.replace(/(_\d+)$/, `_${variant}$1`);
                             newPath = `${BASE_URL}imagens/anniversary_monsters/monster_${num}th/${type}_type_${num}th/${modifiedName}_th_${num}.webp`;
                         }
                         img.src = newPath;
@@ -834,6 +977,19 @@
                 });
             });
         }
+
+        document.querySelectorAll('.tab-button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetTab = btn.dataset.tab;
+                document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(targetTab + '-tab').classList.add('active');
+                if (targetTab === 'legendary' && !document.getElementById('legendary-display').innerHTML) {
+                    loadLegendaryCups();
+                }
+            });
+        });
 
         document.querySelectorAll('.anniversary-card').forEach(card => {
             card.addEventListener('click', () => {
