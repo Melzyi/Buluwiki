@@ -1,0 +1,91 @@
+[
+ {
+"name": "Hammer strike",
+"type": "Ice",
+"monster": "Polar Ogre",
+"power": 125,
+"precision": "100%",
+"effect": "Heavily strikes an enemy with a hammer when appeared to battle. The enemy loses 20% max HP if it has a shield."
+},
+{
+"name": "Easter bless",
+"type": "Water",
+"monster": "Ocean Dragk",
+"power": 0,
+"precision": "100%",
+"effect": "Receive bless from the spirit of easter when appeared to battle.Heal pet's 150% HP in 15 turns."
+},
+{
+"name": "Thousand Bird",
+"type": "Lightning",
+"monster": "Chickelord",
+"power": 110,
+"precision": "100%",
+"effect": "Use lightning power to pierce the enemy when appearing to battle. 25% chance to paralysis enemy for 1-2 turns. Ignore the shield."
+},
+{
+"name": "Psycho Conquer",
+"type": "Spirit",
+"monster": "Psychobra",
+"power": 0,
+"precision": "100%",
+"effect": "Show out the great psycho power to shock the enemy when appeared to battle. Decrease the enemy's attack into 50%."
+},
+{
+"name": "Sneak Attack",
+"type": "Evil",
+"monster": "Empbat",
+"power": 80,
+"precision": "100%",
+"effect": "Stab monster sneaky with its fork when appeared to battle. Breaks the enemy shield immediately."
+},
+{
+"name": "Sealing Sight",
+"type": "Spirit",
+"monster": "Will Of Ra",
+"power": 0,
+"precision": "100%",
+"effect": "Seal part of enemy's power with its eye when appeared to battle. Seal the last skill the enemy used for 5 turns." 
+},
+{
+"name": "Gravity Zone",
+"type": "Dragon",
+"monster": "Siggdrak",
+"power": 0,
+"precision": "100%",
+"effect": "Create a zone that reverse the battlefield. For the next 5 turns, monsters with lower speed move first."
+},
+{
+"name": "Pegasus Punch",
+"type": "Wind",
+"monster": "Pegakorns",
+"power": 120,
+"precision": "100%",
+"effect": "Quickily attacks the enemy when appeared to battle. Deals 3 damage to a shield."
+},
+
+{
+"name": "Heat wave",
+"type": "Fire",
+"monster": "King Lion",
+"power": 115,
+"precision": "100%",
+"effect": "Emits a heat wave when appeared to battle. Penetrates even the toughest enemy. Enemies lose 10% HP after hit."
+},
+{
+"name": "Entangle",
+"type": "Water",
+"monster": "Sqaudion",
+"power": 0,
+"precision": "100%",
+"effect": "Constrict the enemy with the tentacle to limit the enemy's movement when appeared to battle. Decreases enemy's attack and speed by 10%."
+},
+{
+"name": "Ancient Protect",
+"type": "Earth",
+"monster": "Charmedard",
+"power": 0,
+"precision": "100%",
+"effect": "Call to the ancient spirit to protect itself when appeared to battle. Create a shield that blocks 1 attack.Each block increases defense by 10%."
+}
+]
