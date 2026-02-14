@@ -1,0 +1,23 @@
+[
+ {
+"name": "Trance",
+"pp": 5,
+"power": 0, 
+"precision": "100%",
+"effect": "Rises user's attack and defense by 10%. Break the Pet's shield for an extra 20%." 
+},
+ {
+"name": "Spirit Surge",
+"pp": 8,
+"power": 125,
+"precision": "100%",
+"effect": "Enemy lose 10% HP. Pet heals 10% HP."
+},
+ {
+"name": "Prediction",
+"pp": 5,
+"power": 145,
+"precision": "100%",
+"effect": "50% chance to inflict Psycho damage for 40% HP in 3 turn. Stun the mythic enemy for 1 turn."
+}
+]

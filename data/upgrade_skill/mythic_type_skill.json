@@ -1,0 +1,23 @@
+[
+ {
+"name": "Shield Absorb",
+"pp": 5,
+"power": 0,
+"precision": "100%",
+"effect": "Break enemy shield to block 2 attack. Also steal the enemy's attack buff."
+},
+{
+"name": "Swifty-Charge",
+"pp": 5,
+"power": 130,
+"precision": "100%",
+"effect": "Break shield and enemy loses 20% HP if enemy has shield."
+},
+{
+"name": "Ultimate Strike",
+"pp": 3,
+"power": 145,
+"precision": "85%",
+"effect": "Ignore shield. 75% chance also breaks it."
+}
+]

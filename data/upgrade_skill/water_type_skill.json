@@ -1,0 +1,45 @@
+[
+ {
+"name": "Whirlpool",
+"pp": 3,
+"power": 0,
+"precision": "95%",
+"effect": "Inflict Aqua damage for 60% HP in 5 turns. Heal Pet 20% HP."
+},
+{
+"name": "Tsunami",
+"pp": 5,
+"power": 140,
+"precision": "90%",
+"effect": "75% to reduce enemy's attack by 10% and inflict 40% HP Aqua damage in 3 turns."
+},
+{
+"name": "Bubble Ride",
+"pp": 5,
+"power": 135,
+"precision": "100%",
+"effect": "Block 1 attack"
+},
+{
+"name": "Bubble Jet", 
+"pp": 5,
+"power": 130,
+"precision": "100%",
+"effect": "50% chance to reduce the enemy's attack by 20% and heal Pets 20% HP."
+},
+{
+"name": "Aqua Ring",
+"pp": 3, 
+"power": 0,
+"precision": "100%",
+"effect": "Heal Pet's 200% of its HP in 8 turn. Block 1 attack." 
+},
+{
+"name": "Aqua Shield",
+"pp": 3,
+"power": 0,
+"precision": "100%",
+"effect": "Priority+. Block 2 hits. Heal pet's 15% HP. 
+Heal pet's 30% HP in 2 turns." 
+}
+]

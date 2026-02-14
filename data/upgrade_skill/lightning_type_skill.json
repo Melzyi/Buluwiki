@@ -1,0 +1,30 @@
+[
+ {
+"name": "Blitz",
+"pp": 8,
+"power": 0,
+"precision": "100%",
+"effect": "Priority+. Reduce the enemy's speed by 20%."
+},
+{
+"name": "Electrocute",
+"pp": 5,
+"power": 0,
+"precision": "100%",
+"effect": "Electrify the enemy for 40% HP in 3 turns. Becomes 80% if the enemy is already Electrified." 
+},
+{
+"name": "Thunder",
+"pp": 5,
+"power": 150,
+"precision": "80%",
+"effect": "Break shield. Paralysis monster w speed debuff for 1 turn and increases its speed by 20%." 
+},
+{
+"name": "Electrospark",
+"pp": 10,
+"power": 145,
+"precision": "100%",
+"effect": "75% chance to reduce enemy's speed by 10%. Critical strike to speed debuff monsters." 
+}
+]

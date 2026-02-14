@@ -1,0 +1,44 @@
+[ 
+   {
+"name": "Flame Destruction",
+"pp": 3,
+"power": 145,
+"precision": "90%",
+"effect": "Ignore shield against mythic monster. Burn shielded enemy for 60% HP in 2 turns."
+},
+{
+"name": "Sparks",
+"pp": 5,
+"power": 125,
+"precision": "100%",
+"effect": " 75% chance to Burn enemy for 30% HP in 4 turns and remove defend buff."
+},
+{ 
+"name": "Flame Sweep",
+"pp": 8,
+"power": 120,
+"precision": "100%",
+"effect": "Remove enemy's ability buff and Burn it for 40% HP in 3 turns."
+},
+{
+"name": "Flamethrower",
+"pp": 5,
+"power": 145,
+"precision": "100%",
+"effect": "50% chance to remove enemy's ability buff."
+},
+{
+"name": "Fire Dance",
+"pp": 5,
+"power": 145,
+"precision": "100%",
+"effect": "Break shield and Burn 30% HP in 3 turns if enemys is Ice type."
+},
+{
+"name": "Divine Flame",
+"pp": 3,
+"power": 130,
+"precision": "90%",
+"effect": "Burn enemy for 50% HP in 4 turns. Decrease mythic monster's defend by 20%."
+}
+]

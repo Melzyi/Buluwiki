@@ -1,0 +1,73 @@
+[
+ {
+"name": "Icicle Crash", 
+"pp": 3,
+"power": 160,
+"precision": "100%",
+"effect": "Prepare for 1 turn.
+Tear through shield. Reduce enemy's attack by 20%."
+},
+{
+"name": "Frost Bomb",
+"pp": 15,
+"power": 135,
+"precision": "100%",
+"effect": "A normal attack with no special properties."
+},
+{
+"name": "Frost Sweep",
+"pp": 5,
+"power": 0,
+"precision": "100%",
+"effect": "Remove Pet's ability debuff, heal 20% HP and form a shield to attack."
+},
+{
+"name": "Freeze",
+"pp": 5,
+"power": 120,
+"precision": "100%",
+"effect": "70% chance to reduce the enemy's attack by 30%." 
+},
+{
+"name": "Blizzard",
+"pp": 5,
+"power": 0,
+"precision": "90%",
+"effect": "The enemy will lose 50% HP in 3 turns. Remove the enemy's ability buff."
+},
+{
+"name": "Chill Wind",
+"pp": 5,
+"power": 120,
+"precision": "100%",
+"effect": "80% chance for the enemy to lose 100% HP in 8 turns."
+},
+{
+"name": "Ice Punch",
+"pp": 5,
+"power": 140,
+"precision": "100%",
+"effect": "80% chance for the enemy to lose 75% HP in 6 turns."
+},
+{
+"name": "Frost Destruction",
+"pp": 5,
+"power": 125,
+"precision": "100%",
+"effect": "The enemy will lose 30% HP in 4 turns and reduce attack by 10%. Double when shielded."
+},
+{
+"name": "Ice Beam",
+"pp": 8,
+"power": 125,
+"precision": "90%",
+"effect": "Can damage a shielded monster with 140 power."
+},
+{
+"name": "Glacial Shield",
+"pp": 3,
+"power": 0,
+"precision": "100%",
+"effect": "Priority+. Block 3 hits. Pet loses 40% HP in 5 turns. On the block, the enemy also affected."
+}
+]

@@ -1,0 +1,16 @@
+[
+ {
+"name": "Tail Strike",
+"pp": 8,
+"power": 140,
+"precision": "100%",
+"effect": "Remove enemy's ability buff"
+},
+{
+"name": "Dual Chop",
+"pp": 5,
+"power": 140,
+"precision": "100%",
+"effect": "Always critical hit. Remove pet's ability debuff. "
+}
+]

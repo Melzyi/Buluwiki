@@ -1,0 +1,44 @@
+[
+  { 
+"name": "Sandstrike",
+"pp": 5,
+"power": 130,
+"precision": "100%",
+"effect": "Ignore shield. Inflict dust damage to enemy for 40% HP in 3 turns."
+},
+{
+"name": "Mud Attack",
+"pp": 5,
+"power": 110,
+"precision": "100%",
+"effect": "Break shield. Inflict dust damage to enemy for 50% HP in 4 turns."
+},
+{
+"name": "Stone Edge",
+"pp": 3,
+"power": 155,
+"precision": "100%",
+"effect": "Never Critical hit. Tear through shield."
+},
+{
+"name": "Rock Shard",
+"pp": 8,
+"power": 110,
+"precision": "110%",
+"effect": "Tear through shield. Reduce enemy's defense by 20%."
+},
+{
+"name": "Earthquake",
+"pp": 5,
+"power": 150,
+"precision": "100%",
+"effect": "Break shield. Power become 250 when hitting mythic monster." 
+},
+{
+"name": "Gaian Strike",
+"pp": 8,
+"power": 135,
+"precision": "100%",
+"effect": "60% chance to Rise the Pet's attack and defend by 10%."
+}
+]

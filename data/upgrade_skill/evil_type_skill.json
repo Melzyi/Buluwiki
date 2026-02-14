@@ -1,0 +1,51 @@
+[ 
+ {
+"name": "Sneak Attack",
+"pp": 5,
+"power": 115,
+"precision": "100%", 
+"effect": "Enemy loser 25% max HP if Pet demage SPD of enemy's"
+},
+{
+"name": "Possession",
+"pp": 3,
+"power": 0,
+"precision": "95%",
+"effect": "The enemy will lose 120% HP in 8 turns" 
+},
+{
+"name": "Condemnation", 
+"pp": 3,
+"power": 0,
+"precision": "80%",
+"effect": "Inflict Curse for 75% HP in 3 turn. Reduce the mythic enemy's attack and defend by 20%." 
+},
+{
+"name": "Evil Fang", 
+"pp": 8, 
+"power": 125,
+"precision": "100%",
+"effect": "75% chance enemy lose 15% HP and pet heals 15% HP."
+},
+{
+"name": "Soul Sword", 
+"pp": 8,
+"power": 150,
+"precision": "90%",
+"effect": "Ignore shield. Seal last used skill for 2 turns. Remove the enemy's ability buff."
+},
+{
+"name": "Blood Sword", 
+"pp": 3,
+"power": 150,
+"precision": "100%",
+"effect": "Ignore shield. Pet also heals 25% of damage dealt." 
+},
+{
+"name": "Night Slash",
+"pp": 5,
+"power": 135, 
+"precision": "100%",
+"effect": "Enhanced first Strike. The pet also heals 50% of damage dealt."
+}
+]

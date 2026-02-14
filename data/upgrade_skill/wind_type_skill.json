@@ -1,0 +1,65 @@
+[ 
+ {
+"name": "Cyclone Charge", 
+"pp": 5,
+"power": 140,
+"precision": "100%", 
+"effect": "Ignore shield if Pet has ability buff. Use SPD as ATK."
+},
+{
+"name": "Leaf Frenzy",
+"pp": 3,
+"power": 145,
+"precision": "100%",
+"effect": "Tear through shield and reduce enemy's attack and defend by 20%."
+},
+{
+"name": "Air Blade",
+"pp": 8,
+"power": 120,
+"precision": "90%",
+"effect": "Enhanced first strike. Reduce the enemy's attack and defense by 20% when the pet is wind type."
+},
+{
+"name": "Brave Bird",
+"pp": 5,
+"power": 160,
+"precision": "100%",
+"effect": "Enhanced first Strike. Tear throughout."
+},
+{
+"name": "Twister",
+"pp": 5,
+"power": 160,
+"precision": "90%",
+"effect": "Can damage a shielded monster with 150 power."
+},
+{
+"name": "Peck",
+"pp": 8,
+"power": 130,
+"precision": "100%",
+"effect": "First Strike. Rise the user's speed by 20%" 
+},
+{
+"name": "Storm",
+"pp": 5,
+"power": 145,
+"precision": "100%",
+"effect": "Tear through shield when Pet doubles the SPD of enemy."
+},
+{
+"name": "Dive Bomb",
+"pp": 5,
+"power": 135,
+"precision": "100%",
+"effect": "Power becomes 160 when Pet has higher SPD."
+},
+{
+"name": "Aero",
+"pp": 5,
+"power": 145,
+"precision": "90%",
+"effect": "Ignore shield and critical hit when Pet doubles the SPD of enemy."
+}
+]

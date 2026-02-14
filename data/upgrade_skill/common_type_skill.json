@@ -1,0 +1,23 @@
+[
+ {
+"name": "Giga Impact",
+"pp": 3,
+"power": 155,
+"precision": "100%",
+"effect": "Ignore shield. Stun the pet for 1 turn." 
+},
+ {
+"name": "Slash",
+"pp": 5,
+"power": 125,
+"precision": "100%",
+"effect": "Priority+. Tear through shield when Pet has higher SPD."
+},
+ {
+"name": "Smash",
+"pp": 8,
+"power": 145,
+"precision": "100%",
+"effect": "Deal triple damage to a shield."
+}
+]
