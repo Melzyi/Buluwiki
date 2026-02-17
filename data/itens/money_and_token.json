@@ -1,0 +1,32 @@
+[
+ {
+"name": "Bulu Point", 
+"type": "Money and Token",
+"description": "In-game currency can be earned by completing missions or by purchasing it directly from the store!" 
+},
+{
+"name": "Honor Point",
+"type": "Money and Token",
+"description": "A point that only can get from winning battles in the arena" 
+},
+{
+"name": "Monster Coin",
+"type": "Money and Token",
+"description": "Rare coin that is very hard to find in the world." 
+},
+{
+"name": "Apprentice Coin",
+"type": "Money and Token",
+"description": "Shinning coin only able to get and use in apprentice tower." 
+},
+{
+"name": "Special Assignment", 
+"type": "Money and Token",
+"description":"In order to finish a special mission. Huge rewards to the trainer !"
+},
+{
+"name": "Sigma Game Nium",
+"type": "Money and Token", 
+"description": "Used to buy monsters, skill books, upgrade skill, evo items at the Anniversary store"
+}
+]

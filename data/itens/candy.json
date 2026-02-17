@@ -1,0 +1,22 @@
+[
+ {
+"name": "Candy",
+"type": "Candy",
+"description": "Feed to monsters to get 100 EXP"
+},
+{
+"name": "Lollipop",
+"type": "Candy",
+"description": "Feed to monsters to get 1000 EXP"
+},
+{
+"name": "Ice Cream",
+"type": "Candy",
+"description": "Feed to monsters to get 5000 EXP"
+},
+{
+"name": "Huge Ice Cream",
+"type": "Candy",
+"description": "Feed to monsters to get 25000 EXP"
+}
+]

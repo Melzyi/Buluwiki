@@ -1,0 +1,68 @@
+[
+  {
+"name": "Common Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "One of the rarely used balls in the game, low capture percentage!"
+},
+  {
+"name": "Ice Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for capturing Wind, Dragon, and Mythic type monsters." 
+},
+  {
+"name": "Lightning Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster", 
+"tip": "Perfect for catching Lightning and Wind type monsters." 
+},
+ {
+"name": "Spirit Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for capturing Evil-type monsters."
+},
+ {
+"name": "Dragon Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster", 
+"tip": "Perfect for capturing dragon-type monsters."
+},
+ {
+"name": "Evil Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for capturing Spirit-type monsters."
+},
+ {
+"name": "Land Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for catching Common and Lightning type monsters." 
+},
+ {
+"name": "Wind Ball",
+"type": "Ball", 
+"description": "A ball thrown to catch a wild Bulu Monster", 
+"tip": "Perfect for capturing Ice, Earth, and Common type monsters." 
+},
+ {
+"name": "Water Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for capturing fire-type and common monsters."
+},
+  {
+"name": "Fire Ball", 
+"type": "Ball", 
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for capturing Ice and Common type monsters."
+},
+ {
+"name": "Master Ball",
+"type": "Ball",
+"description": "A ball thrown to catch a wild Bulu Monster",
+"tip": "Perfect for capturing any monster with a 100% capture chance!"
+}
+]

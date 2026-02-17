@@ -1,0 +1,27 @@
+[
+ {
+"name": "Item Draw Ticket",
+"type": "Ticket",
+"description": "Acquire this item by battling in the Regular Cup, use it on the NPC, PVP Lucky Draw to win items and supplies" 
+},
+{
+"name": "Monster Ticket", 
+"type": "Ticket",
+"description": "Acquire this item in the Regular or Legendary Cup Edition, use it at the NPC, or in PVP Lucky Draw to win new monsters or Mega Evolution items!" 
+},
+{
+"name": "Bulu League Ticket", 
+"type": "Ticket",
+"description": "Ticket to enter the Bulu League" 
+},
+{
+"name": "Legendary Ticket",
+"type": "Ticket",
+"description": "Ticket to enter the Legendary Cup Edition" 
+},
+{
+"name": "Sigma Voucher",
+"type": "Ticket", 
+"description": "Ticket to be used in the Gacha Anniversary Lucky Draw."
+}
+]

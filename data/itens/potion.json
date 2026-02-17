@@ -1,0 +1,102 @@
+[
+  {
+"name": "Sacred Potion",
+"type": "Potion",
+"effect": "The best potion that perfectly heals your monster!"
+},
+  {
+"name": "Power Potion",
+"type": "Potion",
+"effect": "Used to boost monster power in the arena!"
+},
+{
+"name": "Monster Repel",
+"type": "Potion",
+"effect": "Repel monsters from catching you into battle! Usable when you can challenge GYM!"
+},
+{
+"name": "Tiny Potion",
+"type": "Potion",
+"effect": "The most basic potion. Heals monsters by 20 HP."
+},
+{
+"name": "Small Potion",
+"type": "Potion",
+"effect": "Contains more potions that heal monsters by 50 HP."
+},
+{
+"name": "Normal Potion",
+"type": "Potion",
+"effect": "The most standard potion. Heals monsters by 100 HP."
+},
+{
+"name": "Big Potion",
+"type": "Potion",
+"effect": "A more advanced potion. Heals monsters by 200 HP." 
+},
+{
+"name": "Super Potion",
+"type": "Potion",
+"effect": "A very rare potion which heals monsters by 400 HP."
+},
+{
+"name": "Max Potion",
+"type": "Potion",
+"effect": "The strongest potion that fully heals monsters to Maximum HP"
+},
+{
+"name": "Normal Revive",
+"type": "Potion",
+"effect": "Bring a fainted monster back to the world with 100 HP!"
+},
+{
+"name": "Big Revive",
+"type": "Potion",
+"effect": "Bring a fainted monster back to the world better with 200 HP"
+},
+{
+"name": "Super Revive", 
+"type": "Potion", 
+"effect": "Bring a fainted monster back to the world with 400 HP!" 
+},
+{
+"name": "Max Revive",
+"type": "Potion",
+"effect": "Bring a fainted monster back to the world with full HP!"
+},
+{
+"name": "Powder",
+"type": "Potion", 
+"effect": "Fully restore PP of 1 skill of choice." 
+},
+{
+"name": "Capsule",
+"type": "Potion", 
+"effect": "Contains a lot of Powder. Fully restore PP of all skills!" 
+},
+{
+"name": "Remedy", 
+"type": "Potion",
+"effect": "Cleanse every bad status of a monster!"
+},
+{
+"name": "Vitality Heal",
+"type": "Potion",
+"effect": "Can bring your monster back from ability debuff!"
+},
+{
+"name": "Element Heal",
+"type": "Potion",
+"effect": "Put out every elemental power left on the monster."
+},
+{
+"name": "Awake Powder",
+"type": "Potion",
+"effect": "Enable your monster to do any action!"
+},
+{
+"name": "Unseal Amulet",
+"type": "Potion",
+"effect": "Unseal all skill from your monster." 
+}
+]
