@@ -119,17 +119,17 @@
     "item_name": "Feather Of Tribe"
   },
   {
-    "monster": "Chickerlord",
-    "monster_key": "chickerlord",
+    "monster": "Chickelord",
+    "monster_key": "chickelord",
     "type": "lightning",
     "sprites": [
       {
         "variant": "shyne",
-        "file": "chickerlord_shyne_type_lightning_.webp"
+        "file": "chickelord_shyne_type_lightning_.webp"
       },
       {
         "variant": "normal",
-        "file": "chickerlord_type_lightning_.webp"
+        "file": "chickelord_type_lightning_.webp"
       }
     ],
     "item": "chickelord_evo_voltic_feather.webp",
