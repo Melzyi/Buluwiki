@@ -1,0 +1,22 @@
+[
+ {
+"name": "Suffocating Aura",
+"type": "Umbral",
+"description": "Under any enchantment, enemy lose 10% HP at turn end if it has ability debuff"
+},
+{
+"name": "Shadow Revenger",
+"type": "Umbral", 
+"description": "Under any enchantment, Reduce all PP of enemy's last used skill and lose 25% HP when defeated." 
+},
+{
+"name": "Curse Of Exhaustion",
+"type": "Umbral",
+"description": "Under any Enchantment, Reduce 4 PP of enemy's last used skill at turn end if Pet's HP lower than 1/3."
+},
+{
+"name": "Ghostly Protect",
+"type": "Umbral",
+"description": "Under any enchantment, reduce 25% of damage received."
+}
+]

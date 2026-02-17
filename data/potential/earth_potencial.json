@@ -1,0 +1,42 @@
+[
+ {
+"name": "Abnormal Speed",
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Increase pet's speed by 30% at turn end."
+},
+{
+"name": "Boost Up",
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Increase pet's speed by 10% at turn end."
+},
+{
+"name": "Gaia Power",
+"type": "Earth",
+"description": "Under Sandstorm enchantment, increase attack and speed by 30% after receiving advantaged damage."
+},
+{
+"name": "Rock Absorbing", 
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Pet heal 20% max HP at turn end if it has a shield."
+},
+{
+"name": "Rock Coating",
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Increase pets'defense by 20% after using Shield skill."
+},
+{
+"name": "Still",
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Pet cannot be stunned."
+},
+{
+"name": "Stone Absorbing", 
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Pet heal 10% max HP at turn end if it has a shield."
+},
+{
+"name": "Stone Coating",
+"type": "Earth",
+"description": "Under Sandstorm enchantment, Increase pets'defense by 10% after using Shield skill."
+}
+]

@@ -1,0 +1,42 @@
+[
+ {
+"name": "Angry Fish",
+"type": "Water",
+"description": "Under Rainstorm enchantment, increase pet's attack by 10% after taking skill damage"
+},
+{
+"name": "Isolation Shell",
+"type": "Water",
+"description": "Under Rainstorm enchantment, only receive half damage from lightning skill."
+},
+{
+"name": "Reborn",
+"type": "Water",
+"description": "Under Rainstorm enchantment, heal pet's 20% HP at turn end."
+},
+{
+"name": "Regeneration",
+"type": "Water",
+"description": "Under Rainstorm enchantment, heal pet's 10% HP at turn end."
+},
+{
+"name": "Water Absorbing", 
+"type": "Water",
+"description": "Under Rainstorm enchantment, damaged by water skill will heals 20% HP in 2 turn."
+},
+{
+"name": "Water Controlling", 
+"type": "Water",
+"description": "Under Rainstorm enchantment, 25% chance damage by water skill will generate a shield that blocks 1 attack."
+},
+{
+"name": "Water Master", 
+"type": "Water",
+"description": "Under Rainstorm enchantment, 50% chance damage by water skill will generate a shield that blocks 1 attack."
+},
+{
+"name": "Water Storing",
+"type": "Water",
+"description": "Under Rainstorm enchantment, damaged by water skill will heal 30% HP in 2 turns."
+}
+]

@@ -1,0 +1,42 @@
+[ 
+ {
+"name": "Hawk Eye",
+"type": "Wind",
+"description": "Under Tornado Enchantment, skills have a 100% critical chance." 
+},
+{
+"name": "Breezelord",
+"type": "Wind",
+"description": "Under Tornado Enchantment, dealing damage with Wind skill generates a shield to block 1 attack."
+},
+{
+"name": "Wind Empower",
+"type": "Wind",
+"description": "Under Tornado Enchantment, Wind skills can ignore shields."
+},
+{
+"name": "Desperate",
+"type": "Wind",
+"description": "Under Tornado Enchantment, increase Pet's attack and speed by 20% after receiving advantage damage."
+},
+{
+"name": "Wind Driving",
+"type": "Wind",
+"description": "Under Tornado Enchantment, damage by wind skill will increase Pet's speed by 20%."
+},
+{
+"name": "Wind Absorbing",
+"type": "Wind", 
+"description": "Under Tornado Enchantment, damage by wind skill will increase Pet's speed by 10%."
+},
+{
+"name": "Wind Master",
+"type": "Wind",
+"description": "Under Tornado Enchantment, Wind skills gain first strike."
+},
+{
+"name": "Rebel",
+"type": "Wind",
+"description": "Under Tornado Enchantment, increase Pet's attack and speed by 10% after receiving advantage damage."
+}
+]

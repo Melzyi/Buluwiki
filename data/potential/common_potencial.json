@@ -1,0 +1,52 @@
+[
+ {
+"name": "Brave", 
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's attack by 20% after receiving advantaged damage."
+},
+{
+"name": "Fearless",
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's attack to 150% after receiving advantaged damage."
+},
+{
+"name": "Feathered Wish",
+"type": "Coomon",
+"description": "Under Chaos enchantment, every skill reduces the enemy's Attack by 20%."
+},
+{
+"name": "Feavor",
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's attack by 10% when pet's ability is decreased."
+},
+{
+"name": "Fighting Elite",
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's all ability by 20% and heal pet's 30% HP in 2 turns after using Shield skill."
+},
+{
+"name": "Growing",
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's attack and defend by 10% at turn end."
+},
+{
+"name": "Rising",
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's attack and defend by 20% at turn end."
+},
+{
+"name": "Surrendered",
+"type": "Coomon",
+"description": "Under Chaos enchantment, halves all damage received."
+},
+{
+"name": "Threatening Face",
+"type": "Coomon",
+"description": "Under Chaos enchantment, enemy loses 20% HP at turn end."
+},
+{
+"name": "Zealot", 
+"type": "Coomon",
+"description": "Under Chaos enchantment, increase pet's attack by 20% when pet's ability is decreased."
+}
+]

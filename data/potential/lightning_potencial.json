@@ -1,0 +1,37 @@
+[
+ {
+"name": "Elect Leaking",
+"type": "Lightning",
+"description": "If Charge Enchantment does not exsist, Pet loses 20% max HP at turn end."
+},
+{
+"name": "Electric Storing",
+"type": "Lightning",
+"description": "Under Charge Enchantment, Pet can use skill without any preparation."
+},
+{
+"name": "Electro Fury",
+"type": "Lightning",
+"description": "Under Charge Enchantment, dealing damage with lightning skill increases a pet's attack and speed by 20%."
+},
+{
+"name": "Lightning Absorb",
+"type": "Lightning",
+"description": "Under Charge Enchantment, damaged by Lightning skill will increase the pet's all ability by 10%."
+},
+{
+"name": "Lightnnibalism",
+"type": "Lightning",
+"description": "Under Charge Enchantment, damaged by Lightning skill will increase the pet's all ability by 20%."
+},
+{
+"name": "Static Body",
+"type": "Lightning",
+"description": "Under Charge Enchantment, damaging Pets have a 25% chance to paralyse the enemy for 1-2 turns."
+},
+{
+"name": "Thunder Focus",
+"type": "Lightning",
+"description": "Under Charge Enchantment, every skill will ignore the shield."
+}
+]

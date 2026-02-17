@@ -1,0 +1,52 @@
+[
+ {
+"name": "Breaking Power",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, 25% chance to break enemy shield at turn end."
+},
+{
+"name": "Destroying Power",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, 50% chance to break enemy shield at turn end."
+},
+{
+"name": "Draconic Gale",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, remove enemy's ability buff at turn end."
+},
+{
+"name": "Dragon Blood",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, dragon skill heal 20% of skill damage."
+},
+{
+"name": "Dragon Descend",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, dragon skill heal 40% of skill damage."
+},
+{
+"name": "Heavy Power", 
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, dealing damage with dragon skill has a 15% chance to stun the enemy for 1 turn."
+},
+{
+"name": "Shield Igniting",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, breaking enemy shield will cause enemy lose 40% HP in 3 turn."
+},
+{
+"name": "Surrounding Force", 
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, dealing damage with dragon skill will cause enemy to lose 10% HP."
+},
+{
+"name": "Surrounding Fury",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, dealing damage with dragon skill will cause enemy to lose 20% HP."
+},
+{
+"name": "Vigorous",
+"type": "Dragon",
+"description": "Under Drakflame Enchantment, dealing damage with dragon skill has 30% chance to stun enemy for 1 turn."
+}
+]

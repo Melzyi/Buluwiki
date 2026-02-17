@@ -1,0 +1,47 @@
+[
+ {
+"name": "Curser",
+"type": "Evil",
+"description": "Under Shade enchantment, Decrease enemy's all ability by 10% when defeated."
+},
+{
+"name": "Possessor",
+"type": "Evil",
+"description": "Under Shade enchantment, Decrease enemy's all ability by 30% when defeated."
+},
+{
+"name": "Psychic Transing",
+"type": "Evil",
+"description": "Under Shade enchantment, damaged by spirit skill will heal 30% Pet's HP."
+},
+{
+"name": "Revenger", 
+"type": "Evil",
+"description": "Under Shade enchantment, Decrease the enemy's ability to 50% when defeated."
+},
+{
+"name": "Soul Gain",
+"type": "Evil",
+"description": "Under Shade Enchantment, dealing damage to enemy heals 100% skill damage."
+},
+{
+"name": "Spirit Transing",
+"type": "Evil",
+"description": "Under Shade enchantment, damaged by spirit skill will heal 20% Pet's HP."
+},
+{
+"name": "Strange Force", 
+"type": "Evil",
+"description": "Under Shade enchantment, Seal enemy's last used skill for 1 turn at turn end."
+},
+{
+"name": "Trickster Fog",
+"type": "Evil",
+"description": "Under Shade Enchantment, reduce enemy speed by 20% at turn end."
+},
+{
+"name": "Pressure",
+"type": "Evil",
+"description": "Under Shade enchantment, Seal enemy's last used skill for 2 turns at turn end."
+}
+]

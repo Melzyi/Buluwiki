@@ -1,0 +1,47 @@
+[
+ {
+"name": "Cold Body",
+"type": "Ice",
+"description": "Under Frozen Enchantment, damaging pets have 25% chance to freeze enemies for 1-2 turns."
+},
+{
+"name": "Crystal Absorb",
+"type": "Ice",
+"description": "Under Frozen Enchantment, increase pet's defense by 20% after shield is broken."
+},
+{
+"name": "Freezing Zone",
+"type": "Ice",
+"description": "Under Frozen Enchantment, damaging pets have a 50% chance to decrease the enemy's attack by 10%."
+},
+{
+"name": "Frost Armor",
+"type": "Ice",
+"description": "Under Frozen Enchantment, damaging pet will cause enemy to lose 10% max HP."
+},
+{
+"name": "Frost Thorn",
+"type": "Ice",
+"description": "Under Frozen Enchantment, damaging pet will cause enemy to lose 20% max HP."
+},
+{
+"name": "Froze Charging",
+"type": "Ice",
+"description": "Under Frozen Enchantment, increase pet's attack and defense by 20% at turn end if it has a shield."
+},
+{
+"name": "Frozen Zone",
+"type": "Ice",
+"description": "Under Frozen Enchantment, damaging pets have a 50% chance to decrease the enemy's attack by 20%."
+},
+{
+"name": "Scrap Absorb",
+"type": "Ice",
+"description": "Under Frozen Enchantment, increase pet's defense by 10% after shield is broken."
+},
+{
+"name": "Freezing Body",
+"type": "Ice",
+"description": "Under Frozen Enchantment, damaging pets have a 50% chance to freeze the enemy for 1-2 turns."
+}
+]

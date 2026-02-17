@@ -1,0 +1,62 @@
+[
+{
+"name": "Balanced Blessing",
+"type": "Fire",
+"description": "Under any enchantment, seal the enemy's last used skill for 1 turn after receiving advantage damage."
+},
+{
+"name": "Enrage",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, damaged by fire skill will increase Pet's attack by 20%."
+},
+{
+"name": "Festival Jolt",
+"type": "Fire",
+"description": "Under any enchantment, 15% chance to stun the enemy for 1 turn at turn end."
+},
+{
+"name": "Fok Guard",
+"type": "Fire",
+"description": "Under any enchantment, if Pet has shield at turn end, increase Pet's. attack and defense by 10%."
+},
+{
+"name": "Surrounding Heat",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, dealing damage with fire skill has a 50% chance to cause the enemy to lose 10% HP."
+},
+{
+"name": "Undying",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, Pet heals 100% HP at turn end if its HP lower than 1/8."
+},
+{
+"name": "Heat Body",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, damaging Pets have a 25% chance to cause the enemy to lose 20% HP in 2 turns."
+},
+{
+"name": "Inferno",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, every skill splits out fire to cause the enemy to lose 20% HP in 1 turn." 
+},
+{
+"name": "Madness",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, damaged by fire skill will increase Pet's attack by 10%." 
+},
+{
+"name": "Flame Body",
+"type": "Fire",
+"description": "Under Wildfire Enchantment, damaging Pet have 50% chance to cause enemy lose 20% HP in 2 turn."
+},
+{
+"name": "Surrounding Flame", 
+"type": "Fire",
+"description": "Under Wildfire Enchantment, dealing damage with fire skill has a 50% chance to cause the enemy lose 15% HP."
+},
+{
+"name": "Wise Savings",
+"type": "Fire",
+"description": "Under any enchantment, reduce 1 PP of the enemy's last used skill at the turn end."
+}
+]

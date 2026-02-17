@@ -1,0 +1,52 @@
+[
+ {
+"name": "Evil Transing",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, pets do not receive evil skill damage."
+},
+{
+"name": "Ink Bloom",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, Reduce 1 PP of enemy's last used skill when pet's ability is rised."
+},
+{
+"name": "Psyche Enforce",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill costs double PP to increase a pet's attack by 10%"
+},
+{
+"name": "Psychic Overload",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill cost double PP to first strike and critical strike."
+},
+{
+"name": "Psycho Trample",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill costs double PP to critical strike on shielded monsters."
+},
+{
+"name": "Spirit Absorb",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill costs double PP to heal 25% of skill damage."
+},
+{
+"name": "Spirit Assimilate", 
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill costs double PP to heal 50% of skill damage."
+},
+{
+"name": "Spirit Control",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill costs double PP to add 50% chance to stun the enemy for 1 turn."
+},
+{
+"name": "Spirit Maniple",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit skill costs double PP to add 25% chance to stun the enemy for 1 turn."
+},
+{
+"name": "Spirit Piercing",
+"type": "Spirit",
+"description": "Under Psycho Enchantment, spirit type skill costs double PP to ignore the shield."
+}
+]

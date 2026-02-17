@@ -1,0 +1,42 @@
+[
+ {
+"name": "Adoption",
+"type": "Mythic",
+"description": "Under Ancient enchantment, heal pet 50% HP in 3 turns after receiving advantaged damage."
+},
+{
+"name": "Ancient Endurance",
+"type": "Mythic",
+"description": "Under Ancient enchantment, heal pet 30% HP in 3 turns after receiving advantaged damage."
+},
+{
+"name": "Ancient Specie",
+"type": "Mythic",
+"description": "Under Ancient Enchantment, Pet heals 50% HP at turn end if its HP lower than 1/5."
+},
+{
+"name":  "Crisis Predict",
+"type": "Mythic",
+"description": "Under Ancient Enchantment, create a shield to block 1 attack when the enemy uses Ice skill."
+},
+{
+"name": "Terra Adapt",
+"type": "Mythic",
+"description": "Under Ancient Enchantment, mythic skill has +20 power."
+},
+{
+"name": "Threat Zone",
+"type": "Mythic",
+"description": "Under Ancient Enchantment, 15% chance to stun the enemy for 1 turn at turn end."
+},
+{
+"name": "Tremor",
+"type": "Mythic",
+"description": "Under Ancient Enchantment, 30% chance to stun the enemy for 1 turn at turn end."
+},
+{
+"name": "Territory Adapt",
+"type": "Mythic",
+"description": "Under Ancient Enchantment, mythic skill has +10 power."
+}
+]
