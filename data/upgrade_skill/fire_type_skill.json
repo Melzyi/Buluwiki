@@ -6,12 +6,20 @@
 "precision": "90%",
 "effect": "Ignore shield against mythic monster. Burn shielded enemy for 60% HP in 2 turns."
 },
+   
 {
 "name": "Sparks",
 "pp": 5,
 "power": 125,
 "precision": "100%",
 "effect": " 75% chance to Burn enemy for 30% HP in 4 turns and remove defend buff."
+},
+{
+"name": "Inferno",
+"pp": 3,
+"power": 160,
+"precision": "80%"
+"effect": "Can damage shielded monster with 135 power."
 },
 { 
 "name": "Flame Sweep",
