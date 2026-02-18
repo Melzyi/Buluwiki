@@ -5,8 +5,7 @@
 "power": 145,
 "precision": "90%",
 "effect": "Ignore shield against mythic monster. Burn shielded enemy for 60% HP in 2 turns."
-},
-   
+},   
 {
 "name": "Sparks",
 "pp": 5,
