@@ -17,7 +17,7 @@
 "name": "Inferno",
 "pp": 3,
 "power": 160,
-"precision": "80%"
+"precision": "80%",
 "effect": "Can damage shielded monster with 135 power."
 },
 { 
