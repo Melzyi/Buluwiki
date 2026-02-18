@@ -28,6 +28,13 @@
 "effect": "Enhanced first Strike. Tear throughout."
 },
 {
+"name": "Tornado",
+"pp": 3,
+"power": 145,
+"precision": "90%",
+"effect": "75% chance for the enemy to lose 60% HP in 3 turns"
+},
+{
 "name": "Twister",
 "pp": 5,
 "power": 160,
