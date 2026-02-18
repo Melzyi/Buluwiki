@@ -7,6 +7,13 @@
 "effect": "Remove enemy's ability buff"
 },
 {
+"name": "Dragonbreath",
+"pp": 3,
+"power": 150,
+"precision": "100%",
+"effect": "The enemy will lose 60% HP in 4 turns"
+},
+{
 "name": "Dual Chop",
 "pp": 5,
 "power": 140,
