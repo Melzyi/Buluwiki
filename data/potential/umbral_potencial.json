@@ -5,7 +5,7 @@
 "description": "Under any enchantment, enemy lose 10% HP at turn end if it has ability debuff"
 },
 {
-"name": "Shadow Revenger",
+"name": "Shadow Revenge",
 "type": "Umbral", 
 "description": "Under any enchantment, Reduce all PP of enemy's last used skill and lose 25% HP when defeated." 
 },
