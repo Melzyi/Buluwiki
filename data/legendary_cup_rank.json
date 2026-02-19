@@ -1,0 +1,189 @@
+{ 
+"standard premiums":  {
+"11_20": "Lollipop x4, Monster Ticket x6", 
+"21_50": "Lollipop x3, Monster Ticket x2", 
+"51_100": "Lollipop x2, Item Draw Ticket x4",
+"101_300": "Candy x20, Item Draw Ticket x1", 
+"301_500": "Candy x10, Memory Feather x3",
+"501_1000": "Candy x1"
+ },
+
+"weeks": [ 
+ { 
+"number": "01",
+"name": "Kirin Edition",
+ "1": "1 Kiric (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Kiric , 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Kiric , 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Kiric (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "01",
+"name": "Kenga Edition",
+ "1": "1 Kenga (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Kenga , 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Kenga , 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Kenga (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "02",
+"name": "Arctery Edition",
+ "1": "1 Arctery (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Arctery, 2 Ice Cream, 2 Glass Cup", 
+ "3":  "1 Arctery, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Arctery (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "02",
+"name": "Leafy Edition",
+ "1": "1 Lievi (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Lievi, 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Lievi, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Lievi (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "03",
+"name": "Griff Edition",
+ "1": "1 Griffie (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Griffie, 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Griffie, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Griffie (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "03",
+"name": "Musta Edition",
+ "1": "1 Kolter (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Kolter, 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Kolter, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Kolter (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "04",
+"name": "Glacial Edition",
+ "1": "1 Glacic (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Glacic, 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Glacic, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Glacic (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "04",
+"name": "Pando Edition",
+ "1": "1 Pandy (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Pandy, 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Pandy, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Pandy (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "05",
+"name": "Grety Edition",
+ "1": "1 Grety (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Grety, 2 Ice Cream, 2 Glass Cup", 
+ "3": "1 Grety, 1 Ice Cream, 1 Glass Cup", 
+ "4_10": "1 Grety (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "05",
+"name": "Krus Edition",
+ "1": "1 Krus (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 Krus, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Krus, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Krus (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "06",
+"name": "Voca Edition",
+ "1": "1 Volcano Armor, 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Volcano Armor, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Volcano Armor, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Volcano Armor"
+},
+{ 
+"number": "07",
+"name": "Lamp Edition",
+ "1": "1 Lampiz (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Lampiz, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Lampiz, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Lampiz (With a maximum of 3.5 diamonds)"
+},
+{ 
+"number": "08",
+"name": "Meduran",
+ "1": "1 Medy (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Medy, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Medy, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Medy (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "09",
+"name": "Blaze Edition",
+ "1": "1 Blazhin (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Blazhin, 2 Ice Cream, 3 Glass Cup",
+ "3": "1 Blazhin, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Blazhin (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "09",
+"name": "Volti Edition",
+ "1": "1 Voltio (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Voltio, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Voltio, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Voltio (With a maximum of 3.5 diamonds)"
+},
+ { 
+"number": "10",
+"name": "Necro Edition",
+ "1": "1 Necio (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Necio, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Necio, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Necio (With a maximum of 3.5 diamonds)"
+},
+ {
+"number": "10",
+"name": "Nighty Edition",
+ "1": "1 Nighty (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Nighty, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Nighty, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Nighty (With a maximum of 3.5 diamonds)" 
+},
+{ 
+"number": "11",
+"name": "Saur Edition",
+ "1": "1 Saurpunch, 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Saurpunch, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Saurpunch, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Saurpunch" 
+},
+{ 
+"number": "12",
+"name": "Azlord Edition",
+ "1": "1 Crystal Protect, 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Crystal Protect, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Crystal Protect, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Crystal Protect"
+},
+{ 
+"number": "13",
+"name": "Whino Edition",
+ "1": "1 Whindz (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Whindz, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Whindz, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Whindz (With a maximum of 3.5 diamonds)" 
+},
+{ 
+"number": "14",
+"name": "Vendra Edition",
+ "1": "1 Heavenly Feather, 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Heavenly Feather, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Heavenly Feather, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Heavenly Feather" 
+},
+{ 
+"number": "15",
+"name": "Aqua Edition",
+ "1": "1 Tidal Might, 5 Ice Cream, 3 Glass Cup",
+ "2": "1 Tidal Might, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 Tidal Might, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 Tidal Might"
+}
+]
+}
