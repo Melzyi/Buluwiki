@@ -1,0 +1,222 @@
+[
+  {
+    "lc_name": "Kirin Edition",
+    "monster_name": "Kirin",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 482,
+    "atk": 306,
+    "def": 200,
+    "spd": 200
+  },
+  {
+    "lc_name": "Kenga Edition",
+    "monster_name": "Kengarion",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 594,
+    "atk": 256,
+    "def": 216,
+    "spd": 177
+  },
+  {
+    "lc_name": "Arctery Edition",
+    "monster_name": "Arcterion",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 527,
+    "atk": 216,
+    "def": 177,
+    "spd": 289
+  },
+  {
+    "lc_name": "Leafy Edition",
+    "monster_name": "Leafornite",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 325,
+    "atk": 233,
+    "def": 233,
+    "spd": 317
+  },
+  {
+    "lc_name": "Griff Edition",
+    "monster_name": "Griflizon",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 549,
+    "atk": 267,
+    "def": 166,
+    "spd": 239
+  },
+  {
+    "lc_name": "Musta Edition",
+    "monster_name": "Mystang",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 415,
+    "atk": 233,
+    "def": 200,
+    "spd": 303
+  },
+  {
+    "lc_name": "Glacial Edition",
+    "monster_name": "Glacic",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 504,
+    "atk": 244,
+    "def": 300,
+    "spd": 149
+  },
+  {
+    "lc_name": "Pando Edition",
+    "monster_name": "Pandy",
+    "type": "ice",
+    "stars": 6,
+    "hp": 594,
+    "atk": 250,
+    "def": 250,
+    "spd": 149
+  },
+  {
+    "lc_name": "Grety Edition",
+    "monster_name": "Grety",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 605,
+    "atk": 261,
+    "def": 261,
+    "spd": 149
+  },
+  {
+    "lc_name": "Krus Edition",
+    "monster_name": "Krus",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 504,
+    "atk": 289,
+    "def": 211,
+    "spd": 222
+  },
+  {
+    "lc_name": "Voca Edition",
+    "monster_name": "Volcagon",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 538,
+    "atk": 317,
+    "def": 253,
+    "spd": 200
+  },
+  {
+    "lc_name": "Lamp Edition",
+    "monster_name": "Lampiz",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 755,
+    "atk": 270,
+    "def": 314,
+    "spd": 91
+  },
+  {
+    "lc_name": "Meduran Edition",
+    "monster_name": "Medy",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 600,
+    "atk": 160,
+    "def": 272,
+    "spd": 211
+  },
+  {
+    "lc_name": "Blaze Edition",
+    "monster_name": "Blazhin",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 527,
+    "atk": 289,
+    "def": 200,
+    "spd": 194
+  },
+  {
+    "lc_name": "Volti Edition",
+    "monster_name": "Voltio",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 650,
+    "atk": 244,
+    "def": 233,
+    "spd": 144
+  },
+  {
+    "lc_name": "Necro Edition",
+    "monster_name": "Necio",
+    "type": "evil",
+    "stars": 6,
+    "hp": 482,
+    "atk": 233,
+    "def": 289,
+    "spd": 183
+  },
+  {
+    "lc_name": "Nighty Edition",
+    "monster_name": "Nighty",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 403,
+    "atk": 289,
+    "def": 116,
+    "spd": 340
+  },
+  {
+    "lc_name": "Saur Edition",
+    "monster_name": "Ultisaur",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 493,
+    "atk": 261,
+    "def": 340,
+    "spd": 172
+  },
+  {
+    "lc_name": "Azlord Edition",
+    "monster_name": "Ardizlord",
+    "type": "mythic",
+    "stars": 6,
+    "hp": 480,
+    "atk": 289,
+    "def": 255,
+    "spd": 238
+  },
+  {
+    "lc_name": "Whino Edition",
+    "monster_name": "Whindz",
+    "type": "wind",
+    "stars": 6,
+    "hp": 605,
+    "atk": 194,
+    "def": 261,
+    "spd": 239
+  },
+  {
+    "lc_name": "Vendra Edition",
+    "monster_name": "Ventragon",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 490,
+    "atk": 200,
+    "def": 200,
+    "spd": 340
+  },
+  {
+    "lc_name": "Aqua Edition",
+    "monster_name": "Aquarion",
+    "type": "dragon",
+    "stars": 6,
+    "hp": 635,
+    "atk": 175,
+    "def": 235,
+    "spd": 144
+  }
+]
