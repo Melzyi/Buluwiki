@@ -49,7 +49,7 @@
     "water": {
       "type": "water",
       "evo_item": {
-        "name": "Ocean Spirit",
+        "name": "Oceanspirit",
         "quantity": 1,
         "cost": 800,
         "currency": "Apprentice Coin"
