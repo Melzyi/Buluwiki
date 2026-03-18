@@ -27,9 +27,9 @@
 {
 "name": "Undying",
 "type": "Fire",
-"description": "Pet heals 25% HP and rise all ability by 10% at turn end if its HP lower than 1/5. Renames to Ashen Rebirth."
+"description": "Pet heals 25% HP and rise all ability by 10% at turn end if its HP lower than 1/5.Renames to Ashen Rebirth."
 },
-{ 
+{
 "name": "Heat Body",
 "type": "Fire",
 "description": "Under Wildfire Enchantment,damaging Pets have a 25% chance to cause the enemy to lose 20% HP in 2 turns."
