@@ -2195,6 +2195,201 @@ header {
 }
 
 
+
+/* ══════════ HOME TAB ══════════ */
+.home-welcome {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+.home-title {
+  font-family: var(--ff3);
+  font-size: 0.9rem;
+  color: var(--text3);
+  font-style: italic;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+}
+.home-subtitle {
+  font-family: var(--ff1);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  color: var(--gold2);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 30px rgba(201,162,39,0.4);
+}
+.home-divider {
+  width: 80px; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold2), transparent);
+  margin: 1rem auto 1.5rem;
+}
+.home-facts-container {
+  padding: 0 0.5rem 2rem;
+}
+.home-fact-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,162,39,0.12);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff3);
+  font-size: 0.88rem;
+  color: var(--text2);
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.home-fact-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.home-fact-card:hover {
+  border-color: rgba(201,162,39,0.3);
+  background: rgba(201,162,39,0.04);
+}
+.home-fact-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.home-fact-text b {
+  color: var(--gold2);
+  font-family: var(--ff2);
+  letter-spacing: 0.03em;
+}
+
+
+/* ══════════ EVENT BANNER MELHORADO ══════════ */
+.event-banner {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255,120,50,0.4);
+  animation: eventGlow 3s ease-in-out infinite;
+  min-height: 320px;
+}
+.event-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: 0;
+}
+.event-banner-img {
+  position: relative;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  z-index: 1;
+}
+.event-banner-body {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(20,5,0,0.7) 0%, rgba(10,3,0,0.92) 100%);
+  padding: 0.75rem 1.1rem 1rem;
+}
+.event-logo {
+  display: block;
+  max-height: 60px;
+  max-width: 220px;
+  margin: 0 auto 0.5rem;
+  filter: drop-shadow(0 0 12px rgba(255,140,50,0.6));
+  object-fit: contain;
+}
+.event-live-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.event-live-dot {
+  width: 7px; height: 7px;
+  background: #ff6b35;
+  border-radius: 50%;
+  animation: lcGoldPulse 1s ease-in-out infinite;
+}
+.event-live-label {
+  font-family: var(--ff2);
+  font-size: 0.6rem;
+  letter-spacing: 2.5px;
+  color: #ff6b35;
+  text-transform: uppercase;
+}
+.event-name {
+  font-family: var(--ff1);
+  font-size: clamp(1rem, 3.5vw, 1.4rem);
+  color: #ffb347;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 24px rgba(255,120,50,0.7);
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+.event-dates {
+  font-family: var(--ff3);
+  font-size: 0.73rem;
+  color: var(--text3);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.65rem;
+}
+/* Linha evolutiva */
+.event-evo-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.event-evo-img {
+  width: 52px; height: 52px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(255,120,50,0.45));
+  transition: transform 0.25s;
+}
+.event-evo-img:hover { transform: scale(1.18) translateY(-3px); }
+.event-evo-final {
+  width: 64px; height: 64px;
+  filter: drop-shadow(0 0 12px rgba(255,160,50,0.7));
+}
+.event-evo-arrow {
+  color: rgba(255,150,50,0.6);
+  font-size: 1rem;
+}
+.event-evo-feather {
+  width: 40px; height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255,200,80,0.8));
+  margin-left: 0.4rem;
+  animation: floatItem 2.5s ease-in-out infinite;
+}
+@keyframes floatItem {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+/* Itens */
+.event-items-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.65rem;
+}
+.event-item-img {
+  width: 44px; height: 44px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(201,162,39,0.5));
+  transition: transform 0.2s;
+}
+.event-item-img:hover { transform: scale(1.2); }
+
+
 </style>
 </head>
 <body>
@@ -2233,7 +2428,8 @@ header {
 <!-- TABS NAV -->
 <div class="tabs-wrapper" id="tabsWrapper">
   <div class="tabs" id="tabs">
-    <button class="tab-button active" data-tab="anniversary">✦ Anniversary</button>
+    <button class="tab-button active" data-tab="home">🏠 Home</button>
+      <button class="tab-button" data-tab="anniversary">✦ Anniversary</button>
     <button class="tab-button" data-tab="year">⚔ Monster of Year</button>
     <button class="tab-button" data-tab="legendary">☽ Legendary Cup <span id="lc-tab-badge" class="lc-tab-badge"></span></button>
     <button class="tab-button" data-tab="tower">🗼 Tower</button>
@@ -2248,8 +2444,67 @@ header {
 <!-- CONTENT -->
 <div class="content">
 
+  <!-- HOME TAB -->
+  <div id="home-tab" class="tab-content active">
+    <div id="home-event-banner">
+      <div class="event-banner">
+        <!-- Fundo: ilha do evento -->
+        <div class="event-bg" style="background-image:url('https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/phoenix_island_mountain.webp')"></div>
+        <!-- Banner principal por cima -->
+        <img class="event-banner-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/banner.jpg" alt="Protector of Phoenix Mountain" onerror="this.src='https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/banner1.png'">
+        <div class="event-banner-body">
+          <!-- Logo do evento -->
+          <img class="event-logo" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/event_logo.png" alt="Event Logo" onerror="this.style.display='none'">
+          <div class="event-live-row">
+            <div class="event-live-dot"></div>
+            <span class="event-live-label">Event Live Now</span>
+            <div class="event-live-dot"></div>
+          </div>
+          <div class="event-name">🔥 Protector of Phoenix Mountain</div>
+          <div class="event-dates">Mar 12 – Mar 29 &nbsp;·&nbsp; Ends 21:00 BRT / 00:00 UTC</div>
+          <!-- Monstros da linha evolutiva -->
+          <div class="event-evo-line">
+            <img class="event-evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/firechick01.webp" onerror="this.style.display='none'">
+            <span class="event-evo-arrow">→</span>
+            <img class="event-evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/peafire02.webp" onerror="this.style.display='none'">
+            <span class="event-evo-arrow">→</span>
+            <img class="event-evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/phoenix03.webp" onerror="this.style.display='none'">
+            <span class="event-evo-arrow">→</span>
+            <img class="event-evo-img event-evo-final" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/phoecinix04.webp" onerror="this.style.display='none'">
+            <img class="event-evo-feather" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/phoenix_evo_feather.webp" onerror="this.style.display='none'">
+          </div>
+          <!-- Itens do evento -->
+          <div class="event-items-row">
+            <img class="event-item-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/any_item.webp" onerror="this.style.display='none'">
+            <img class="event-item-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/any_item1.webp" onerror="this.style.display='none'">
+            <img class="event-item-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/event/any_item2.webp" onerror="this.style.display='none'">
+          </div>
+          <!-- Contagem -->
+          <div id="event-countdown"></div>
+        </div>
+      </div>
+    </div>
+    <div class="home-welcome">
+      <div class="home-title">Welcome to the</div>
+      <div class="home-subtitle">Bulu Monster Codex</div>
+      <div class="home-divider"></div>
+    </div>
+    <div class="home-facts-container">
+      <div class="home-fact-card visible"><div class="home-fact-icon">🐉</div><div class="home-fact-text">There are <b>12 types</b> of monsters in Bulu Monster: Fire, Water, Wind, Earth, Evil, Dragon, Spirit, Lightning, Ice, Common, Mythic and No Restrictions.</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">🏆</div><div class="home-fact-text">The <b>Legendary Cup</b> runs every week with special edition monsters. Check the LC tab for the full schedule and prizes!</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">🗼</div><div class="home-fact-text">The <b>Tower of Apprentice</b> resets every Friday at 00:00 UTC. Each week features a different monster type with unique rewards.</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">💎</div><div class="home-fact-text">Mega Evolution lets your monster reach its ultimate form! Each mega monster requires a specific evolution item.</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">📜</div><div class="home-fact-text">Upgrade Skills can boost your monster's combat abilities. Check the Skills tab to find the best skills for each type!</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">⚡</div><div class="home-fact-text">Potentials are passive abilities that activate under specific conditions — they can turn the tide of any battle!</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">🎂</div><div class="home-fact-text">Every year Bulu Monster celebrates its anniversary with exclusive new monsters and limited-time events.</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">⚗️</div><div class="home-fact-text">Items like Candies, Tickets and Memory Feathers are essential for powering up your monsters. Check the Items tab!</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">⚔️</div><div class="home-fact-text">In the <b>Type Chart</b>, some types deal double damage against others. Knowing the matchups is key to winning battles!</div></div>
+      <div class="home-fact-card visible"><div class="home-fact-icon">🌟</div><div class="home-fact-text">The <b>Monster of the Year</b> award celebrates the most iconic monsters from each Bulu Monster anniversary.</div></div>
+    </div>
+  </div>
+
   <!-- ANNIVERSARY TAB -->
-  <div id="anniversary-tab" class="tab-content active">
+  <div id="anniversary-tab" class="tab-content">
     <h2 class="codex-title">Anniversary Chronicles</h2>
     <p class="codex-subtitle">Select an anniversary to reveal its monsters</p>
     <div class="anniversary-grid">
@@ -2569,6 +2824,7 @@ document.querySelectorAll('.tab-button').forEach(function(btn) {
     const tabEl = document.getElementById(target + '-tab');
     if (tabEl) tabEl.classList.add('active');
     // Lazy load
+    if (target === 'home')                              { loadHomeTab(); }
     if (target === 'tower' && !tabState.tower)         { loadTowerOfApprentice(); tabState.tower = true; }
     if (target === 'legendary' && !tabState.legendary) { loadLegendaryCupWithPrizes(); tabState.legendary = true; }
     if (target === 'skills' && !tabState.skills)       { loadAllSkills(); tabState.skills = true; }
@@ -2640,7 +2896,7 @@ const typeData = {
   evil:{weak:['spirit','umbral'],strong:['spirit'],openingSkill:{name:'Shade Enchantment',effect:'Create a Shade Enchantment to enhance evil power. For next 5 turns, Spirit type skill does not have advantage on Evil monsters.'}},
   fire:{weak:['mythic','water'],strong:['common','umbral','ice'],openingSkill:{name:'Wildfire Enchantment',effect:'Create a Wildfire Enchantment to enhance fire power. For next 5 turns, Fire type skill has advantage on Water monsters.'}},
   ice:{weak:['fire','wind'],strong:['mythic','wind'],openingSkill:{name:'Frozen Enchantment',effect:'Create a Frozen Enchantment to enhance ice power. For next 5 turns, Ice type skill has advantage on Fire monsters.'}},
-  lightning:{weak:['earth','spirit'],strong:['common','water','wind'],openingSkill:{name:'Charge Enchantment',effect:'Create a Charge Enchantment to enhance lightning power. For next 5 turns, Lightning type skill has advantage on Earth monsters.'}},
+  lightning:{weak:['earth','spirit'],strong:['common','water','wind','umbral'],openingSkill:{name:'Charge Enchantment',effect:'Create a Charge Enchantment to enhance lightning power. For next 5 turns, Lightning type skill has advantage on Earth monsters.'}},
   mythic:{weak:['ice'],strong:['dragon','earth','fire','water'],openingSkill:{name:'Ancient Enchantment',effect:'Create an Ancient Enchantment to enhance mythic power. For next 5 turns, Mythic type skill has advantage on Ice monsters.'}},
   spirit:{weak:['evil','umbral'],strong:['evil','lightning'],openingSkill:{name:'Psycho Enchantment',effect:'Create a Psycho Enchantment to enhance psychic power. For next 5 turns, Evil type skill does not have advantage on Spirit monsters.'}},
   water:{weak:['lightning','mythic'],strong:['common','fire'],openingSkill:{name:'Rainstorm Enchantment',effect:'Create a Rainstorm Enchantment to enhance water power. For next 5 turns, Water type skill has advantage on Lightning monsters.'}},
@@ -2773,6 +3029,8 @@ function getPrizeIcon(itemName) {
   if (name.includes('duo hammer'))       return BASE_URL + 'imagens/mega_evolution_items/polar_ogre_evo_duo_hammer.webp';
   if (name.includes('frost nutrition'))  return BASE_URL + 'imagens/mega_evolution_items/snowlomon_evo_frost_nutrition.webp';
   if (name.includes('puddin crown'))     return BASE_URL + 'imagens/mega_evolution_items/puuking_evo_puddin_crown.webp';
+  if (name.includes('fortune crest'))   return BASE_URL + 'imagens/mega_evolution_items/fortunarch_evo_fortune_crest.webp';
+  if (name.includes('glacial armor'))   return BASE_URL + 'imagens/mega_evolution_items/froscorium_evo_glacial_armor.webp';
   
   // Monstros LC - Mapear para sprites
   const monsterMap = {
@@ -3041,6 +3299,27 @@ let allMegaMonsters=[], currentMegaFilter='all', currentVariants={};
 async function loadMegaMonsters() {
   try {
     allMegaMonsters=await fetch(BASE_URL+'data/mega_monsters.json').then(function(r){return r.json();});
+    // Novos monstros adicionados inline
+    var newMegas = [
+      {
+        monster: 'Fortunarch', monster_key: 'fortunarch', type: 'fire',
+        item: 'fortunarch_evo_fortune_crest.webp',
+        item_name: 'Fortune Crest',
+        sprites: [{ variant: 'normal', file: 'fortunarch_type_fire_.webp' }]
+      },
+      {
+        monster: 'Froscorium', monster_key: 'froscorium', type: 'ice',
+        item: 'froscorium_evo_glacial_armor.webp',
+        item_name: 'Glacial Armor',
+        sprites: [{ variant: 'normal', file: 'froscorium_type_ice_.webp' }]
+      }
+    ];
+    // Adicionar apenas se ainda não existirem
+    newMegas.forEach(function(nm) {
+      if (!allMegaMonsters.find(function(m){ return m.monster_key === nm.monster_key; })) {
+        allMegaMonsters.push(nm);
+      }
+    });
     displayMegaMonsters();
   } catch(e) {
     document.getElementById('mega-grid').innerHTML='<div class="no-results">Failed to load mega monsters</div>';
@@ -3514,6 +3793,70 @@ function updateTabBadge(status) {
 
 
 // ══════════ BACK TO TOP ══════════
+// ══════════ HOME TAB ══════════
+var HOME_FACTS = [
+  { icon: '🐉', text: 'There are <b>12 types</b> of monsters in Bulu Monster: Fire, Water, Wind, Earth, Evil, Dragon, Spirit, Lightning, Ice, Common, Mythic and No Restrictions.' },
+  { icon: '🏆', text: 'The <b>Legendary Cup</b> runs every week with special edition monsters. Check the LC tab for the full schedule and prizes!' },
+  { icon: '🗼', text: 'The <b>Tower of Apprentice</b> resets every Friday at 00:00 UTC. Each week features a different monster type with unique rewards.' },
+  { icon: '💎', text: 'Mega Evolution lets your monster reach its ultimate form! Each mega monster requires a specific evolution item.' },
+  { icon: '📜', text: 'Upgrade Skills can boost your monster\'s combat abilities. Check the Skills tab to find the best skills for each type!' },
+  { icon: '⚡', text: 'Potentials are passive abilities that activate under specific conditions — they can turn the tide of any battle!' },
+  { icon: '🎂', text: 'Every year Bulu Monster celebrates its anniversary with exclusive new monsters and limited-time events.' },
+  { icon: '⚗️', text: 'Items like Candies, Tickets and Memory Feathers are essential for powering up your monsters. Check the Items tab!' },
+  { icon: '⚔️', text: 'In the <b>Type Chart</b>, some types deal double damage against others. Knowing the matchups is key to winning battles!' },
+  { icon: '🌟', text: 'The <b>Monster of the Year</b> award celebrates the most iconic monsters from each Bulu Monster anniversary.' },
+];
+
+var homeFact_current = 0;
+var homeFact_timer = null;
+
+function renderHomeFacts() {
+  var container = document.getElementById('home-facts');
+  if (!container) return;
+  container.innerHTML = HOME_FACTS.map(function(f, i) {
+    return '<div class="home-fact-card" id="hf-'+i+'">' +
+      '<div class="home-fact-icon">' + f.icon + '</div>' +
+      '<div class="home-fact-text">' + f.text + '</div>' +
+    '</div>';
+  }).join('');
+  // Animar entrada em cascata
+  HOME_FACTS.forEach(function(_, i) {
+    setTimeout(function() {
+      var el = document.getElementById('hf-'+i);
+      if (el) el.classList.add('visible');
+    }, 100 + i * 80);
+  });
+}
+
+// ══════════ EVENT BANNER ══════════
+// Protector Of Phoenix Mountain
+// Início: 12/03/2026 21:00 BRT = 13/03/2026 00:00 UTC
+// Fim:    29/03/2026 21:00 BRT = 30/03/2026 00:00 UTC
+var EVENT_START = new Date(Date.UTC(2026, 2, 13, 0, 0, 0)); // 13 mar 2026 00:00 UTC
+var EVENT_END   = new Date(Date.UTC(2026, 2, 30, 0, 0, 0)); // 30 mar 2026 00:00 UTC
+var EVENT_NAME  = 'Protector of Phoenix Mountain';
+var EVENT_MONSTERS = ['firechick01','peafire02','phoenix03','phoecinix04'];
+
+function renderEventBanner() {
+  var now = new Date();
+  var cd_el = document.getElementById('event-countdown');
+  if (!cd_el) return;
+  if (now >= EVENT_END) {
+    var wrap = document.getElementById('home-event-banner');
+    if (wrap) wrap.innerHTML = '';
+    return;
+  }
+  var cd = formatCountdown(EVENT_END - now);
+  cd_el.innerHTML = '<div class="lc-time-remaining">' + timeBlocks(cd, false) + '</div>';
+}
+function loadHomeTab() {
+  renderEventBanner();
+  renderHomeFacts();
+  setInterval(function() {
+    renderEventBanner();
+  }, 1000);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   var btn = document.getElementById('back-to-top');
   if (!btn) return;
@@ -3694,6 +4037,10 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeMonsterInfo();
 });
 
+window.addEventListener('load', function() {
+  loadHomeTab();
+});
+
 
 
 // ══════════ TOWER OF APPRENTICE ══════════
@@ -3843,6 +4190,7 @@ function loadTowerOfApprentice() {
 
 
 // ══════════ TOWER OF APPRENTICE BANNER ══════════
+
 
 
 
