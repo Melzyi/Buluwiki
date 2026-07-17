@@ -1,8 +1,8 @@
 [
  {
-"name": "Angry Fish",
+"name": "Tidal Fury",
 "type": "Water",
-"description": "Under Rainstorm enchantment, increase pet's attack by 10% after taking skill damage"
+"description": "Under Rainstorm enchantment, raise the pet's ATK by 10% and heal 10% HP after taking skill damage."
 },
 {
 "name": "Isolating Shell",
