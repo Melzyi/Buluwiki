@@ -7,6 +7,20 @@
 "effect": "Break enemy shield to block 2 attack. Also steal the enemy's attack buff."
 },
 {
+"name": "Lion Roar",
+"pp": 3,
+"power": 160,
+"precision": "90%",
+"effect": "Tear through shield. Reduces the user's attack and defense by 10%."
+},
+{
+"name": "Terror Wind",
+"pp": 8,
+"power": 130,
+"precision": "100%",
+"effect": "Remove enemy's all ability buff."
+},
+{
 "name": "Swifty-Charge",
 "pp": 5,
 "power": 130,
