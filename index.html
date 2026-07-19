@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05070d">
+<title>Bulu Monster Codex — Complete Database</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Bulu Monster Codex — complete fan-made database of monsters, skills, mega evolutions, items, potentials and Legendary Cup for the game Bulu Monster.">
+<meta property="og:title" content="Bulu Monster Codex — Complete Database">
+<meta property="og:description" content="Complete fan-made database of monsters, skills, mega evolutions, items and potentials for Bulu Monster.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button id="back-to-top" title="Back to top" aria-label="Back to top">▲</button>
+
+
+<!-- PROGRESS BAR -->
+<div id="progress-bar"></div>
+
+<!-- FIREFLIES -->
+<div id="fireflies"></div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-content">
+    <div class="logo-section">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/bulu_monster_logo.png" alt="Bulu Monster" class="logo">
+      <span class="site-title">Bulu Monster Codex</span>
+    </div>
+    <div class="header-stats">
+      <div class="hstat"><div class="hstat-num" data-target="79">0</div><div class="hstat-label">Mega</div></div>
+      <div class="hstat"><div class="hstat-num" data-target="59">0</div><div class="hstat-label">Skills</div></div>
+      <div class="hstat"><div class="hstat-num" data-target="22">0</div><div class="hstat-label">Opening</div></div>
+      <div class="hstat"><div class="hstat-num" data-target="12">0</div><div class="hstat-label">Types</div></div>
+    </div>
+    <div class="header-actions">
+      <div class="theme-toggle" id="themeToggle" role="button" tabindex="0" aria-label="Toggle dark/light theme"><div class="theme-toggle-slider">🌙</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- TABS NAV -->
+<div class="tabs-wrapper" id="tabsWrapper">
+  <div class="tabs" id="tabs" role="tablist" aria-label="Codex sections">
+    <span class="tab-indicator" id="tabIndicator"></span>
+    <button class="tab-button active" data-tab="home" role="tab" aria-label="Home tab">🏠 Home</button>
+      <button class="tab-button" data-tab="anniversary" role="tab" aria-label="Anniversary tab">✦ Anniversary</button>
+    <button class="tab-button" data-tab="year" role="tab" aria-label="Year tab">⚔ Monster of Year</button>
+    <button class="tab-button" data-tab="legendary" role="tab" aria-label="Legendary tab">☽ Legendary Cup <span id="lc-tab-badge" class="lc-tab-badge"></span></button>
+    <button class="tab-button" data-tab="skills" role="tab" aria-label="Skills tab">📜 Upgrade Skills</button>
+    <button class="tab-button" data-tab="types" role="tab" aria-label="Types tab">⚖ Type Chart</button>
+    <button class="tab-button" data-tab="mega" role="tab" aria-label="Mega tab">◈ Mega Monsters</button>
+    <button class="tab-button" data-tab="items" role="tab" aria-label="Items tab">⚗ Items</button>
+    <button class="tab-button" data-tab="potentials" role="tab" aria-label="Potentials tab">✦ Potentials</button>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- HOME TAB -->
+  <div id="home-tab" class="tab-content active">
+    <div class="home-welcome">
+      <div class="home-title">Welcome to the</div>
+      <div class="home-subtitle">Bulu Monster Codex</div>
+      <div class="home-divider"></div>
+    </div>
+  </div>
+
+  <!-- ANNIVERSARY TAB -->
+  <div id="anniversary-tab" class="tab-content">
+    <h2 class="codex-title">Anniversary Chronicles</h2>
+    <p class="codex-subtitle">Select an anniversary to reveal its monsters</p>
+    <div class="anniversary-grid">
+      <div class="anniversary-card" data-anniversary="1"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/01th-anniversary.jpg" alt="1st Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">I · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="2"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/02th-anniversary.jpg" alt="2nd Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">II · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="3"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/03th-anniversary.jpg" alt="3rd Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">III · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="4"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/04th-anniversary.jpg" alt="4th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">IV · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="5"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/05th-anniversary.jpg" alt="5th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">V · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="6"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/06th-anniversary.jpg" alt="6th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">VI · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="7"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/07th-anniversary.jpg" alt="7th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">VII · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="8"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/08th-anniversary.jpg" alt="8th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">VIII · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="9"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/09th-anniversary.jpg" alt="9th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">IX · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="10"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/10th-anniversary.jpg" alt="10th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">X · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="11"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/11th-anniversary.jpg" alt="11th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">XI · Anniversary</div></div>
+      <div class="anniversary-card" data-anniversary="12"><img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/banner/12th-anniversary.jpg" alt="12th Anniversary"><div class="ann-overlay"></div><div class="anniversary-label">XII · Anniversary</div></div>
+      <div class="anniversary-card coming-soon"><div class="anniversary-label">XIII · Anniversary</div><div class="anniversary-soon-badge">Coming Soon — 2026</div></div>
+    </div>
+    <div id="monster-display"></div>
+  </div>
+
+  <!-- YEAR TAB -->
+  <div id="year-tab" class="tab-content">
+    <div class="year-container">
+      <h2 class="year-title">Champion of the Realm — 2025</h2>
+      <div class="main-monster-card">
+        <img loading="lazy" decoding="async" id="main-monster-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/ventragon_04_monster_year_2025.webp" alt="Ventragon" class="main-monster-img mega-evolution">
+      </div>
+      <div class="evolution-line">
+        <div class="evolution-card"><img loading="lazy" decoding="async" class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vingon_01_monster_year_2025.webp" alt="Vingon"><div class="evolution-name">Vingon</div></div>
+        <div class="evolution-card"><img loading="lazy" decoding="async" class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vindragon_02_monster_year_2025.webp" alt="Vindragon"><div class="evolution-name">Vindragon</div></div>
+        <div class="evolution-card"><img loading="lazy" decoding="async" class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/vedragon_03_monster_year_2025.webp" alt="Vedragon"><div class="evolution-name">Vedragon</div></div>
+        <div class="evolution-card"><img loading="lazy" decoding="async" class="evo-img" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/monster_of_the_year/ventragon_04_monster_year_2025.webp" alt="Ventragon"><div class="evolution-name">Ventragon</div></div>
+      </div>
+      <button class="shiny-toggle" id="shiny-btn">✦ Toggle Shyne Variant</button>
+    </div>
+  </div>
+
+  <!-- LEGENDARY TAB -->
+  <div id="legendary-tab" class="tab-content">
+    <div class="legendary-header">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/legendery_cup_edition_logo.webp" alt="Legendary Cup" class="legendary-logo">
+    </div>
+    <!-- LC WEEK BANNER -->
+    <div id="lc-banner" class="lc-banner"></div>
+      <p class="codex-subtitle">Legendary Cup champions — evolution lines & base stats</p>
+      <div class="codex-grid" id="codex-grid"></div>
+    </div>
+
+    <div id="legendary-display"></div>
+  </div>
+
+  <!-- SKILLS TAB -->
+  <div id="skills-tab" class="tab-content">
+    <div style="text-align:center;margin-bottom:2rem;padding:1rem 0;">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/upgrade_books.webp"
+           alt="Upgrade Skills"
+           style="max-width:300px;width:90%;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 0 22px rgba(63,169,245,0.55));">
+    </div>
+    <div class="skills-controls">
+      <div class="search-box">
+        <input type="text" id="skill-search" placeholder="Search skills by name..." aria-label="Search skills by name">
+        <span class="search-icon">⚔</span>
+      </div>
+      <div class="filter-section" id="skills-type-filters" role="group" aria-label="Filter skills by type">
+        <span class="filter-label">Type:</span>
+      </div>
+      <select class="sort-select" id="skill-sort" aria-label="Sort skills">
+        <option value="name">Sort by Name</option>
+        <option value="power-desc">Power (High → Low)</option>
+        <option value="power-asc">Power (Low → High)</option>
+        <option value="pp-desc">PP (High → Low)</option>
+        <option value="pp-asc">PP (Low → High)</option>
+      </select>
+    </div>
+    <div class="skills-count" id="skills-count"></div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+
+  <!-- TYPES TAB -->
+  <div id="types-tab" class="tab-content">
+    <h2 class="codex-title">⚖ Type Effectiveness</h2>
+    <p class="codex-subtitle">Advantages, weaknesses and Opening Skill enchantments</p>
+    <div class="type-grid" id="type-grid"></div>
+    <div class="section-header">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/openig_skill/logo_opening_skill.webp" alt="Opening Skills">
+      <div class="section-title">Opening Skills — Enchantments</div>
+    </div>
+    <div class="opening-skills-grid" id="opening-skills-grid"></div>
+    <div class="section-header" style="margin-top:2.5rem;">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/opening_skill_attack.webp" alt="Attack Skills">
+      <div class="section-title">Attack Opening Skills</div>
+    </div>
+    <div class="attack-skills-grid" id="attack-skills-grid"></div>
+  </div>
+
+  <!-- MEGA TAB -->
+  <div id="mega-tab" class="tab-content">
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/mega_evolution.webp" alt="Mega Evolution" style="max-width:240px;height:auto;filter:drop-shadow(0 0 18px rgba(63,169,245,0.4));">
+      <p class="codex-subtitle" style="margin-bottom:0;">All monsters with mega evolution items and their variants</p>
+    </div>
+    <div class="mega-controls">
+      <div class="mega-search-box">
+        <input type="text" id="mega-search" placeholder="Search monster or item..." aria-label="Search mega monster or item">
+        <span class="mega-search-icon">⚔</span>
+      </div>
+    </div>
+    <div class="mega-filter-section" id="mega-type-filters" role="group" aria-label="Filter mega monsters by type"></div>
+    <div class="mega-count" id="mega-count"></div>
+    <div class="mega-grid" id="mega-grid"></div>
+  </div>
+
+  <!-- ITEMS TAB -->
+  <div id="items-tab" class="tab-content">
+    <h2 class="codex-title">⚗ Alchemical Inventory</h2>
+    <p class="codex-subtitle">Complete collection of balls, potions, candies and more</p>
+    <div class="items-categories">
+      <button class="category-btn active" data-category="all">All Items</button>
+      <button class="category-btn" data-category="ball">Balls</button>
+      <button class="category-btn" data-category="candy">Candies</button>
+      <button class="category-btn" data-category="potion">Potions</button>
+      <button class="category-btn" data-category="money">Money & Tokens</button>
+      <button class="category-btn" data-category="ticket">Tickets</button>
+    </div>
+    <div class="items-grid" id="items-grid"></div>
+  </div>
+
+  <!-- POTENTIALS TAB -->
+  <div id="potentials-tab" class="tab-content">
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Melzyi/Buluwiki/main/imagens/logos/icon_potential.webp" alt="Potentials" style="max-width:160px;height:auto;filter:drop-shadow(0 0 14px rgba(63,169,245,0.4));">
+    </div>
+    <h2 class="codex-title">✦ Potential Abilities</h2>
+    <p class="codex-subtitle">Passive abilities that activate with Opening Skill enchantments</p>
+    <div class="potentials-filters" id="potentials-filters" role="group" aria-label="Filter potentials by type"></div>
+    <div class="potentials-grid" id="potentials-grid"></div>
+  </div>
+
+</div><!-- /content -->
+
+<script src="app.js" defer></script>
+
+
+
+<!-- MONSTER INFORMATION MODAL -->
+<div class="mi-overlay" id="mi-overlay">
+  <div class="mi-card" id="mi-card">
+    <div class="mi-card-bg" id="mi-card-bg"></div>
+    <div class="mi-card-overlay"></div>
+    <div class="mi-card-content">
+      <button class="mi-close" id="mi-close">✕</button>
+      <!-- Linha evolutiva pequena no topo -->
+      <div class="mi-evoline-small" id="mi-evoline"></div>
+      <!-- Imagem grande do monstro final -->
+      <div class="mi-monster-area">
+        <img loading="lazy" decoding="async" class="mi-monster-img" id="mi-monster-img" src="" alt="">
+      </div>
+      <!-- Stats estilo Pokémon -->
+      <div class="mi-stats-area" id="mi-stats-area">
+        <div class="mi-stat-row" id="mi-row-hp">
+          <span class="mi-stat-icon">❤️</span>
+          <span class="mi-stat-num mi-c-hp" id="mi-num-hp">—</span>
+          <span class="mi-stat-name">HP</span>
+          <div class="mi-stat-bar-wrap"><div class="mi-stat-bar mi-bar-hp" id="mi-bar-hp"></div></div>
+        </div>
+        <div class="mi-stat-row" id="mi-row-atk">
+          <span class="mi-stat-icon">⚔️</span>
+          <span class="mi-stat-num mi-c-atk" id="mi-num-atk">—</span>
+          <span class="mi-stat-name">ATK</span>
+          <div class="mi-stat-bar-wrap"><div class="mi-stat-bar mi-bar-atk" id="mi-bar-atk"></div></div>
+        </div>
+        <div class="mi-stat-row" id="mi-row-def">
+          <span class="mi-stat-icon">🛡️</span>
+          <span class="mi-stat-num mi-c-def" id="mi-num-def">—</span>
+          <span class="mi-stat-name">DEF</span>
+          <div class="mi-stat-bar-wrap"><div class="mi-stat-bar mi-bar-def" id="mi-bar-def"></div></div>
+        </div>
+        <div class="mi-stat-row" id="mi-row-spd">
+          <span class="mi-stat-icon">💨</span>
+          <span class="mi-stat-num mi-c-spd" id="mi-num-spd">—</span>
+          <span class="mi-stat-name">SPD</span>
+          <div class="mi-stat-bar-wrap"><div class="mi-stat-bar mi-bar-spd" id="mi-bar-spd"></div></div>
+        </div>
+      </div>
+      <!-- Barra de nome no fundo -->
+      <div class="mi-name-bar" id="mi-name-bar">
+        <span class="mi-monster-name" id="mi-monster-name"></span>
+        <span class="mi-type-pill" id="mi-type-pill"></span>
+        <span class="mi-stars-row" id="mi-stars-row"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
