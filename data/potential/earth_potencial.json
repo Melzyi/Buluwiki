@@ -1,8 +1,8 @@
 [
  {
-"name": "Abnormal Speed",
+"name": "Core Momentum",
 "type": "Earth",
-"description": "Under Sandstorm enchantment, Increase pet's speed by 30% at turn end."
+"description": "Under Sandstorm enchantment, rise Pet's DEF by 10% at turn end if Pet's SPD is higher."
 },
 {
 "name": "Boost Up",
