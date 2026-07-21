@@ -25,6 +25,11 @@
 "description": "Under Tornado Enchantment, damage by wind skill will increase Pet's speed by 20%."
 },
 {
+"name": "Petal Shield",
+"type": "Wind",
+"description": "Under Tornado Enchantment, if Pet has shield at turn end, heal 15% HP."
+},
+{
 "name": "Wind Absorbing",
 "type": "Wind", 
 "description": "Under Tornado Enchantment, damage by wind skill will increase Pet's speed by 10%."
