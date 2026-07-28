@@ -1,0 +1,130 @@
+[
+  {
+    "Name": "Gaian Strike",
+    "PP": 8,
+    "Type": "Earth",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "30% chance to Rise the Pet's defend by 10%"
+  },
+  {
+    "Name": "Earthquake",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "30% chance to breaks shield."
+  },
+  {
+    "Name": "Sinkhole",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Reduce enemy's attack, defense and speed by 20%"
+  },
+  {
+    "Name": "Sandstrike",
+    "PP": 8,
+    "Type": "Earth",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Inflict Dust damage to enemy for 40% HP in 3 turn"
+  },
+  {
+    "Name": "Mud attack",
+    "PP": 8,
+    "Type": "Earth",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Inflict Dust damage to enemy for 50% HP in 4 turn"
+  },
+  {
+    "Name": "Bone Raid",
+    "PP": 15,
+    "Type": "Earth",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Bone Smash",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 145,
+    "Percentage": "80%",
+    "Effect": "Counts as 2 hits against a shield."
+  },
+  {
+    "Name": "Stone kick",
+    "PP": 10,
+    "Type": "Earth",
+    "Power": 135,
+    "Percentage": "90%",
+    "Effect": "30% chance to breaks shield."
+  },
+  {
+    "Name": "Earth Shield",
+    "PP": 3,
+    "Type": "Earth",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 2 hit. Rise Pet's defense by 10%."
+  },
+  {
+    "Name": "Rock Shard",
+    "PP": 8,
+    "Type": "Earth",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Breaks shield."
+  },
+  {
+    "Name": "Diamond Coat",
+    "PP": 3,
+    "Type": "Earth",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 3 hit. Pet loses 10% HP."
+  },
+  {
+    "Name": "Ancient Power",
+    "PP": 10,
+    "Type": "Earth",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Never Critical hit."
+  },
+  {
+    "Name": "Poison Fang",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 000,
+    "Percentage": "75%",
+    "Effect": "Inflict Dust damage for 200% HP In 6 turns."
+  },
+  {
+    "Name": "Stone Edge",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 145,
+    "Percentage": "90%",
+    "Effect": "Never Critical hit. 50% Breaks shield."
+  },
+  {
+    "Name": "Heavy Punch",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "50% chance to stun enemy for 1 turn."
+  },
+  {
+    "Name": "Mud Spear",
+    "PP": 5,
+    "Type": "Earth",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Hitting enemy with Dust damage tear through shield and stun for 1 turn."
+  }
+]

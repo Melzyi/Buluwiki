@@ -1,0 +1,154 @@
+[
+  {
+    "Name": "Condemnation",
+    "PP": 3,
+    "Type": "Evil",
+    "Power": 000,
+    "Percentage": "80%",
+    "Effect": "The enemy will lose 75% HP in 3 turns"
+  },
+  {
+    "Name": "Possession",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 000,
+    "Percentage": "90%",
+    "Effect": "The enemy will lose 75% HP in 4 turns"
+  },
+  {
+    "Name": "Curse",
+    "PP": 8,
+    "Type": "Evil",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "The enemy will lose 75% HP in 5 turns"
+  },
+  {
+    "Name": "Sneak Attack",
+    "PP": 12,
+    "Type": "Evil",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "30% chance for the enemy to lose 10% max HP."
+  },
+  {
+    "Name": "Evil Fang",
+    "PP": 8,
+    "Type": "Evil",
+    "Power": 125,
+    "Percentage": "90%",
+    "Effect": "50% chance for the enemy to lose 10% max HP."
+  },
+  {
+    "Name": "Dark Claw",
+    "PP": 8,
+    "Type": "Evil",
+    "Power": 125,
+    "Percentage": "80%",
+    "Effect": "30% chance for the enemy to lose 20% max HP."
+  },
+  {
+    "Name": "Shadowstrike",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 130,
+    "Percentage": "80%",
+    "Effect": "50% chance for the enemy to lose 10% max HP."
+  },
+  {
+    "Name": "Blood Sword",
+    "PP": 4,
+    "Type": "Evil",
+    "Power": 140,
+    "Percentage": "100%",
+    "Effect": "50% chance for the enemy to lose 20% max HP."
+  },
+  {
+    "Name": "Dark Sphere",
+    "PP": 8,
+    "Type": "Evil",
+    "Power": 125,
+    "Percentage": "90%",
+    "Effect": "Always critical hit."
+  },
+  {
+    "Name": "Rabid Bite",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Breaks shield."
+  },
+  {
+    "Name": "Blood Shield",
+    "PP": 3,
+    "Type": "Evil",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 1 hit. On block, enemy loses 15% HP, pet heals 15% HP."
+  },
+  {
+    "Name": "Night Shade",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "Pet also heals 50% of damage dealt."
+  },
+  {
+    "Name": "Dark Shield",
+    "PP": 3,
+    "Type": "Evil",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 2 hit. On block, enemy loses 15% HP."
+  },
+  {
+    "Name": "Night Slash",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Pet also heals 20% of damage dealt."
+  },
+  {
+    "Name": "Phantom Bind",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Enemy loses 50% HP in 2 turns and Pet heals 50% HP in 2 turns if enemy has shield."
+  },
+  {
+    "Name": "Soul Vanish",
+    "PP": 6,
+    "Type": "Evil",
+    "Power": 900,
+    "Percentage": "30%",
+    "Effect": "Cannot be blocked by shield."
+  },
+  {
+    "Name": "Soul Sword",
+    "PP": 5,
+    "Type": "Evil",
+    "Power": 140,
+    "Percentage": "90%",
+    "Effect": "Ignore shield. 50% chance to break shield and seal last used skill for 2 turns."
+  },
+  {
+    "Name": "Dark Destroyer",
+    "PP": 8,
+    "Type": "Evil",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Ignore shield. Power become 170 if enemy has ability buff."
+  },
+  {
+    "Name": "Immortal",
+    "PP": 3,
+    "Type": "Evil",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Heal Pet's 50% HP. Heal Pet's 50% HP in 2 turn."
+  }
+]

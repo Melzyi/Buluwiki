@@ -1,0 +1,130 @@
+[
+  {
+    "Name": "Swift-Charge",
+    "PP": 10,
+    "Type": "Mythic",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Ultimate Strike",
+    "PP": 3,
+    "Type": "Mythic",
+    "Power": 145,
+    "Percentage": "85%",
+    "Effect": "Cannot be blocked by a shield."
+  },
+  {
+    "Name": "Mystic Light",
+    "PP": 5,
+    "Type": "Mythic",
+    "Power": 135,
+    "Percentage": "90%",
+    "Effect": "Enemy loses 20%HP if it has a shield."
+  },
+  {
+    "Name": "Shield Absorb",
+    "PP": 5,
+    "Type": "Mythic",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Break the enemy shield to block 2 hit."
+  },
+  {
+    "Name": "Grow Up",
+    "PP": 8,
+    "Type": "Mythic",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Rise user's attack and defense by 10%. The user heals 20% HP."
+  },
+  {
+    "Name": "Petrifying Breath",
+    "PP": 5,
+    "Type": "Mythic",
+    "Power": 000,
+    "Percentage": "80%",
+    "Effect": "Inflict ancient flame for 200% HP in 8 turns and reduce enemy's attack by 20%."
+  },
+  {
+    "Name": "Spirit Charge",
+    "PP": 8,
+    "Type": "Mythic",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Break shield and enemy loses 25% HP if enemy has shield."
+  },
+  {
+    "Name": "Lion Roar",
+    "PP": 3,
+    "Type": "Mythic",
+    "Power": 160,
+    "Percentage": "80%",
+    "Effect": "Cannot be blocked by a shield. Reduces the user's attack and defense by 10%."
+  },
+  {
+    "Name": "Cannon Blast",
+    "PP": 3,
+    "Type": "Mythic",
+    "Power": 145,
+    "Percentage": "90%",
+    "Effect": "Cannot be blocked by shield. 50% chance to raise the user's speed by 20%"
+  },
+  {
+    "Name": "Mythic Breath",
+    "PP": 5,
+    "Type": "Mythic",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Break shield and Inflict ancient flame for 50% HP in 3 turns if it has a shield."
+  },
+  {
+    "Name": "Terror Wind",
+    "PP": 12,
+    "Type": "Mythic",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Rage Bite",
+    "PP": 10,
+    "Type": "Mythic",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Sheeplight",
+    "PP": 3,
+    "Type": "Mythic",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Rise user's ability by 20%. Heal Pet 20% HP instantly and the next 10 turns."
+  },
+  {
+    "Name": "Sheepjudge",
+    "PP": 3,
+    "Type": "Mythic",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Reduce enemy's ability by 20%. Lose 15% HP instantly and the next 10 turns."
+  },
+  {
+    "Name": "Sacred Blow",
+    "PP": 5,
+    "Type": "Mythic",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Hit shielded evil monsters with 150 power also reduce their attack by 20%."
+  },
+  {
+    "Name": "Savage Echo",
+    "PP": 3,
+    "Type": "Mythic",
+    "Power": 160,
+    "Percentage": "100%",
+    "Effect": "Always critical hit and ignore enemy DEF when Pet is at 1/3 HP."
+  }
+]

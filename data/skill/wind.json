@@ -1,0 +1,138 @@
+[
+  {
+    "Name": "Aero",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 145,
+    "Percentage": "80%",
+    "Effect": "Can damage shielded monster with 120 power."
+  },
+  {
+    "Name": "Twister",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 160,
+    "Percentage": "90%",
+    "Effect": "Can damage shielded monster with 140 power. Reduce user's attack by 10%."
+  },
+  {
+    "Name": "Gale",
+    "PP": 15,
+    "Type": "Wind",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Tornado",
+    "PP": 3,
+    "Type": "Wind",
+    "Power": 140,
+    "Percentage": "90%",
+    "Effect": "50% chance for the enemy to lose 40% HP in 4 turns"
+  },
+  {
+    "Name": "Dive bomb",
+    "PP": 8,
+    "Type": "Wind",
+    "Power": 130,
+    "Percentage": "90%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Peck",
+    "PP": 12,
+    "Type": "Wind",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Rise user's speed by 10%"
+  },
+  {
+    "Name": "Air Blade",
+    "PP": 8,
+    "Type": "Wind",
+    "Power": 120,
+    "Percentage": "90%",
+    "Effect": "Counts as 2 hits against a shield."
+  },
+  {
+    "Name": "Storm",
+    "PP": 15,
+    "Type": "Wind",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "50% chance to Rise the enemy's speed by 10%."
+  },
+  {
+    "Name": "Brave Bird",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 160,
+    "Percentage": "100%",
+    "Effect": "Priority+. Pet lose 15% of its max HP."
+  },
+  {
+    "Name": "Air Needle",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 135,
+    "Percentage": "90%",
+    "Effect": "Priority+ if enemy has shield. Cannot be blocked by shield."
+  },
+  {
+    "Name": "Storm Dispel",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 125,
+    "Percentage": "90%",
+    "Effect": "Critical hit if enemy has shield. Cannot be blocked by shield."
+  },
+  {
+    "Name": "Storm Shield",
+    "PP": 3,
+    "Type": "Wind",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+2. Block 1 hits. Rise pet's SPD by 10%."
+  },
+  {
+    "Name": "Aerial Ace",
+    "PP": 12,
+    "Type": "Wind",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Priority+."
+  },
+  {
+    "Name": "Leaf Storm",
+    "PP": 12,
+    "Type": "Wind",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Always critical hit."
+  },
+  {
+    "Name": "Wing Strike",
+    "PP": 8,
+    "Type": "Wind",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Priority+. Always critical hit."
+  },
+  {
+    "Name": "Leaf Frenzy",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 145,
+    "Percentage": "80%",
+    "Effect": "Break shield and reduce enemy's attack and defense by 10% if enemy has shield."
+  },
+  {
+    "Name": "Cyclone Charge",
+    "PP": 5,
+    "Type": "Wind",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "has ability buff. Priority+. Ignore shield if Pet."
+  }
+]

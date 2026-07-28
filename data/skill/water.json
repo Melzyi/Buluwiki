@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Water Gun",
+    "PP": 15,
+    "Type": "Water",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Bubble Raid",
+    "PP": 12,
+    "Type": "Water",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Torrent",
+    "PP": 8,
+    "Type": "Water",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "30% to inflict Aqua damage for 40% HP in 3 turns."
+  },
+  {
+    "Name": "Tsunami",
+    "PP": 5,
+    "Type": "Water",
+    "Power": 140,
+    "Percentage": "90%",
+    "Effect": "30% to inflict Aqua damage for 40% HP in 3 turns."
+  },
+  {
+    "Name": "Bubbles",
+    "PP": 15,
+    "Type": "Water",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "25% chance to reduce the enemy's attack by 10%"
+  },
+  {
+    "Name": "Aqua cannon",
+    "PP": 8,
+    "Type": "Water",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "40% chance to reduce the enemy's attack by 10%"
+  },
+  {
+    "Name": "Bubble Jet",
+    "PP": 8,
+    "Type": "Water",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "30% chance to reduce the enemy's attack by 20%"
+  },
+  {
+    "Name": "Whirlpool",
+    "PP": 10,
+    "Type": "Water",
+    "Power": 000,
+    "Percentage": "90%",
+    "Effect": "Inflict Aqua damage for 60% HP in 5 turns."
+  },
+  {
+    "Name": "Aqua Tail",
+    "PP": 12,
+    "Type": "Water",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Aqua Claw",
+    "PP": 8,
+    "Type": "Water",
+    "Power": 110,
+    "Percentage": "90%",
+    "Effect": "Always critical hit."
+  },
+  {
+    "Name": "Aqua Shield",
+    "PP": 3,
+    "Type": "Water",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 2 hit. Pet heals 10% HP. On block, Pet heals 10% HP."
+  },
+  {
+    "Name": "Aqua Wall",
+    "PP": 3,
+    "Type": "Water",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 2 hit. On block, rise pet's defense by 10%."
+  },
+  {
+    "Name": "Aqua Ring",
+    "PP": 5,
+    "Type": "Water",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Heal Pet's 200% of its HP in 10 turn."
+  },
+  {
+    "Name": "Death Riptide",
+    "PP": 3,
+    "Type": "Water",
+    "Power": 145,
+    "Percentage": "90%",
+    "Effect": "Heal Pets 50% HP in 3 turn."
+  },
+  {
+    "Name": "Water Pulse",
+    "PP": 3,
+    "Type": "Water",
+    "Power": 145,
+    "Percentage": "90%",
+    "Effect": "Heal Pets 30% HP in 2 turn."
+  },
+  {
+    "Name": "Aqua Breath",
+    "PP": 8,
+    "Type": "Water",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Priority-. Heal Pets 30% HP If enemy has shield."
+  },
+  {
+    "Name": "Steam Laser",
+    "PP": 8,
+    "Type": "Water",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "Cannot be blocked by shield."
+  },
+  {
+    "Name": "Aqua Soak",
+    "PP": 5,
+    "Type": "Water",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Absorb Aqua damage on enemy to heal 50% HP and form a shield to block 2 attack."
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "Name": "Trance",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Rises user's attack and defense by 10%"
+  },
+  {
+    "Name": "Swiftness",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Rises user's speed Rise by 20%."
+  },
+  {
+    "Name": "Psybeam",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "50% chance to Rise both attack by 10%"
+  },
+  {
+    "Name": "Interference",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "50% chance to Rise both defense by 10%"
+  },
+  {
+    "Name": "Spirit Breath",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "50% chance to Rise both speed by 10%"
+  },
+  {
+    "Name": "Mind Blast",
+    "PP": 12,
+    "Type": "Spirit",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Spirit Surge",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Pet also heals 10% of damage dealt."
+  },
+  {
+    "Name": "Prediction",
+    "PP": 5,
+    "Type": "Spirit",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "30% chance to inflict Psycho damage to enemy for 40% HP in 3 turn."
+  },
+  {
+    "Name": "Psycho Shield",
+    "PP": 3,
+    "Type": "Spirit",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+2. Block 1 hit. On block, reduce enemy's ATK by 10%."
+  },
+  {
+    "Name": "Ancient Spirit",
+    "PP": 5,
+    "Type": "Spirit",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Break Pet's shield to inflict Psycho damage to enemy for 75% HP in 3 turn."
+  },
+  {
+    "Name": "Psycho Pulse",
+    "PP": 5,
+    "Type": "Spirit",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Break Pet's shield to rise power to 140 and ignore shield."
+  },
+  {
+    "Name": "Psycho Claw",
+    "PP": 5,
+    "Type": "Spirit",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Break Pet's shield to rise power to 160 and strike first."
+  },
+  {
+    "Name": "Spirit Shroud",
+    "PP": 3,
+    "Type": "Spirit",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 4 attacks. Seal this skill for 3 turns."
+  },
+  {
+    "Name": "Psycho Boost",
+    "PP": 3,
+    "Type": "Spirit",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Break Pet's shield to Heal Pet's 100% HP in 4 turn."
+  },
+  {
+    "Name": "Psystrike",
+    "PP": 8,
+    "Type": "Spirit",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Priority-. Break Pet's shield to reduce enemy's all ability by 20%."
+  },
+  {
+    "Name": "Psycho Blast",
+    "PP": 5,
+    "Type": "Spirit",
+    "Power": 140,
+    "Percentage": "100%",
+    "Effect": "Prepare for 1 turn. Remove enemy's ability buff and seal its last used skill for 5 turns."
+  }
+]

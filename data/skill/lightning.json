@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Blitz",
+    "PP": 10,
+    "Type": "Lightning",
+    "Power": 000,
+    "Percentage": "90%",
+    "Effect": "Reduce enemy's speed by 20%."
+  },
+  {
+    "Name": "Shock",
+    "PP": 15,
+    "Type": "Lightning",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "15% chance to reduce the enemy's speed by 10%"
+  },
+  {
+    "Name": "Electrospark",
+    "PP": 10,
+    "Type": "Lightning",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "25% chance to reduce the enemy's speed by 10%"
+  },
+  {
+    "Name": "Thunderpunch",
+    "PP": 8,
+    "Type": "Lightning",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "40% chance to reduce the enemy's speed by 10%."
+  },
+  {
+    "Name": "Thunderbolt",
+    "PP": 8,
+    "Type": "Lightning",
+    "Power": 140,
+    "Percentage": "100%",
+    "Effect": "30% chance to paralyse the enemy for 1 turn."
+  },
+  {
+    "Name": "Thunder",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 150,
+    "Percentage": "80%",
+    "Effect": "75% chance to break shield and Paralyse shielded monster for 1 turn."
+  },
+  {
+    "Name": "Electrocute",
+    "PP": 8,
+    "Type": "Lightning",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Electrify the enemy for 40% HP in 3 turns"
+  },
+  {
+    "Name": "Spark Cannon",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 140,
+    "Percentage": "100%",
+    "Effect": "50% chance to electrify the enemy for 50% HP in 3 turns."
+  },
+  {
+    "Name": "Pierce Shock",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Ignore shield."
+  },
+  {
+    "Name": "Static Shield",
+    "PP": 3,
+    "Type": "Lightning",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 2 hit. On block, reduce enemy's SPD by 10%."
+  },
+  {
+    "Name": "Overload",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "Prepare for 1 turn. Paralyse shielded enemy for 2 turn and breaks it."
+  },
+  {
+    "Name": "Thunder Claw",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "Priority+. Reduce enemy's speed by 20%."
+  },
+  {
+    "Name": "Charging",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 000,
+    "Percentage": "100%",
+    "Effect": "Prepare for 1 turn. Recover 100% HP and rise pet's defend by 30%."
+  },
+  {
+    "Name": "Bolt Strike",
+    "PP": 8,
+    "Type": "Lightning",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Prepare for 1 turn. Electrify enemy for 50% HP in 3 turn."
+  },
+  {
+    "Name": "Volt Rend",
+    "PP": 5,
+    "Type": "Lightning",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "50% to reduce enemy's SPD by 10%. Ignore shield if enemy has SPD debuff."
+  }
+]
