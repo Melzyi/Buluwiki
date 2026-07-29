@@ -19,7 +19,7 @@
     "Name": "Sinkhole",
     "PP": 5,
     "Type": "Earth",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Reduce enemy's attack, defense and speed by 20%"
   },
@@ -67,7 +67,7 @@
     "Name": "Earth Shield",
     "PP": 3,
     "Type": "Earth",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Priority+. Block 2 hit. Rise Pet's defense by 10%."
   },
@@ -83,7 +83,7 @@
     "Name": "Diamond Coat",
     "PP": 3,
     "Type": "Earth",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Priority+. Block 3 hit. Pet loses 10% HP."
   },
@@ -99,7 +99,7 @@
     "Name": "Poison Fang",
     "PP": 5,
     "Type": "Earth",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "75%",
     "Effect": "Inflict Dust damage for 200% HP In 6 turns."
   },
