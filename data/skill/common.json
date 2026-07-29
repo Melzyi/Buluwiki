@@ -3,7 +3,7 @@
     "Name": "Squeal",
     "PP": 8,
     "Type": "Common",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Reduce enemy's defense by 20%."
   },
@@ -27,7 +27,7 @@
     "Name": "Frighten",
     "PP": 10,
     "Type": "Common",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Reduce enemy's attack by 20%."
   },
@@ -75,7 +75,7 @@
     "Name": "Shield",
     "PP": 3,
     "Type": "Common",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Priority+. Block 1 hit. On block, rise Pet's ATK and DEF by 10%."
   },
