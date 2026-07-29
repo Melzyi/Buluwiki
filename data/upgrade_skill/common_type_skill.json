@@ -7,7 +7,7 @@
 "effect": "Ignore shield. Stun the pet for 1 turn." 
 },
  {
-"name": "Vaccum Blast",
+"name": "Vacuum Blast",
 "pp": 3,
 "power": 135,
 "precision": "100%",
