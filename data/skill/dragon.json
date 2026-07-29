@@ -139,7 +139,7 @@
     "Name": "Sigma Overdrive",
     "PP": 8,
     "Type": "Dragon",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Increase Pet's all ability by 30% and heals 100% max HP but Paralyze it for 1 turn."
   },
