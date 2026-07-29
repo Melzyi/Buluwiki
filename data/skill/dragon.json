@@ -19,7 +19,7 @@
     "Name": "Awakening",
     "PP": 5,
     "Type": "Dragon",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Rises user's attack and speed by 20%"
   },
@@ -75,7 +75,7 @@
     "Name": "Draco Shield",
     "PP": 5,
     "Type": "Dragon",
-    "Power": 000,
+    "Power": 0,
     "Percentage": "100%",
     "Effect": "Priority+. Block 3 hits. Pet lose 20% HP."
   },
