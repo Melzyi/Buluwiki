@@ -1,0 +1,527 @@
+{
+  "week_01": {
+    "editions": [
+      {
+        "name": "Kirin Edition",
+        "folder": "kirin_edition",
+        "banner": "kirin_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "kiric_01",
+            "hasVariant": false
+          },
+          {
+            "name": "kiriak_02",
+            "hasVariant": false
+          },
+          {
+            "name": "kirin_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Kenga Edition",
+        "folder": "kenga_edition",
+        "banner": "kenga_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "kenga_01",
+            "hasVariant": false
+          },
+          {
+            "name": "kengarok_02",
+            "hasVariant": false
+          },
+          {
+            "name": "kengarion_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_02": {
+    "editions": [
+      {
+        "name": "Arctery Edition",
+        "folder": "arcter_edition",
+        "banner": "arctery_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "arctery_01",
+            "hasVariant": false
+          },
+          {
+            "name": "arcterick_02",
+            "hasVariant": false
+          },
+          {
+            "name": "arcterion_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Leafy Edition",
+        "folder": "leafy_edition",
+        "banner": "lievi_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "lievi_01",
+            "hasVariant": false
+          },
+          {
+            "name": "laforn_02",
+            "hasVariant": false
+          },
+          {
+            "name": "leafornite_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_03": {
+    "editions": [
+      {
+        "name": "Griff Edition",
+        "folder": "griff_edition",
+        "banner": "griffie_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "griffie_01",
+            "hasVariant": false
+          },
+          {
+            "name": "grifflio_02",
+            "hasVariant": false
+          },
+          {
+            "name": "grifllizon_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Musta Edition",
+        "folder": "musta_edition",
+        "banner": "kolter_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "kolter_01",
+            "hasVariant": false
+          },
+          {
+            "name": "fillio_02",
+            "hasVariant": false
+          },
+          {
+            "name": "mystang_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_04": {
+    "editions": [
+      {
+        "name": "Glacial Edition",
+        "folder": "glacial_edition",
+        "banner": "glacic_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "glacic_01",
+            "hasVariant": false
+          },
+          {
+            "name": "glacirio_02",
+            "hasVariant": false
+          },
+          {
+            "name": "glacigon_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Pando Edition",
+        "folder": "pando_edition",
+        "banner": "pandy_week_banner.png",
+        "type": "ice",
+        "monsters": [
+          {
+            "name": "pandy_01",
+            "hasVariant": false
+          },
+          {
+            "name": "pandin_02",
+            "hasVariant": false
+          },
+          {
+            "name": "pandizard_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_05": {
+    "editions": [
+      {
+        "name": "Grety Edition",
+        "folder": "grety_edition",
+        "banner": "grety_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "grety_01",
+            "hasVariant": false
+          },
+          {
+            "name": "greydi_02",
+            "hasVariant": false
+          },
+          {
+            "name": "greydon_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Krus Edition",
+        "folder": "krus_edition",
+        "banner": "krus_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "krus_01",
+            "hasVariant": false
+          },
+          {
+            "name": "krusil_02",
+            "hasVariant": false
+          },
+          {
+            "name": "krushigon_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_06": {
+    "editions": [
+      {
+        "name": "Voca Edition",
+        "folder": "voca_edition",
+        "banner": "volcano_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "firegon_01",
+            "hasVariant": true
+          },
+          {
+            "name": "alagon_02",
+            "hasVariant": true
+          },
+          {
+            "name": "lavagon_03",
+            "hasVariant": true
+          },
+          {
+            "name": "volcagon_04",
+            "hasVariant": true,
+            "hasMega": true
+          }
+        ]
+      }
+    ]
+  },
+  "week_07": {
+    "editions": [
+      {
+        "name": "Lamp Edition",
+        "folder": "lamp_edition",
+        "banner": "lampiz_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "lampiz_01",
+            "hasVariant": false
+          },
+          {
+            "name": "lampiee_02",
+            "hasVariant": false
+          },
+          {
+            "name": "genierts_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_08": {
+    "editions": [
+      {
+        "name": "Meduran Edition",
+        "folder": "meduran_edition",
+        "banner": "medy_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "medy_01",
+            "hasVariant": false
+          },
+          {
+            "name": "mediss_02",
+            "hasVariant": false
+          },
+          {
+            "name": "medurans_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_09": {
+    "editions": [
+      {
+        "name": "Blaze Edition",
+        "folder": "blaze_edition",
+        "banner": "blazhin_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "blazhin_01",
+            "hasVariant": false
+          },
+          {
+            "name": "blazlin_02",
+            "hasVariant": false
+          },
+          {
+            "name": "blazlong_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Volti Edition",
+        "folder": "volti_edition",
+        "banner": "voltio_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "voltio_01",
+            "hasVariant": false
+          },
+          {
+            "name": "volkon_02",
+            "hasVariant": false
+          },
+          {
+            "name": "volcarion_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_10": {
+    "editions": [
+      {
+        "name": "Necro Edition",
+        "folder": "necro_edition",
+        "banner": "necio_week_banner.png",
+        "type": "evil",
+        "monsters": [
+          {
+            "name": "necio_01",
+            "hasVariant": false
+          },
+          {
+            "name": "nectis_02",
+            "hasVariant": false
+          },
+          {
+            "name": "necrolym_03",
+            "hasVariant": false
+          }
+        ]
+      },
+      {
+        "name": "Nighty Edition",
+        "folder": "nighty_edition",
+        "banner": "nighty_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "nighty_01",
+            "hasVariant": false
+          },
+          {
+            "name": "nightiers_02",
+            "hasVariant": false
+          },
+          {
+            "name": "nightigon_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_11": {
+    "editions": [
+      {
+        "name": "Saur Edition",
+        "folder": "saur_edition",
+        "banner": "saur_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "rocky_01",
+            "hasVariant": true
+          },
+          {
+            "name": "rocksaur_02",
+            "hasVariant": true
+          },
+          {
+            "name": "megasaur_03",
+            "hasVariant": true
+          },
+          {
+            "name": "ultisaur_04",
+            "hasVariant": true,
+            "hasMega": true
+          }
+        ]
+      }
+    ]
+  },
+  "week_12": {
+    "editions": [
+      {
+        "name": "Azlord Edition",
+        "folder": "azlord_edition",
+        "banner": "crystal_week_banner.png",
+        "type": "mythic",
+        "monsters": [
+          {
+            "name": "ardio_01",
+            "hasVariant": false
+          },
+          {
+            "name": "ardris_02",
+            "hasVariant": false
+          },
+          {
+            "name": "ardizard_03",
+            "hasVariant": false
+          },
+          {
+            "name": "ardizlord_04",
+            "hasVariant": false,
+            "hasMega": true
+          }
+        ]
+      }
+    ]
+  },
+  "week_13": {
+    "editions": [
+      {
+        "name": "Whino Edition",
+        "folder": "whino_edition",
+        "banner": "whindz_week_banner.png",
+        "type": "wind",
+        "monsters": [
+          {
+            "name": "whindz_01",
+            "hasVariant": false
+          },
+          {
+            "name": "whindniy_02",
+            "hasVariant": false
+          },
+          {
+            "name": "whindnoser_03",
+            "hasVariant": false
+          }
+        ]
+      }
+    ]
+  },
+  "week_14": {
+    "editions": [
+      {
+        "name": "Vendra Edition",
+        "folder": "vendra_edition",
+        "banner": "heavenly_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "vingon_01",
+            "hasVariant": true
+          },
+          {
+            "name": "vindragon_02",
+            "hasVariant": true
+          },
+          {
+            "name": "vedragon_03",
+            "hasVariant": true
+          },
+          {
+            "name": "ventragon_04",
+            "hasVariant": true,
+            "hasMega": true
+          }
+        ]
+      }
+    ]
+  },
+  "week_15": {
+    "editions": [
+      {
+        "name": "Aqua Edition",
+        "folder": "aqua_edition",
+        "banner": "tidal_week_banner.png",
+        "type": "dragon",
+        "monsters": [
+          {
+            "name": "aquatini_01",
+            "hasVariant": true
+          },
+          {
+            "name": "aquatir_02",
+            "hasVariant": true
+          },
+          {
+            "name": "aquanite_03",
+            "hasVariant": true
+          },
+          {
+            "name": "aquarion_04",
+            "hasVariant": true,
+            "hasMega": true
+          }
+        ]
+      }
+    ]
+  }
+}
