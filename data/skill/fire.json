@@ -1,0 +1,178 @@
+[
+  {
+    "Name": "Burning Dash",
+    "PP": 15,
+    "Type": "Fire",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Fire Dance",
+    "PP": 12,
+    "Type": "Fire",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Flamethrower",
+    "PP": 8,
+    "Type": "Fire",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Inferno",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 155,
+    "Percentage": "80%",
+    "Effect": "Can damage shielded monster with 120 power."
+  },
+  {
+    "Name": "Sparks",
+    "PP": 12,
+    "Type": "Fire",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "50% chance to Burn enemy for 30% HP in 4 turns"
+  },
+  {
+    "Name": "Fire Punch",
+    "PP": 8,
+    "Type": "Fire",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "75% chance to Burn enemy for 40% HP in 4 turns"
+  },
+  {
+    "Name": "Divine Flame",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 130,
+    "Percentage": "90%",
+    "Effect": "Burn enemy for 50% HP in 4 turns."
+  },
+  {
+    "Name": "Blazing Whirl",
+    "PP": 10,
+    "Type": "Fire",
+    "Power": 0,
+    "Percentage": "90%",
+    "Effect": "Burn enemy for 60% HP in 4 turns."
+  },
+  {
+    "Name": "Flame Claw",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 135,
+    "Percentage": "80%",
+    "Effect": "Always critical hit."
+  },
+  {
+    "Name": "Flame Shield",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 0,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 1 hit. On block, Burn enemy for 30% HP in 2 turns."
+  },
+  {
+    "Name": "Flame Spear",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 140,
+    "Percentage": "100%",
+    "Effect": "Cannot be blocked by a shield. Pet lose 10% of its max HP."
+  },
+  {
+    "Name": "Flame Bite",
+    "PP": 12,
+    "Type": "Fire",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "Priority+."
+  },
+  {
+    "Name": "Selfdestruct",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "HP becomes 0. Break the shield and reduce the enemy's ability by 20%."
+  },
+  {
+    "Name": "Explosion",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 250,
+    "Percentage": "100%",
+    "Effect": "HP become 0. Can damage a shielded enemy with 150 power."
+  },
+  {
+    "Name": "Incinerate",
+    "PP": 8,
+    "Type": "Fire",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Cannot be blocked by a shield. Burn Pet for 25% HP in 3 turns if enemy has shield."
+  },
+  {
+    "Name": "Flame Destruction",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 135,
+    "Percentage": "90%",
+    "Effect": "The enemy will lose 50% HP in 2 turns if it has a shield."
+  },
+  {
+    "Name": "Popcorn Bomb",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 250,
+    "Percentage": "100%",
+    "Effect": "Pet's HP become O after hit the enemy. Damage shielded the enemy with 130 power."
+  },
+  {
+    "Name": "Flare Gift",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "50% chance to raise the enemy's attack by 10%"
+  },
+  {
+    "Name": "Heavy Burn",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "Inflict Burning for 25% HP in 2 turn. Triple the burn to the shielded monster."
+  },
+  {
+    "Name": "Flame Sweep",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 0,
+    "Percentage": "100%",
+    "Effect": "Remove the enemy's ability buff and Burn it for 40%HP in 3 turns."
+  },
+  {
+    "Name": "Mantra Blaze",
+    "PP": 5,
+    "Type": "Fire",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Break shield. Seal this skill and enemy last skill for 7 turns."
+  },
+  {
+    "Name": "Scalding Blaze",
+    "PP": 3,
+    "Type": "Fire",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Ignore shield and Burn enemy for 40% HP in 3 turns if enemy has Aqua damage."
+  }
+]

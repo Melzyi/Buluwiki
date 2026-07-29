@@ -1,0 +1,186 @@
+[
+  {
+    "Name": "Blizzard",
+    "PP": 8,
+    "Type": "Ice",
+    "Power": 0,
+    "Percentage": "90%",
+    "Effect": "The enemy will lose 50% HP in 4 turns."
+  },
+  {
+    "Name": "Chil Wind",
+    "PP": 10,
+    "Type": "Ice",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "80% chance for the enemy to lose 30% HP in 6 turns."
+  },
+  {
+    "Name": "Frost Bomb",
+    "PP": 15,
+    "Type": "Ice",
+    "Power": 115,
+    "Percentage": "100%",
+    "Effect": "A normal attack with no special properties."
+  },
+  {
+    "Name": "Freeze",
+    "PP": 10,
+    "Type": "Ice",
+    "Power": 104,
+    "Percentage": "90%",
+    "Effect": "70% chance to reduce the enemy's attack by 10%"
+  },
+  {
+    "Name": "Icefall",
+    "PP": 10,
+    "Type": "Ice",
+    "Power": 120,
+    "Percentage": "100%",
+    "Effect": "20% chance to reduce the enemy's attack by 10%"
+  },
+  {
+    "Name": "Ice Beam",
+    "PP": 12,
+    "Type": "Ice",
+    "Power": 125,
+    "Percentage": "90%",
+    "Effect": "Can damage shielded monster with 105 power."
+  },
+  {
+    "Name": "Ice Punch",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 135,
+    "Percentage": "100%",
+    "Effect": "80% chance for the enemy to lose 30% HP in 5 turns"
+  },
+  {
+    "Name": "Froststrike",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "10% chance to freeze enemy for 2 turn."
+  },
+  {
+    "Name": "Ice Shield",
+    "PP": 3,
+    "Type": "Ice",
+    "Power": 0,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 2 hits. On block, reduce enemy's ATK by 10%."
+  },
+  {
+    "Name": "Glacial Shield",
+    "PP": 3,
+    "Type": "Ice",
+    "Power": 0,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 3 hits. Pet loses 30% HP in 3 turns."
+  },
+  {
+    "Name": "Ice Claw",
+    "PP": 8,
+    "Type": "Ice",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Priority-. Reduce enemy's attack by 20%."
+  },
+  {
+    "Name": "Icicle Crash",
+    "PP": 3,
+    "Type": "Ice",
+    "Power": 160,
+    "Percentage": "100%",
+    "Effect": "Prepare for 1 turn. 50% chance to Reduce enemy's attack by 20%."
+  },
+  {
+    "Name": "Frost Bite",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Reduce enemy's attack by 30% if enemy has shield."
+  },
+  {
+    "Name": "Mirror",
+    "PP": 3,
+    "Type": "Ice",
+    "Power": 0,
+    "Percentage": "100%",
+    "Effect": "Priority+. Block 1 hit. On block, reflect 50% of damage to enemey."
+  },
+  {
+    "Name": "Frost Destruction",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "The enemy will lose 50% HP in 4 turns and reduce attack by 10% if it has shield."
+  },
+  {
+    "Name": "Frost Magic",
+    "PP": 3,
+    "Type": "Ice",
+    "Power": 145,
+    "Percentage": "100%",
+    "Effect": "Reduce enemy's attack and defense by 10%."
+  },
+  {
+    "Name": "Glacial Gift",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 150,
+    "Percentage": "100%",
+    "Effect": "50% chance to Rise enemy's defense by 10%"
+  },
+  {
+    "Name": "Ice Hammer",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Can damage shielded monster with 115 power."
+  },
+  {
+    "Name": "Frozen Breath",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 0,
+    "Percentage": "80%",
+    "Effect": "The enemy will lose 75% HP in 2 turns. Also Freeze enemy if it has shield."
+  },
+  {
+    "Name": "Frost Sweep",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 0,
+    "Percentage": "100%",
+    "Effect": "Remove Pet's ability debuff and form a shield to block 2 attack."
+  },
+  {
+    "Name": "Santa Gift",
+    "PP": 5,
+    "Type": "Ice",
+    "Power": 125,
+    "Percentage": "100%",
+    "Effect": "Ignore Shield. Rise both all ability by 10%"
+  },
+  {
+    "Name": "Frosty Claw",
+    "PP": 8,
+    "Type": "Ice",
+    "Power": 130,
+    "Percentage": "100%",
+    "Effect": "Remove Pet's ability debuff. Remove enemy's ability buff."
+  },
+  {
+    "Name": "Frost Break",
+    "PP": 3,
+    "Type": "Ice",
+    "Power": 110,
+    "Percentage": "90%",
+    "Effect": "75% to Freeze enemy for 1 turn. Also Reduce its defend by 30% if Pet has double SPD."
+  }
+]
