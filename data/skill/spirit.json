@@ -69,7 +69,7 @@
     "Type": "Spirit",
     "Power": 0,
     "Percentage": "100%",
-    "Effect": "Priority+2. Block 1 hit. On block, reduce enemy's ATK by 10%."
+    "Effect": "Priority+2. Block 1 hit. Seal enemy's last skill for 1 turn."
   },
   {
     "Name": "Ancient Spirit",
