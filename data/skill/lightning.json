@@ -32,12 +32,12 @@
     "Effect": "40% chance to reduce the enemy's speed by 10%."
   },
   {
-    "Name": "Thunderbolt",
+    "Name": "Stormbolt",
     "PP": 8,
     "Type": "Lightning",
-    "Power": 140,
+    "Power": 150,
     "Percentage": "100%",
-    "Effect": "30% chance to paralyse the enemy for 1 turn."
+    "Effect": "40% chance: Paralyze enemy for 1 turn."
   },
   {
     "Name": "Thunder",
