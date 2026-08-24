@@ -1,0 +1,11 @@
+{
+  "year": 2025,
+  "title": "Champion of the Realm",
+  "type": "dragon",
+  "line": [
+    { "key": "vingon_01", "name": "Vingon" },
+    { "key": "vindragon_02", "name": "Vindragon" },
+    { "key": "vedragon_03", "name": "Vedragon" },
+    { "key": "ventragon_04", "name": "Ventragon" }
+  ]
+}
