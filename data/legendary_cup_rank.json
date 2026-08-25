@@ -83,11 +83,11 @@
 },
  {
 "number": "05",
-"name": "Krus Edition",
- "1": "1 Kruso (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
- "2": "1 Kruso, 2 Ice Cream, 2 Glass Cup",
- "3": "1 Kruso, 1 Ice Cream, 1 Glass Cup",
- "4_10": "1 Krus (With a maximum of 3.5 diamonds)"
+"name": "kruso Edition",
+ "1": "1 kruso (With 4+ diamonds), 5 Ice Cream, 3 Glass Cup", 
+ "2": "1 kruso, 2 Ice Cream, 2 Glass Cup",
+ "3": "1 kruso, 1 Ice Cream, 1 Glass Cup",
+ "4_10": "1 kruso (With a maximum of 3.5 diamonds)"
 },
  { 
 "number": "06",
