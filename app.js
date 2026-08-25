@@ -374,7 +374,7 @@ function getPrizeIcon(itemName) {
   const monsterMap = {
     'kiric': 'mythic', 'kenga': 'dragon', 'arctery': 'mythic', 'lievi': 'dragon',
     'griffie': 'mythic', 'kolter': 'mythic', 'glacic': 'dragon', 'pandy': 'ice',
-    'grety': 'mythic', 'krus': 'dragon', 'lampiz': 'dragon', 'medy': 'mythic',
+    'grety': 'mythic', 'kruso': 'dragon', 'lampiz': 'dragon', 'medy': 'mythic',
     'blazhin': 'dragon', 'voltio': 'mythic', 'necio': 'evil', 'nighty': 'dragon',
     'whindz': 'wind'
   };
