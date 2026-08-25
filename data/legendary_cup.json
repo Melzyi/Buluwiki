@@ -198,9 +198,9 @@
         ]
       },
       {
-        "name": "Krus Edition",
-        "folder": "krus_edition",
-        "banner": "krus_week_banner.png",
+        "name": "Kruso Edition",
+        "folder": "kruso_edition",
+        "banner": "kruso_week_banner.png",
         "type": "dragon",
         "monsters": [
           {
