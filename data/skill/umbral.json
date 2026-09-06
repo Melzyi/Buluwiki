@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "Shadow Drain",
+    "PP": 5,
+    "Type": "Umbral",
+    "Power": 100,
+    "Percentage": "100%",
+    "Effect": "Priority-. Reduce 2 PP of enemy's last used skill."
+  },
+  {
+    "Name": "Sneaky Claw",
+    "PP": 5,
+    "Type": "Umbral",
+    "Power": 100,
+    "Percentage": "100%",
+    "Effect": "Steal enemy's defense buff."
+  },
+  {
+    "Name": "Umbral Orb",
+    "PP": 5,
+    "Type": "Umbral",
+    "Power": 100,
+    "Percentage": "100%",
+    "Effect": "Steal enemy's attack buff."
+  },
+  {
+    "Name": "Umbrarend",
+    "PP": 3,
+    "Type": "Umbral",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Priority+. Ignore enemy's defense."
+  },
+  {
+    "Name": "Phantopunch",
+    "PP": 5,
+    "Type": "Umbral",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "50% chance to stun enemy for 1 turn if Pet double the SPD of enemy's."
+  },
+  {
+    "Name": "Nightstep",
+    "PP": 3,
+    "Type": "Umbral",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Tear through shield. Reduce the enemy's ability by 20% if it has a shield."
+  },
+  {
+    "Name": "Duskfang",
+    "PP": 5,
+    "Type": "Umbral",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "If the enemy has the ability debuff, Power +20, heal 100% of damage and remove it."
+  },
+  {
+    "Name": "Veil Lash",
+    "PP": 3,
+    "Type": "Umbral",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Seal the enemy's last used skill for 3 turns."
+  },
+  {
+    "Name": "Feaster Of Lurker",
+    "PP": 3,
+    "Type": "Umbral",
+    "Power": 110,
+    "Percentage": "100%",
+    "Effect": "Steal the enemy's all ability buff. If successful, seal the enemy's last used skill for 3 turns."
+  },
+  {
+    "Name": "Crescent Trick",
+    "PP": 3,
+    "Type": "Umbral",
+    "Power": 0,
+    "Percentage": "90%",
+    "Effect": "Inflict Blight for 60% HP over 4 turns. Enemy SPD -30%. Enemy's last skill PP -2."
+  }
+]
