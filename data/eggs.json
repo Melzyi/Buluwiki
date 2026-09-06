@@ -1,0 +1,2533 @@
+[
+  {
+    "id": "sigma_egg",
+    "name": "Sigma Egg",
+    "banner": "sigma_egg.webp",
+    "monsters": [
+      {
+        "name": "Sheepskins",
+        "key": "sheepskins",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Liquiy",
+        "key": "liquiy",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Liquigon",
+        "key": "liquigon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigg",
+        "key": "sigg",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Siggonit",
+        "key": "siggonit",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Siggy",
+        "key": "siggy",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigmetit",
+        "key": "sigmetit",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigqua",
+        "key": "sigqua",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigquigon",
+        "key": "sigquigon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Hatchette",
+        "key": "hatchette",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Gaiachette",
+        "key": "gaiachette",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigiv",
+        "key": "sigiv",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigversa",
+        "key": "sigversa",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigco",
+        "key": "sigco",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Sigcobie",
+        "key": "sigcobie",
+        "type": "dragon",
+        "variant": "default"
+      }
+    ]
+  },
+  {
+    "id": "christmas",
+    "name": "Christmas Egg",
+    "banner": "egg_christmas.webp",
+    "monsters": [
+      {
+        "name": "Chrisba",
+        "key": "chrisba",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Gifthy",
+        "key": "gifthy",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Charmelon (Christmas)",
+        "key": "charmelon",
+        "type": "earth",
+        "variant": "christmas"
+      },
+      {
+        "name": "Penguin (Christmas)",
+        "key": "penguin",
+        "type": "ice",
+        "variant": "christmas"
+      },
+      {
+        "name": "Ice Cub (Christmas)",
+        "key": "ice_cub",
+        "type": "ice",
+        "variant": "christmas"
+      },
+      {
+        "name": "Squidar (Christmas)",
+        "key": "squidar",
+        "type": "water",
+        "variant": "christmas"
+      },
+      {
+        "name": "Thoud (Christmas)",
+        "key": "thoud",
+        "type": "lightning",
+        "variant": "christmas"
+      },
+      {
+        "name": "Snowman (Christmas)",
+        "key": "snowman",
+        "type": "ice",
+        "variant": "christmas"
+      },
+      {
+        "name": "Polarin",
+        "key": "polarin",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Wiz Kid (Christmas)",
+        "key": "wiz_kid",
+        "type": "spirit",
+        "variant": "christmas"
+      },
+      {
+        "name": "Sheepskins (Christmas)",
+        "key": "sheepskins",
+        "type": "spirit",
+        "variant": "christmas"
+      },
+      {
+        "name": "Derio",
+        "key": "derio",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Deera",
+        "key": "deera",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Kangy",
+        "key": "kangy",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Racoco (Christmas)",
+        "key": "racoco",
+        "type": "common",
+        "variant": "christmas"
+      },
+      {
+        "name": "Breezy (Christmas)",
+        "key": "breezy",
+        "type": "wind",
+        "variant": "christmas"
+      },
+      {
+        "name": "Red Lynx (Christmas)",
+        "key": "red_lynx",
+        "type": "fire",
+        "variant": "christmas"
+      },
+      {
+        "name": "Snowie (Christmas)",
+        "key": "snowie",
+        "type": "ice",
+        "variant": "christmas"
+      }
+    ]
+  },
+  {
+    "id": "legendary",
+    "name": "Legendary Egg",
+    "banner": "egg_lendery.webp",
+    "monsters": [
+      {
+        "name": "Kenga",
+        "key": "kenga",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Kiric",
+        "key": "kiric",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Arctery",
+        "key": "arctery",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Lievi",
+        "key": "lievi",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Lampiz",
+        "key": "lampiz",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Griffie",
+        "key": "griffie",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Kolter",
+        "key": "kolter",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Pandy",
+        "key": "pandy",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Glacic",
+        "key": "glacic",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Medy",
+        "key": "medy",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Kruso",
+        "key": "kruso",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Grety",
+        "key": "grety",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Whindz",
+        "key": "whindz",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Voltio",
+        "key": "voltio",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Blazhin",
+        "key": "blazhin",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Necio",
+        "key": "necio",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Nighty",
+        "key": "nighty",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Ultisaur",
+        "key": "ultisaur",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Ardizlord",
+        "key": "ardizlord",
+        "type": "mythic",
+        "variant": "default"
+      }
+    ]
+  },
+  {
+    "id": "ocean",
+    "name": "Ocean Egg",
+    "banner": "egg_ocean.webp",
+    "monsters": [
+      {
+        "name": "Telefishy",
+        "key": "telefishy",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Telefishy (Shyne)",
+        "key": "telefishy",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Sharky",
+        "key": "sharky",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Quacko",
+        "key": "quacko",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Quacko (Shyne)",
+        "key": "quacko",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Skippet",
+        "key": "skippet",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Willy",
+        "key": "willy",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Willy (Shyne)",
+        "key": "willy",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Puffle",
+        "key": "puffle",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Aquapole",
+        "key": "aquapole",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Liquake",
+        "key": "liquake",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Marubi",
+        "key": "marubi",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Marubi (Shyne)",
+        "key": "marubi",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Ice Pup",
+        "key": "ice_pup",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Ice Pup (Shyne)",
+        "key": "ice_pup",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Anglerblow",
+        "key": "anglerblow",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Anglerblow (Shyne)",
+        "key": "anglerblow",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Penguin",
+        "key": "penguin",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Penguin (Shyne)",
+        "key": "penguin",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Crabee",
+        "key": "crabee",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Crabee (Shyne)",
+        "key": "crabee",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Angeliz",
+        "key": "angeliz",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Angeliz (Shyne)",
+        "key": "angeliz",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Jellyfishz",
+        "key": "jellyfishz",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Jellyfishz (Shyne)",
+        "key": "jellyfishz",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Squidar",
+        "key": "squidar",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Squidar (Shyne)",
+        "key": "squidar",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Bonevil",
+        "key": "bonevil",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Bonevil (Shyne)",
+        "key": "bonevil",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Hermiss",
+        "key": "hermiss",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Hermiss (Shyne)",
+        "key": "hermiss",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Hamme",
+        "key": "hamme",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Hamme (Shyne)",
+        "key": "hamme",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Froggie",
+        "key": "froggie",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Froggie (Shyne)",
+        "key": "froggie",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Stingaz",
+        "key": "stingaz",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Stingaz (Shyne)",
+        "key": "stingaz",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Mud Ell",
+        "key": "mud_ell",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Pearldrop",
+        "key": "pearldrop",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Pearldrop (Shyne)",
+        "key": "pearldrop",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Snowtle",
+        "key": "snowtle",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Snowtle (Shyne)",
+        "key": "snowtle",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Staafie",
+        "key": "staafie",
+        "type": "earth",
+        "variant": "default"
+      }
+    ],
+    "description": "Monsters that live in the ocean"
+  },
+  {
+    "id": "ocean_plus",
+    "name": "Ocean Egg+",
+    "banner": "egg_ocean_plus.webp",
+    "monsters": [
+      {
+        "name": "Psychicfishy",
+        "key": "psychicfishy",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Psychicfishy (Shyne)",
+        "key": "psychicfishy",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "King Shark",
+        "key": "king_shark",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Quacky",
+        "key": "quacky",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Quacky (Shyne)",
+        "key": "quacky",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Skippodon",
+        "key": "skippodon",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Gianina",
+        "key": "gianina",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Gianina (Shyne)",
+        "key": "gianina",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Puffinieh",
+        "key": "puffinieh",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Aquobra",
+        "key": "aquobra",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Clownfrog",
+        "key": "clownfrog",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Maruni",
+        "key": "maruni",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Maruni (Shyne)",
+        "key": "maruni",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Sealza",
+        "key": "sealza",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Sealza (Shyne)",
+        "key": "sealza",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Psy-angler",
+        "key": "psy_angler",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Psy-angler (Shyne)",
+        "key": "psy_angler",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Pengy",
+        "key": "pengy",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Pengy (Shyne)",
+        "key": "pengy",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Crabeen",
+        "key": "crabeen",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Crabeen (Shyne)",
+        "key": "crabeen",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Angel Shark",
+        "key": "angel_shark",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Angel Shark (Shyne)",
+        "key": "angel_shark",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Jellystingz",
+        "key": "jellystingz",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Jellystingz (Shyne)",
+        "key": "jellystingz",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Squidoo",
+        "key": "squidoo",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Squidoo (Shyne)",
+        "key": "squidoo",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fishvil",
+        "key": "fishvil",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Fishvil (Shyne)",
+        "key": "fishvil",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Hermisa",
+        "key": "hermisa",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Hermisa (Shyne)",
+        "key": "hermisa",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Hammera",
+        "key": "hammera",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Hammera (Shyne)",
+        "key": "hammera",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Toadmaster",
+        "key": "toadmaster",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Toadmaster (Shyne)",
+        "key": "toadmaster",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Stingrayz",
+        "key": "stingrayz",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Stingrayz (Shyne)",
+        "key": "stingrayz",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Gaia Ell",
+        "key": "gaia_ell",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Pearlthorn",
+        "key": "pearlthorn",
+        "type": "water",
+        "variant": "default"
+      },
+      {
+        "name": "Pearlthorn (Shyne)",
+        "key": "pearlthorn",
+        "type": "water",
+        "variant": "shyne"
+      },
+      {
+        "name": "Snowtoise",
+        "key": "snowtoise",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Snowtoise (Shyne)",
+        "key": "snowtoise",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Starfios",
+        "key": "starfios",
+        "type": "water",
+        "variant": "default"
+      }
+    ],
+    "description": "Monsters that live in the ocean"
+  },
+  {
+    "id": "dragon",
+    "name": "Dragon Egg",
+    "banner": "egg_dragon.webp",
+    "monsters": [
+      {
+        "name": "Darkerith",
+        "key": "darkerith",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Psychorath",
+        "key": "psychorath",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Telekent",
+        "key": "telekent",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Chubby",
+        "key": "chubby",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Frosto",
+        "key": "frosto",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Wyfishy",
+        "key": "wyfishy",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Megasaur",
+        "key": "megasaur",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Megasaur (Shyne)",
+        "key": "megasaur",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Aquanite",
+        "key": "aquanite",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Aquanite (Shyne)",
+        "key": "aquanite",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Thundrestorm",
+        "key": "thundrestorm",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Thundrestorm (Shyne)",
+        "key": "thundrestorm",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Vedragon",
+        "key": "vedragon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Vedragon (Shyne)",
+        "key": "vedragon",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Lavagon",
+        "key": "lavagon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Lavagon (Shyne)",
+        "key": "lavagon",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Daara",
+        "key": "daara",
+        "type": "dragon",
+        "variant": "default"
+      }
+    ]
+  },
+  {
+    "id": "dragon_plus",
+    "name": "Dragon Egg+",
+    "banner": "egg_dragon_plus.webp",
+    "monsters": [
+      {
+        "name": "Darkerith",
+        "key": "darkerith",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Psychorath",
+        "key": "psychorath",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Telekgon",
+        "key": "telekgon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Obsedragon",
+        "key": "obsedragon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Froslong",
+        "key": "froslong",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Dragkfishy",
+        "key": "dragkfishy",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Megasaur",
+        "key": "megasaur",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Megasaur (Shyne)",
+        "key": "megasaur",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Aquanite",
+        "key": "aquanite",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Aquanite (Shyne)",
+        "key": "aquanite",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Thundrestorm",
+        "key": "thundrestorm",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Thundrestorm (Shyne)",
+        "key": "thundrestorm",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Vedragon",
+        "key": "vedragon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Vedragon (Shyne)",
+        "key": "vedragon",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Lavagon",
+        "key": "lavagon",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Lavagon (Shyne)",
+        "key": "lavagon",
+        "type": "dragon",
+        "variant": "shyne"
+      },
+      {
+        "name": "Garajion",
+        "key": "garajion",
+        "type": "dragon",
+        "variant": "default"
+      }
+    ]
+  },
+  {
+    "id": "wing",
+    "name": "Wing Egg",
+    "banner": "egg_wing.webp",
+    "monsters": [
+      {
+        "name": "Quacky",
+        "key": "quacky",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Quacky (Shyne)",
+        "key": "quacky",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Ardio",
+        "key": "ardio",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Windifishy",
+        "key": "windifishy",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Firechick",
+        "key": "firechick",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Firechick (Shyne)",
+        "key": "firechick",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Golexie",
+        "key": "golexie",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Kimechu",
+        "key": "kimechu",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Kimechu (Shyne)",
+        "key": "kimechu",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Lion Cub",
+        "key": "lion_cub",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Lion Cub (Shyne)",
+        "key": "lion_cub",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Winkey",
+        "key": "winkey",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Winkey (Shyne)",
+        "key": "winkey",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Bitterpillar",
+        "key": "bitterpillar",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Bitterpillar (Shyne)",
+        "key": "bitterpillar",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Chickz",
+        "key": "chickz",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Chickz (Shyne)",
+        "key": "chickz",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Colbat",
+        "key": "colbat",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Colbat (Shyne)",
+        "key": "colbat",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Bumbleboo",
+        "key": "bumbleboo",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Bumbleboo (Shyne)",
+        "key": "bumbleboo",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Flybee",
+        "key": "flybee",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Flybee (Shyne)",
+        "key": "flybee",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Swifty",
+        "key": "swifty",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Swifty (Shyne)",
+        "key": "swifty",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Owlanto",
+        "key": "owlanto",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Owlanto (Shyne)",
+        "key": "owlanto",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Feebit",
+        "key": "feebit",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Feebit (Shyne)",
+        "key": "feebit",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fairin",
+        "key": "fairin",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Fairin (Shyne)",
+        "key": "fairin",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Flaredog",
+        "key": "flaredog",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Snowie",
+        "key": "snowie",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Snowie (Shyne)",
+        "key": "snowie",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fliwy",
+        "key": "fliwy",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Fliwy (Shyne)",
+        "key": "fliwy",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Horus Eye",
+        "key": "horus_eye",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Horus Eye (Shyne)",
+        "key": "horus_eye",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Breezy",
+        "key": "breezy",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Breezy (Shyne)",
+        "key": "breezy",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Cuppi",
+        "key": "cuppi",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Cuppi (Shyne)",
+        "key": "cuppi",
+        "type": "common",
+        "variant": "shyne"
+      }
+    ],
+    "description": "Monsters that can fly"
+  },
+  {
+    "id": "wing_plus",
+    "name": "Wing Egg+",
+    "banner": "egg_wing_plus.webp",
+    "monsters": [
+      {
+        "name": "Quacky",
+        "key": "quacky",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Quacky (Shyne)",
+        "key": "quacky",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Ardizard",
+        "key": "ardizard",
+        "type": "mythic",
+        "variant": "default"
+      },
+      {
+        "name": "Stormfishy",
+        "key": "stormfishy",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Phoenix",
+        "key": "phoenix",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Phoenix (Shyne)",
+        "key": "phoenix",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Golixo",
+        "key": "golixo",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Kitapi",
+        "key": "kitapi",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Kitapi (Shyne)",
+        "key": "kitapi",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fire Lion",
+        "key": "fire_lion",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Fire Lion (Shyne)",
+        "key": "fire_lion",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Pegasus",
+        "key": "pegasus",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Pegasus (Shyne)",
+        "key": "pegasus",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Winnofly",
+        "key": "winnofly",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Winnofly (Shyne)",
+        "key": "winnofly",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Chickelec",
+        "key": "chickelec",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Chickelec (Shyne)",
+        "key": "chickelec",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fulbat",
+        "key": "fulbat",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Fulbat (Shyne)",
+        "key": "fulbat",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Bumblebee",
+        "key": "bumblebee",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Bumblebee (Shyne)",
+        "key": "bumblebee",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Swifteagle",
+        "key": "swifteagle",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Swifteagle (Shyne)",
+        "key": "swifteagle",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Owlantir",
+        "key": "owlantir",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Owlantir (Shyne)",
+        "key": "owlantir",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Feera",
+        "key": "feera",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Feera (Shyne)",
+        "key": "feera",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fairwind",
+        "key": "fairwind",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Fairwind (Shyne)",
+        "key": "fairwind",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Pyrohound",
+        "key": "pyrohound",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Eye Of Ra",
+        "key": "eye_of_ra",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Eye Of Ra (Shyne)",
+        "key": "eye_of_ra",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Breeznii",
+        "key": "breeznii",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Breeznii (Shyne)",
+        "key": "breeznii",
+        "type": "wind",
+        "variant": "shyne"
+      }
+    ],
+    "description": "Monsters that can fly"
+  },
+  {
+    "id": "soul",
+    "name": "Soul Egg",
+    "banner": "egg_soul.webp",
+    "monsters": [
+      {
+        "name": "Sphaia",
+        "key": "sphaia",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Guardy",
+        "key": "guardy",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Golexie",
+        "key": "golexie",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Telemid (Shyne)",
+        "key": "telemid",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Telemid",
+        "key": "telemid",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Snowman (Shyne)",
+        "key": "snowman",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Snowman",
+        "key": "snowman",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Ghost (Shyne)",
+        "key": "ghost",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Ghost",
+        "key": "ghost",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Thoud (Shyne)",
+        "key": "thoud",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Thoud",
+        "key": "thoud",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Soldier (Shyne)",
+        "key": "soldier",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Soldier",
+        "key": "soldier",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Gola",
+        "key": "gola",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Soullent",
+        "key": "soullent",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Purin (Shyne)",
+        "key": "purin",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Purin",
+        "key": "purin",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Puppiti (Shyne)",
+        "key": "puppiti",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Puppiti",
+        "key": "puppiti",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Terra (Shyne)",
+        "key": "terra",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Terra",
+        "key": "terra",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Sandbolt (Shyne)",
+        "key": "sandbolt",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Sandbolt",
+        "key": "sandbolt",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Starmite (Shyne)",
+        "key": "starmite",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Starmite",
+        "key": "starmite",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Jomonza (Shyne)",
+        "key": "jomonza",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Jomonza",
+        "key": "jomonza",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Cuffvil (Shyne)",
+        "key": "cuffvil",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Cuffvil",
+        "key": "cuffvil",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Flakie (Shyne)",
+        "key": "flakie",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Flakie",
+        "key": "flakie",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Terrock (Shyne)",
+        "key": "terrock",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Terrock",
+        "key": "terrock",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Cyclony (Shyne)",
+        "key": "cyclony",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Cyclony",
+        "key": "cyclony",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Tricksure",
+        "key": "tricksure",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Spirikett",
+        "key": "spirikett",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Fireball (Shyne)",
+        "key": "fireball",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fireball",
+        "key": "fireball",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Larock (Shyne)",
+        "key": "larock",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Larock",
+        "key": "larock",
+        "type": "fire",
+        "variant": "default"
+      }
+    ],
+    "description": "Monster that has no soul"
+  },
+  {
+    "id": "soul_plus",
+    "name": "Soul Egg+",
+    "banner": "egg_soul_plus.webp",
+    "monsters": [
+      {
+        "name": "Sphainite",
+        "key": "sphainite",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Guardion",
+        "key": "guardion",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Golixo",
+        "key": "golixo",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Psymid (Shyne)",
+        "key": "psymid",
+        "type": "spirit",
+        "variant": "shyne"
+      },
+      {
+        "name": "Psymid",
+        "key": "psymid",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Snoworc (Shyne)",
+        "key": "snoworc",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Snoworc",
+        "key": "snoworc",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Prisoner (Shyne)",
+        "key": "prisoner",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Prisoner",
+        "key": "prisoner",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Duke (Shyne)",
+        "key": "duke",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Duke",
+        "key": "duke",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Thoudie (Shyne)",
+        "key": "thoudie",
+        "type": "lightning",
+        "variant": "shyne"
+      },
+      {
+        "name": "Thoudie",
+        "key": "thoudie",
+        "type": "lightning",
+        "variant": "default"
+      },
+      {
+        "name": "Punchlem",
+        "key": "punchlem",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Ghoosent",
+        "key": "ghoosent",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Purina (Shyne)",
+        "key": "purina",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Purina",
+        "key": "purina",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Puppeto (Shyne)",
+        "key": "puppeto",
+        "type": "common",
+        "variant": "shyne"
+      },
+      {
+        "name": "Puppeto",
+        "key": "puppeto",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Terroza (Shyne)",
+        "key": "terroza",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Terroza",
+        "key": "terroza",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Sandrift (Shyne)",
+        "key": "sandrift",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Sandrift",
+        "key": "sandrift",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Gemite (Shyne)",
+        "key": "gemite",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Gemite",
+        "key": "gemite",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Evil Cuff (Shyne)",
+        "key": "evil_cuff",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Evil Cuff",
+        "key": "evil_cuff",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Snowflake (Shyne)",
+        "key": "snowflake",
+        "type": "ice",
+        "variant": "shyne"
+      },
+      {
+        "name": "Snowflake",
+        "key": "snowflake",
+        "type": "ice",
+        "variant": "default"
+      },
+      {
+        "name": "Terrocannon (Shyne)",
+        "key": "terrocannon",
+        "type": "earth",
+        "variant": "shyne"
+      },
+      {
+        "name": "Terrocannon",
+        "key": "terrocannon",
+        "type": "earth",
+        "variant": "default"
+      },
+      {
+        "name": "Cyclone (Shyne)",
+        "key": "cyclone",
+        "type": "wind",
+        "variant": "shyne"
+      },
+      {
+        "name": "Cyclone",
+        "key": "cyclone",
+        "type": "wind",
+        "variant": "default"
+      },
+      {
+        "name": "Tricksbox",
+        "key": "tricksbox",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Psychokett",
+        "key": "psychokett",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Firechild (Shyne)",
+        "key": "firechild",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Firechild",
+        "key": "firechild",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Volrock (Shyne)",
+        "key": "volrock",
+        "type": "fire",
+        "variant": "shyne"
+      },
+      {
+        "name": "Volrock",
+        "key": "volrock",
+        "type": "fire",
+        "variant": "default"
+      }
+    ],
+    "description": "Monster that has no soul"
+  },
+  {
+    "id": "halloween",
+    "name": "Halloween Egg",
+    "banner": "egg_halloween02.webp",
+    "monsters": [
+      {
+        "name": "Trickbit",
+        "key": "trickbit",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Trickloom",
+        "key": "trickloom",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Evilmet",
+        "key": "evilmet",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Helmetvil",
+        "key": "helmetvil",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Vampii",
+        "key": "vampii",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Vampilion",
+        "key": "vampilion",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Evilir",
+        "key": "evilir",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Eviccuma",
+        "key": "eviccuma",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Vidoll",
+        "key": "vidoll",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Viwick",
+        "key": "viwick",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Tricksure",
+        "key": "tricksure",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Tricksbox",
+        "key": "tricksbox",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Pumpkin",
+        "key": "pumpkin",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Pumpwitch",
+        "key": "pumpwitch",
+        "type": "evil",
+        "variant": "default"
+      }
+    ],
+    "description": "Hatch special Halloween monsters"
+  },
+  {
+    "id": "halloween_shyne",
+    "name": "Halloween Shyne Egg",
+    "banner": "egg_halloween.webp",
+    "monsters": [
+      {
+        "name": "Colbat (Shyne)",
+        "key": "colbat",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Fulbat (Shyne)",
+        "key": "fulbat",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Lanvil (Shyne)",
+        "key": "lanvil",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Lanternvil (Shyne)",
+        "key": "lanternvil",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Spidervil (Shyne)",
+        "key": "spidervil",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Bandit (Shyne)",
+        "key": "bandit",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Pirate (Shyne)",
+        "key": "pirate",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Ghost (Shyne)",
+        "key": "ghost",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Prisoner (Shyne)",
+        "key": "prisoner",
+        "type": "evil",
+        "variant": "shyne"
+      },
+      {
+        "name": "Bookvil (Shyne)",
+        "key": "bookvil",
+        "type": "evil",
+        "variant": "shyne"
+      }
+    ],
+    "description": "Hatch shyne versions of Halloween monsters"
+  },
+  {
+    "id": "valentine",
+    "name": "Valentine's Egg",
+    "banner": "egg_valentine.webp",
+    "monsters": [
+      {
+        "name": "Roselie",
+        "key": "roselie",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Roselius",
+        "key": "roselius",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Rosachuck",
+        "key": "rosachuck",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Venuschuck",
+        "key": "venuschuck",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Cocochuck",
+        "key": "cocochuck",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Eroschuck",
+        "key": "eroschuck",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Peavy",
+        "key": "peavy",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Peavilko",
+        "key": "peavilko",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Speena",
+        "key": "speena",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Spearino",
+        "key": "spearino",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Psychos",
+        "key": "psychos",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Psychorath",
+        "key": "psychorath",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Darkery",
+        "key": "darkery",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Darkerith",
+        "key": "darkerith",
+        "type": "dragon",
+        "variant": "default"
+      },
+      {
+        "name": "Bitterpillar (Valentine's Day)",
+        "key": "bitterpillar",
+        "type": "earth",
+        "variant": "valentine's_day"
+      },
+      {
+        "name": "Winnofly (Valentine's Day)",
+        "key": "winnofly",
+        "type": "wind",
+        "variant": "valentine's_day"
+      },
+      {
+        "name": "Winnee (Valentine's Day)",
+        "key": "winnee",
+        "type": "wind",
+        "variant": "valentine's_day"
+      },
+      {
+        "name": "Chocomin",
+        "key": "chocomin",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Rosamin",
+        "key": "rosamin",
+        "type": "common",
+        "variant": "default"
+      },
+      {
+        "name": "Trickiz",
+        "key": "trickiz",
+        "type": "evil",
+        "variant": "default"
+      },
+      {
+        "name": "Troubiz",
+        "key": "troubiz",
+        "type": "spirit",
+        "variant": "default"
+      },
+      {
+        "name": "Racoco (Valentine's Day)",
+        "key": "racoco",
+        "type": "common",
+        "variant": "valentine's_day"
+      },
+      {
+        "name": "Racoona (Valentine's Day)",
+        "key": "racoona",
+        "type": "common",
+        "variant": "valentine's_day"
+      }
+    ]
+  },
+  {
+    "id": "newyear",
+    "name": "Lunar New Year Egg",
+    "banner": "egg_newyear.webp",
+    "monsters": [
+      {
+        "name": "Fortucub",
+        "key": "fortucub",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Fortuleo",
+        "key": "fortuleo",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Dragonyak",
+        "key": "dragonyak",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Dragonlion",
+        "key": "dragonlion",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Cowlex",
+        "key": "cowlex",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Cowlexion",
+        "key": "cowlexion",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Lunar Cub",
+        "key": "lunar_cub",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Lunar Cub (Shyne Black)",
+        "key": "lunar_cub",
+        "type": "fire",
+        "variant": "shyne_black"
+      },
+      {
+        "name": "Lunar Cub (Shyne Blue)",
+        "key": "lunar_cub",
+        "type": "fire",
+        "variant": "shyne_blue"
+      },
+      {
+        "name": "Lunar Cub (Shyne Red)",
+        "key": "lunar_cub",
+        "type": "fire",
+        "variant": "shyne_red"
+      },
+      {
+        "name": "Lunar Lion",
+        "key": "lunar_lion",
+        "type": "fire",
+        "variant": "default"
+      },
+      {
+        "name": "Lunar Lion (Shyne Black)",
+        "key": "lunar_lion",
+        "type": "fire",
+        "variant": "shyne_black"
+      },
+      {
+        "name": "Lunar Lion (Shyne Blue)",
+        "key": "lunar_lion",
+        "type": "fire",
+        "variant": "shyne_blue"
+      },
+      {
+        "name": "Lunar Lion (Shyne Red)",
+        "key": "lunar_lion",
+        "type": "fire",
+        "variant": "shyne_red"
+      },
+      {
+        "name": "Winkey (Chinese New Year)",
+        "key": "winkey",
+        "type": "wind",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Pegasus (Chinese New Year)",
+        "key": "pegasus",
+        "type": "wind",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Electricow (Chinese New Year)",
+        "key": "electricow",
+        "type": "lightning",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Electricox (Chinese New Year)",
+        "key": "electricox",
+        "type": "lightning",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Lion Cub (Chinese New Year)",
+        "key": "lion_cub",
+        "type": "fire",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Fire Cub (Chinese New Year)",
+        "key": "fire_cub",
+        "type": "fire",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Estregot (Chinese New Year)",
+        "key": "estregot",
+        "type": "earth",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Escargot (Chinese New Year)",
+        "key": "escargot",
+        "type": "earth",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Lambiz (Chinese New Year)",
+        "key": "lambiz",
+        "type": "lightning",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Sheepiz (Chinese New Year)",
+        "key": "sheepiz",
+        "type": "lightning",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Pigz (Chinese New Year)",
+        "key": "pigz",
+        "type": "lightning",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Boariz (Chinese New Year)",
+        "key": "boariz",
+        "type": "lightning",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Cobra (Chinese New Year)",
+        "key": "cobra",
+        "type": "spirit",
+        "variant": "chinese_new_year"
+      },
+      {
+        "name": "Vabra (Chinese New Year)",
+        "key": "vabra",
+        "type": "spirit",
+        "variant": "chinese_new_year"
+      }
+    ]
+  }
+]
