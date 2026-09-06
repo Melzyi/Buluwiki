@@ -1,0 +1,1363 @@
+[
+  {
+    "monster": "Alphamid",
+    "monster_key": "alphamid",
+    "type": "spirit",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "alphamid_shyne_type_spirit_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "alphamid_type_spirit_.webp"
+      }
+    ],
+    "item": "alphamid_evo_energy_topaz.webp",
+    "item_name": "Energy Topaz"
+  },
+  {
+    "monster": "Aquamorph",
+    "monster_key": "aquamorph",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "aquamorph_type_water_.webp"
+      }
+    ],
+    "item": "aquamorph_evo_water_essence_10_th.webp",
+    "item_name": "Water Essence 10 Th"
+  },
+  {
+    "monster": "Aquarion",
+    "monster_key": "aquarion",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "aquarion_shyne_type_dragon_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "aquarion_type_dragon_.webp"
+      }
+    ],
+    "item": "aquarion_evo_tidal_might.webp",
+    "item_name": "Tidal Might"
+  },
+  {
+    "monster": "Archduke",
+    "monster_key": "archduke",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "archduke_shyne_type_evil_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "archduke_type_evil_.webp"
+      }
+    ],
+    "item": "archduke_evo_nobleswill.webp",
+    "item_name": "Nobleswill"
+  },
+  {
+    "monster": "Ardizlord",
+    "monster_key": "ardizlord",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "ardizlord_type_mythic_.webp"
+      }
+    ],
+    "item": "ardizlord_evo_crystal_protect.webp",
+    "item_name": "Crystal Protect"
+  },
+  {
+    "monster": "Captain Due",
+    "monster_key": "captain_due",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "captain_due_shyne_type_evil_.webp"
+      },
+      {
+        "variant": "sigma",
+        "file": "captain_due_sigma_event_type_evil_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "captain_due_type_evil_.webp"
+      }
+    ],
+    "item": "captain_due_evo_porgotten_pearl.webp",
+    "item_name": "Porgotten Pearl"
+  },
+  {
+    "monster": "Charmedard",
+    "monster_key": "charmedard",
+    "type": "earth",
+    "sprites": [
+      {
+        "variant": "christmas",
+        "file": "charmedard_christmas_event_type_earth_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "charmedard_shyne_type_earth_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "charmedard_type_earth_.webp"
+      }
+    ],
+    "item": "charmedard_evo_feather_of_tribe.webp",
+    "item_name": "Feather Of Tribe"
+  },
+  {
+    "monster": "Chickelord",
+    "monster_key": "chickelord",
+    "type": "lightning",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "chickelord_shyne_type_lightning_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "chickelord_type_lightning_.webp"
+      }
+    ],
+    "item": "chickelord_evo_voltic_feather.webp",
+    "item_name": "Voltic Feather"
+  },
+  {
+    "monster": "Cosmitorra",
+    "monster_key": "cosmitorra",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "cosmitorra_type_mythic_.webp"
+      }
+    ],
+    "item": "cosmitorra_evo_cosmic_jade.webp",
+    "item_name": "Cosmic Jade"
+  },
+  {
+    "monster": "Cosmittor",
+    "monster_key": "cosmittor",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "cosmittor_type_mythic_.webp"
+      }
+    ],
+    "item": "cosmittor_evo_cosmic_jade.webp",
+    "item_name": "Cosmic Jade"
+  },
+  {
+    "monster": "Crystophy",
+    "monster_key": "crystophy",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "crystophy_type_ice_.webp"
+      }
+    ],
+    "item": "crystophy_evo_ice_essence_10_th.webp",
+    "item_name": "Ice Essence 10 Th"
+  },
+  {
+    "monster": "Cyclonph",
+    "monster_key": "cyclonph",
+    "type": "wind",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "cyclonph_type_wind_.webp"
+      }
+    ],
+    "item": "cyclonph_evo_wind_essence_10_th.webp",
+    "item_name": "Wind Essence 10 Th"
+  },
+  {
+    "monster": "Dancing Lion",
+    "monster_key": "dancing_lion",
+    "type": "fire",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "dancing_lion_shyne_type_fire_.webp"
+      },
+      {
+        "variant": "shyne2",
+        "file": "dancing_lion_shyne2_type_fire_.webp"
+      },
+      {
+        "variant": "shyne3",
+        "file": "dancing_lion_shyne3_type_fire_.webp"
+      },
+      {
+        "variant": "shyne4",
+        "file": "dancing_lion_shyne4_type_fire_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "dancing_lion_type_fire_.webp"
+      }
+    ],
+    "item": "dancing_lion_evo_jade_lettuce.webp",
+    "item_name": "Jade Lettuce"
+  },
+  {
+    "monster": "Darkernov",
+    "monster_key": "darkernov",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "darkernov_type_dragon_.webp"
+      }
+    ],
+    "item": "darkernov_evo_dark_core.webp",
+    "item_name": "Darkcore"
+  },
+  {
+    "monster": "Darkphlame",
+    "monster_key": "darkphlame",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "darkphlame_type_evil_.webp"
+      }
+    ],
+    "item": "darkphlame_evo_evil_essence_10_th.webp",
+    "item_name": "Evil Essence 10 Th"
+  },
+  {
+    "monster": "Duskvorr",
+    "monster_key": "duskvorr",
+    "type": "umbral",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "duskvorr_type_umbral_.webp"
+      }
+    ],
+    "item": "duskvorr_evo_dusklight_bone_12_th.webp",
+    "item_name": "Dusklight Bone 12 Th"
+  },
+  {
+    "monster": "Empbat",
+    "monster_key": "empbat",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "empbat_shyne_type_evil_.webp"
+      },
+      {
+        "variant": "sigma",
+        "file": "empbat_sigma_event_type_evil_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "empbat_type_evil_.webp"
+      }
+    ],
+    "item": "empbat_evo_emperor_cape.webp",
+    "item_name": "Emperor Cape"
+  },
+  {
+    "monster": "Feerals",
+    "monster_key": "feerals",
+    "type": "wind",
+    "sprites": [
+      {
+        "variant": "easter",
+        "file": "feerals_easter_event_type_wind_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "feerals_shyne_type_wind_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "feerals_type_wind_.webp"
+      }
+    ],
+    "item": "feerals_evo_easter_carrot.webp",
+    "item_name": "Easter Carrot"
+  },
+  {
+    "monster": "Flarephiant",
+    "monster_key": "flarephiant",
+    "type": "fire",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "flarephiant_type_fire_.webp"
+      }
+    ],
+    "item": "flarephiant_evo_fire_essence_10_th.webp",
+    "item_name": "Fire Essence 10 Th"
+  },
+  {
+    "monster": "Frozen Wolf",
+    "monster_key": "frozen_wolf",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "christmas",
+        "file": "frozen_wolf_christmas_event_type_ice_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "frozen_wolf_shyne_type_ice_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "frozen_wolf_type_ice_.webp"
+      }
+    ],
+    "item": "frozen_wolf_evo_glacial_claw.webp",
+    "item_name": "Glacial Claw"
+  },
+  {
+    "monster": "Gaiaphyz",
+    "monster_key": "gaiaphyz",
+    "type": "earth",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "gaiaphyz_type_earth_.webp"
+      }
+    ],
+    "item": "gaiaphyz_evo_earth_essence_10_th.webp",
+    "item_name": "Earth Essence 10 Th"
+  },
+  {
+    "monster": "Giganion",
+    "monster_key": "giganion",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "giganion_shyne_type_water_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "giganion_type_water_.webp"
+      }
+    ],
+    "item": "giganion_evo_diamond_horn.webp",
+    "item_name": "Diamond Horn"
+  },
+  {
+    "monster": "Gigantle",
+    "monster_key": "gigantle",
+    "type": "earth",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "gigantle_shyne_type_earth_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "gigantle_type_earth_.webp"
+      }
+    ],
+    "item": "gigantle_evo_titan_shell.webp",
+    "item_name": "Titan Shell"
+  },
+  {
+    "monster": "Helmdevil",
+    "monster_key": "helmdevil",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "helmdevil_type_evil_.webp"
+      }
+    ],
+    "item": "helmdevil_evo_spooky_card.webp",
+    "item_name": "Spooky Card"
+  },
+  {
+    "monster": "Hivernox",
+    "monster_key": "hivernox",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "hivernox_type_ice_.webp"
+      }
+    ],
+    "item": "hivernox_evo_aegis_core.webp",
+    "item_name": "Aegis Core"
+  },
+  {
+    "monster": "Hydreilion",
+    "monster_key": "hydreilion",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "hydreilion_type_evil_.webp"
+      }
+    ],
+    "item": "hydreilion_evo_sigma_sign_09_th.webp",
+    "item_name": "Sigma Sign 09 Th"
+  },
+  {
+    "monster": "Kappujin",
+    "monster_key": "kappujin",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "kappujin_type_mythic_.webp"
+      }
+    ],
+    "item": "kappujin_evo_exorcising_staff.webp",
+    "item_name": "Exorcising Staff"
+  },
+  {
+    "monster": "King Bear",
+    "monster_key": "king_bear",
+    "type": "wind",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "king_bear_shyne_type_wind_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "king_bear_type_wind_.webp"
+      }
+    ],
+    "item": "king_bear_evo_king_bear_claw.webp",
+    "item_name": "King Bear Claw"
+  },
+  {
+    "monster": "King Lion",
+    "monster_key": "king_lion",
+    "type": "fire",
+    "sprites": [
+      {
+        "variant": "chinese_new_year",
+        "file": "king_lion_chinese_new_year_type_fire_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "king_lion_shyne_type_fire_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "king_lion_type_fire_.webp"
+      }
+    ],
+    "item": "king_lion_evo_burning_wing.webp",
+    "item_name": "Burning Wing"
+  },
+  {
+    "monster": "Lunabbiox",
+    "monster_key": "lunabbiox",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "lunabbiox_type_evil_.webp"
+      }
+    ],
+    "item": "lunabbiox_evo_luna_orb.webp",
+    "item_name": "Luna Orb"
+  },
+  {
+    "monster": "Lunamitox",
+    "monster_key": "lunamitox",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "lunamitox_type_water_.webp"
+      }
+    ],
+    "item": null,
+    "item_name": null
+  },
+  {
+    "monster": "Lunati",
+    "monster_key": "lunati",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "lunati_type_water_.webp"
+      }
+    ],
+    "item": "lunati_evo_moonlight_crystal.webp",
+    "item_name": "Moonlight Crystal"
+  },
+  {
+    "monster": "Lunatith",
+    "monster_key": "lunatith",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "lunatith_type_water_.webp"
+      }
+    ],
+    "item": "lunatith_evo_luna_holy_water.webp",
+    "item_name": "Luna Holy Water"
+  },
+  {
+    "monster": "Luni",
+    "monster_key": "luni",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "luni_type_water_.webp"
+      }
+    ],
+    "item": "luni_evo_lunar_water.webp",
+    "item_name": "Lunar Water"
+  },
+  {
+    "monster": "Miracle Sheep",
+    "monster_key": "miracle_sheep",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "christmas",
+        "file": "miracle_sheep_christmas_event_type_mythic_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "miracle_sheep_shyne_type_mythic_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "miracle_sheep_type_mythic_.webp"
+      }
+    ],
+    "item": "miracle_sheep_evo_ancient_ring_05_th.webp",
+    "item_name": "Ancient Ring 05 Th"
+  },
+  {
+    "monster": "Mordrak",
+    "monster_key": "mordrak",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "mordrak_type_dragon_.webp"
+      }
+    ],
+    "item": "mordrak_evo_dragon_essence_10_th.webp",
+    "item_name": "Dragon Essence 10 Th"
+  },
+  {
+    "monster": "Morgicka",
+    "monster_key": "morgicka",
+    "type": "spirit",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "morgicka_type_spirit_.webp"
+      }
+    ],
+    "item": "morgicka_evo_spirit_essence_10_th.webp",
+    "item_name": "Spirit Essence 10 Th"
+  },
+  {
+    "monster": "Noelstar",
+    "monster_key": "noelstar",
+    "type": "umbral",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "noelstar_type_umbral_.webp"
+      }
+    ],
+    "item": "noelstar_evo_star_topper_crest.webp",
+    "item_name": "Star Topper Crest"
+  },
+  {
+    "monster": "Ocean Dragk",
+    "monster_key": "ocean_dragk",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "ocean_dragk_shyne_type_water_.webp"
+      },
+      {
+        "variant": "shyne2",
+        "file": "ocean_dragk_shyne2_type_water_.webp"
+      },
+      {
+        "variant": "shyne3",
+        "file": "ocean_dragk_shyne3_type_water_.webp"
+      },
+      {
+        "variant": "shyne4",
+        "file": "ocean_dragk_shyne4_type_water_.webp"
+      },
+      {
+        "variant": "shyne5",
+        "file": "ocean_dragk_shyne5_type_water_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "ocean_dragk_type_water_.webp"
+      }
+    ],
+    "item": "ocean_dragk_evo_easter_horn.webp",
+    "item_name": "Easter Horn"
+  },
+  {
+    "monster": "Orriginph",
+    "monster_key": "orriginph",
+    "type": "common",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "orriginph_type_common_.webp"
+      }
+    ],
+    "item": "orriginph_evo_common_essence_10_th.webp",
+    "item_name": "Common Essence 10 Th"
+  },
+  {
+    "monster": "Pegakorns",
+    "monster_key": "pegakorns",
+    "type": "wind",
+    "sprites": [
+      {
+        "variant": "chinese_new_year",
+        "file": "pegakorns_chinese_new_year_type_wind_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "pegakorns_shyne_type_wind_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "pegakorns_type_wind_.webp"
+      }
+    ],
+    "item": "pegakorns_evo_sharp_horn.webp",
+    "item_name": "Sharp Horn"
+  },
+  {
+    "monster": "Phoecinix",
+    "monster_key": "phoecinix",
+    "type": "fire",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "phoecinix_type_fire_.webp"
+      }
+    ],
+    "item": "phoecinix_evo_phoenix_feather.webp",
+    "item_name": "Phoenix Feather"
+  },
+  {
+    "monster": "Polar Ogre",
+    "monster_key": "polar_ogre",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "christmas",
+        "file": "polar_ogre_christmas_event_type_ice_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "polar_ogre_shyne_type_ice_.webp"
+      },
+      {
+        "variant": "shyne2",
+        "file": "polar_ogre_shyne2_type_ice_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "polar_ogre_type_ice_.webp"
+      }
+    ],
+    "item": "polar_ogre_evo_duo_hammer.webp",
+    "item_name": "Duo Hammer"
+  },
+  {
+    "monster": "Primorphio",
+    "monster_key": "primorphio",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "primorphio_type_mythic_.webp"
+      }
+    ],
+    "item": "primorphio_evo_mythic_essence_10_th.webp",
+    "item_name": "Mythic Essence 10 Th"
+  },
+  {
+    "monster": "Prison Breaker",
+    "monster_key": "prison_breaker",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "hyakki_yagyo",
+        "file": "prison_breaker_hyakki_yagyo_type_evil_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "prison_breaker_shyne_type_evil_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "prison_breaker_type_evil_.webp"
+      }
+    ],
+    "item": "prison_breaker_evo_crimzon_cape_06_th.webp",
+    "item_name": "Crimzon Cape 06 Th"
+  },
+  {
+    "monster": "Psychobra",
+    "monster_key": "psychobra",
+    "type": "spirit",
+    "sprites": [
+      {
+        "variant": "chinese_new_year",
+        "file": "psychobra_chinese_new_year_type_spirit_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "psychobra_shyne_type_spirit_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "psychobra_type_spirit_.webp"
+      }
+    ],
+    "item": "psychobra_evo_psycho_spike.webp",
+    "item_name": "Psycho Spike"
+  },
+  {
+    "monster": "Psychonoar",
+    "monster_key": "psychonoar",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "psychonoar_type_dragon_.webp"
+      }
+    ],
+    "item": "psychonoar_evo_psychocore.webp",
+    "item_name": "Psychocore"
+  },
+  {
+    "monster": "Puuking",
+    "monster_key": "puuking",
+    "type": "common",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "puuking_shyne_type_common_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "puuking_type_common_.webp"
+      }
+    ],
+    "item": "puuking_evo_puddin_crown.webp",
+    "item_name": "Puddin Crown"
+  },
+  {
+    "monster": "Roselion",
+    "monster_key": "roselion",
+    "type": "spirit",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "roselion_type_spirit_.webp"
+      }
+    ],
+    "item": "roselion_evo_heartlock.webp",
+    "item_name": "Heartlock"
+  },
+  {
+    "monster": "Samushione",
+    "monster_key": "samushione",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "samushione_type_mythic_.webp"
+      }
+    ],
+    "item": "samushione_evo_muramasa.webp",
+    "item_name": "Muramasa"
+  },
+  {
+    "monster": "Santadeer",
+    "monster_key": "santadeer",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "santadeer_type_ice_.webp"
+      }
+    ],
+    "item": null,
+    "item_name": null
+  },
+  {
+    "monster": "Santarei",
+    "monster_key": "santarei",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "santarei_type_ice_.webp"
+      }
+    ],
+    "item": "santarei_evo_santa_sock.webp",
+    "item_name": "Santa Sock"
+  },
+  {
+    "monster": "Santeer",
+    "monster_key": "santeer",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "santeer_type_ice_.webp"
+      }
+    ],
+    "item": "santeer_evo_santa_ball.webp",
+    "item_name": "Santa Ball"
+  },
+  {
+    "monster": "Sigcobinith",
+    "monster_key": "sigcobinith",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "sigcobinith_type_dragon_.webp"
+      }
+    ],
+    "item": "sigcobinith_evo_sigma_controller_08_th.webp",
+    "item_name": "Sigma Controller 08 Th"
+  },
+  {
+    "monster": "Siggdrak",
+    "monster_key": "siggdrak",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "siggdrak_type_dragon_.webp"
+      }
+    ],
+    "item": "siggdrak_evo_sigma_power_02_th.webp",
+    "item_name": "Sigma Power 02 Th"
+  },
+  {
+    "monster": "Siggement",
+    "monster_key": "siggement",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "siggement_type_dragon_.webp"
+      }
+    ],
+    "item": "siggement_evo_sigma_gem_03_th.webp",
+    "item_name": "Sigma Gem 03 Th"
+  },
+  {
+    "monster": "Siggtaplate",
+    "monster_key": "siggtaplate",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "siggtaplate_type_dragon_.webp"
+      }
+    ],
+    "item": "siggtaplate_evo_sigma_elixir_04_th.webp",
+    "item_name": "Sigma Elixir 04 Th"
+  },
+  {
+    "monster": "Sigversith",
+    "monster_key": "sigversith",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "sigversith_type_dragon_.webp"
+      }
+    ],
+    "item": "sigversith_evo_versatile_core_07_th.webp",
+    "item_name": "Versatile Core 07 Th"
+  },
+  {
+    "monster": "Skurvorr",
+    "monster_key": "skurvorr",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "skurvorr_type_mythic_.webp"
+      }
+    ],
+    "item": "skurvorr_evo_hellfire_bone_12_th.webp",
+    "item_name": "Hellfire Bone 12 Th"
+  },
+  {
+    "monster": "Snowlomon",
+    "monster_key": "snowlomon",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "christmas",
+        "file": "snowlomon_christmas_event_type_ice_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "snowlomon_shyne_type_ice_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "snowlomon_type_ice_.webp"
+      }
+    ],
+    "item": "snowlomon_evo_frost_nutrition.webp",
+    "item_name": "Frost Nutrition"
+  },
+  {
+    "monster": "Snowlords",
+    "monster_key": "snowlords",
+    "type": "ice",
+    "sprites": [
+      {
+        "variant": "anniversary",
+        "file": "snowlords_1st_anniversary_type_ice_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "snowlords_shyne_type_ice_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "snowlords_type_ice_.webp"
+      }
+    ],
+    "item": "snowlords_evo_giant_clamp_06_th.webp",
+    "item_name": "Giant Clamp 06 Th"
+  },
+  {
+    "monster": "Sqauidon",
+    "monster_key": "sqauidon",
+    "type": "water",
+    "sprites": [
+      {
+        "variant": "christmas",
+        "file": "sqauidon_christmas_event_type_water_.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "sqauidon_shyne_type_water_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "sqauidon_type_water_.webp"
+      }
+    ],
+    "item": "sqauidon_evo_oceanspirit.webp",
+    "item_name": "Oceanspirit"
+  },
+  {
+    "monster": "Starrtori",
+    "monster_key": "starrtori",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "starrtori_type_mythic_.webp"
+      }
+    ],
+    "item": "starrtori_evo_cosmic_jade.webp",
+    "item_name": "Cosmic Jade"
+  },
+  {
+    "monster": "Starry",
+    "monster_key": "starry",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "starry_type_mythic_.webp"
+      }
+    ],
+    "item": "starry_evo_cosmic_jade.webp",
+    "item_name": "Cosmic Jade"
+  },
+  {
+    "monster": "Tempestnir",
+    "monster_key": "tempestnir",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "tempestnir_type_mythic_.webp"
+      }
+    ],
+    "item": "tempestnir_evo_sigma_fusion_11_th.webp",
+    "item_name": "Sigma Fusion 11 Th"
+  },
+  {
+    "monster": "Terroria",
+    "monster_key": "terroria",
+    "type": "mythic",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "terroria_shyne_type_mythic_.webp"
+      },
+      {
+        "variant": "sigma",
+        "file": "terroria_sigma_event_type_mythic_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "terroria_type_mythic_.webp"
+      }
+    ],
+    "item": "terroria_evo_lunar_soil.webp",
+    "item_name": "Lunar Soil"
+  },
+  {
+    "monster": "Thunder Demon",
+    "monster_key": "thunder_demon",
+    "type": "lightning",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "thunder_demon_shyne_type_lightning_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "thunder_demon_type_lightning_.webp"
+      }
+    ],
+    "item": "thunder_demon_evo_thunder_horn.webp",
+    "item_name": "Thunder Horn"
+  },
+  {
+    "monster": "Thunderoph",
+    "monster_key": "thunderoph",
+    "type": "lightning",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "thunderoph_type_lightning_.webp"
+      }
+    ],
+    "item": "thunderoph_evo_thunder_essence_10_th.webp",
+    "item_name": "Thunder Essence 10 Th"
+  },
+  {
+    "monster": "Toadarch",
+    "monster_key": "toadarch",
+    "type": "fire",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "toadarch_shyne_type_fire_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "toadarch_type_fire_.webp"
+      }
+    ],
+    "item": "toadarch_evo_flame_talisman.webp",
+    "item_name": "Flame Talisman"
+  },
+  {
+    "monster": "Tricklord",
+    "monster_key": "tricklord",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "tricklord_type_evil_.webp"
+      }
+    ],
+    "item": "tricklord_evo_witch_light.webp",
+    "item_name": "Witch Light"
+  },
+  {
+    "monster": "Tulirion",
+    "monster_key": "tulirion",
+    "type": "wind",
+    "sprites": [
+      {
+        "variant": "shyne_orange",
+        "file": "tulirion_type_wind_shyne_orange.webp"
+      },
+      {
+        "variant": "shyne_purple",
+        "file": "tulirion_type_wind_shyne_purple.webp"
+      },
+      {
+        "variant": "shyne_white",
+        "file": "tulirion_type_wind_shyne_white.webp"
+      },
+      {
+        "variant": "shyne_yellow",
+        "file": "tulirion_type_wind_shyne_yellow.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "tulirion_type_wind.webp"
+      }
+    ],
+    "item": "tulirion_evo_relic_seed.webp",
+    "item_name": "Relic Seed"
+  },
+  {
+    "monster": "Ultichette",
+    "monster_key": "ultichette",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "ultichette_type_dragon_.webp"
+      }
+    ],
+    "item": "ultichette_evo_rainbow_feather_06_th.webp",
+    "item_name": "Rainbow Feather 06 Th"
+  },
+  {
+    "monster": "Ultisaur",
+    "monster_key": "ultisaur",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "ultisaur_shyne_type_dragon_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "ultisaur_type_dragon_.webp"
+      }
+    ],
+    "item": "ultisaur_evo_saurpunch.webp",
+    "item_name": "Saurpunch"
+  },
+  {
+    "monster": "Ultratoise",
+    "monster_key": "ultratoise",
+    "type": "earth",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "ultratoise_shyne_type_earth_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "ultratoise_type_earth_.webp"
+      }
+    ],
+    "item": "ultratoise_evo_hard_shell.webp",
+    "item_name": "Hard Shell"
+  },
+  {
+    "monster": "Umbrangler",
+    "monster_key": "umbrangler",
+    "type": "umbral",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "umbrangler_type_umbral_.webp"
+      }
+    ],
+    "item": "umbrangler_evo_leviathan_scale_12_th.webp",
+    "item_name": "Leviathan Scale 12 Th"
+  },
+  {
+    "monster": "Ventragon",
+    "monster_key": "ventragon",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "ventragon_shyne_type_dragon_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "ventragon_type_dragon_.webp"
+      }
+    ],
+    "item": "ventragon_evo_heavenly_feather.webp",
+    "item_name": "Heavenly Feather"
+  },
+  {
+    "monster": "Volcagon",
+    "monster_key": "volcagon",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "volcagon_shyne_type_dragon_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "volcagon_type_dragon_.webp"
+      }
+    ],
+    "item": "volcagon_evo_volcano_armor.webp",
+    "item_name": "Volcano Armor"
+  },
+  {
+    "monster": "Volcanorse",
+    "monster_key": "volcanorse",
+    "type": "fire",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "volcanorse_type_fire.webp"
+      }
+    ],
+    "item": "volcanorse_evo_thermal_pearl.jpeg",
+    "item_name": "Thermal Pearl"
+  },
+  {
+    "monster": "Voltboar",
+    "monster_key": "voltboar",
+    "type": "lightning",
+    "sprites": [
+      {
+        "variant": "chinese_new_year",
+        "file": "voltboar_chinese_new_year_type_lightning.webp"
+      },
+      {
+        "variant": "shyne",
+        "file": "voltboar_shyne_type_lightning.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "voltboar_type_lightning.webp"
+      }
+    ],
+    "item": "voltboar_evo_flashing_teeth.webp",
+    "item_name": "Flashing Teeth"
+  },
+  {
+    "monster": "Voltragh",
+    "monster_key": "voltragh",
+    "type": "lightning",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "voltragh_type_lightning.webp"
+      }
+    ],
+    "item": "voltragh_evo_thunderbeast_core.webp",
+    "item_name": "Thunderbeast Core"
+  },
+  {
+    "monster": "Will Of Ra",
+    "monster_key": "will_of_ra",
+    "type": "spirit",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "will_of_ra_shyne_type_spirit_.webp"
+      },
+      {
+        "variant": "shyne2",
+        "file": "will_of_ra_shyne2_type_spirit_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "will_of_ra_type_spirit_.webp"
+      }
+    ],
+    "item": "will_of_ra_evo_ra's_spell.webp",
+    "item_name": "Ra'S Spell"
+  },
+  {
+    "monster": "Winthelyas",
+    "monster_key": "winthelyas",
+    "type": "wind",
+    "sprites": [
+      {
+        "variant": "shyne",
+        "file": "winthelyas_shyne_type_wind_.webp"
+      },
+      {
+        "variant": "normal",
+        "file": "winthelyas_type_wind_.webp"
+      },
+      {
+        "variant": "valentines",
+        "file": "winthelyas_valentines_event_type_wind_.webp"
+      }
+    ],
+    "item": "winthelyas_evo_super_honey.webp",
+    "item_name": "Super Honey"
+  },
+  {
+    "monster": "Creslipse",
+    "monster_key": "creslipse",
+    "type": "umbral",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "creslipse_type_umbral_04.webp"
+      }
+    ],
+    "item": "creslipse_evo_eclipse_core.webp",
+    "item_name": "Eclipse Core"
+  },
+  {
+    "monster": "Ultichette",
+    "monster_key": "ultichett",
+    "type": "dragon",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "ultichette_type_dragon_04.webp"
+      }
+    ],
+    "item": "ultichette_evo_rainbow_feather_06_th.webp",
+    "item_name": "Rainbow Feather"
+  },
+  {
+    "monster": "Hydrellion",
+    "monster_key": "hydrellion",
+    "type": "evil",
+    "sprites": [
+      {
+        "variant": "normal",
+        "file": "hydreilion_type_evil_04.webp"
+      }
+    ],
+    "item": "hydreilion_evo_sigma_sign_09_th.webp",
+    "item_name": "Sigma Sign"
+  }
+]
